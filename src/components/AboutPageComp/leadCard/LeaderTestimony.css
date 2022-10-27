@@ -1,0 +1,157 @@
+.Founder{
+    position: relative;
+    padding: 3rem;
+    border-radius: 20px;
+    width: 55%;
+    height: 40%;
+    margin:100px 0px;
+    background: #ffffff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.Fcol p{
+    color:black; 
+    font-Family:'Inter', sans-serif; 
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    letter-spacing: .5px;
+    margin-bottom: 5%;
+}
+
+.col-3 img{
+    background: #F8F5ED;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    height:100%;
+    width:130%;
+    border-radius:10px;
+    position:absolute;
+    top:20px;
+    left: -150px;
+}
+
+.socialmedia{
+    padding: 4px;
+    display: flex;
+    gap: 12px;
+    float: right;
+    color: black;
+    padding-right: 20px;
+}
+
+.NameHolder{
+    color: black;
+    font-family:'Inter',sans-serif;
+    font-style:italic;
+    text-align: center;
+}
+.NameHolder::first-line{
+    font-weight: bold;
+    font-size: large;
+}
+
+.NHolder{
+    justify-content:space-between;
+    width:100%;
+}
+
+.iconBiich{
+    display: grid;
+    align-items: center;
+}
+
+.Leader{
+    margin:70px 0px;
+    width: 65%;
+    border-radius: 20px;
+    display: flex;
+    justify-content:center;
+    transform: translateX(26%);
+}
+
+.SemiLead{
+    background: #ffffff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;  
+    margin: 20px;
+    border-radius: 20px;
+    position:relative;
+    height: 100%;
+    width: 100%; 
+    color: black;
+    font-family: 'Inter',sans-serif;
+    font-size: 100%;
+    
+}
+
+
+.avatarSec{
+    position: relative;
+    padding-top: 45%;
+    text-align:center;
+    font-style: italic;
+}
+.avatarSec::first-line{
+    font-weight: bold;
+    font-size: large;
+}
+
+.avatar{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 5%;
+}
+
+.cont{
+    color: black;
+    font-family: 'Inter',sans-serif;
+    text-align:left;
+    height:50%;
+    width: 100%;
+    padding: 20px;
+
+
+    /* word-spacing: 3px; */
+}
+
+.cont p{
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: .5px;
+    font-weight: 400;
+}
+
+.leadTitle{
+    position: relative;
+    margin-top: 10%;
+    margin-bottom: 2%;
+}
+
+.leadTitle div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 48px;
+    margin-bottom: 0px;
+    margin-top: 70px;
+}
+
+.leadTitle span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0px;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 48px;
+}
+
+
+
+
+

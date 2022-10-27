@@ -1,0 +1,27 @@
+.row{
+    row-gap: 30px;
+}
+.imgsty img{
+    width:200px;
+    margin: 50px,20px;
+    column-gap: 20px;
+}   
+.head{
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 70px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+.gradient-text {
+    color: var(--black);
+    background-clip: text;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 70px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 5rem;
+  }

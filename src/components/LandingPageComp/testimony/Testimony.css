@@ -1,0 +1,83 @@
+.lll{
+    /* border: 1px solid red; */
+    position: relative;
+}
+
+.testiMyMain{
+    padding-bottom: 10%;
+}
+
+.TestiTitle{
+    margin-top: 10%;
+    margin-bottom: 2%;
+}
+
+.TestiTitle span{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 48px;
+    margin-bottom: 0px;
+    margin-top: 70px;
+}
+
+.TestiTitle p{
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 48px;
+}
+
+.conMar{
+    max-width: 880px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    /* box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px; */
+}
+
+.avatarCss{
+    position: absolute;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-60%);
+    margin-left: 100px;
+    left:10%;
+}
+
+.testText{
+    margin: 80px 100px;
+    text-align: left;
+}
+
+.ioLeft{
+    position: absolute;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    left:2.5%;
+    opacity: 50%;
+}
+.ioRight{
+
+    position: absolute;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    right:2.5%;
+    opacity: 50%;
+
+}
+.DirName{
+    position: relative;
+    left:27%;
+    top:22%;
+    font-weight: 300 !important;
+}
+
+.DirDes{
+    position: relative;
+    left:27%;
+    top:22%;
+    font-size: 0.9rem;
+}

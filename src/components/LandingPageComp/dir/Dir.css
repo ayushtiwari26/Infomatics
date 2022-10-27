@@ -1,0 +1,40 @@
+
+.kkk{
+    padding-top: 100px ;
+    padding-bottom: 100px;
+    padding-left: 200px;
+    padding-right: 100px;
+}
+
+.back{
+    background-color: rgb(249,248,249);
+}
+
+.h1{
+    font-family: 'Inter', sans-serif;
+    text-align: left;
+    font-weight:bolder;
+    
+}
+
+.p1{
+    font-family: 'Inter', sans-serif;
+    text-align: left;
+    font-weight: bolder;
+    font-size: 25px;
+    letter-spacing: 0.2px;
+}
+.p2{
+    font-family: 'Inter', sans-serif;
+    text-align: left;
+    font-weight: 700;
+    color: aliceblue;
+    font-size: 18px;
+}
+
+
+.img{
+    width: 450px;
+    margin-top: 10%;
+    margin-left: -20px;
+}
