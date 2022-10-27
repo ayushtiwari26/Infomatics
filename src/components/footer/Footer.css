@@ -58,27 +58,27 @@
     margin: 20px 0px;
 }
 
-ul li{
+.footUl li{
     list-style: none;
     margin-bottom: 12px;
     color: #fff;
 
 }
-ul li a{
+.footUl li a{
     font-family: 'Inter';
     text-decoration: none;
     color: #fff;
     transition: color .5s ease-in-out, box-shadow .5s ease-in-out;
 }
 
-ul li a:hover{
+.footUl li a:hover{
     font-family: 'Inter';
     text-decoration: none;
     color: var(--cream);
     border-bottom:1px solid var(--cream);
 }
 
-form{
+.footForm{
     color: #fff;
     padding-bottom: 15px;
     display: flex;
@@ -92,7 +92,7 @@ form{
     font-size: 18px;
     margin-right: 10px;
 }
-form input{
+.footForm input{
     width: 100%;
     background: transparent;
     color: #ccc;
@@ -100,7 +100,7 @@ form input{
     outline: none;
     margin-left: 8px;
 }
-form button{
+.footForm button{
     color: #fff;
     background: transparent;
     border: 0;
@@ -111,20 +111,6 @@ form button{
 .arrow{
     font-size: 16px;
     color: #ccc;
-}
-.social-icon .icon{
-    color: #fff;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 40px;
-    font-size: 20px;
-    color: #000;
-    background: #fff;
-    margin-right: 15px;
-    margin-top:20px ;
-    cursor: pointer;
 }
 
 .hr{

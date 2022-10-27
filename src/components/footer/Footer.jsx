@@ -42,7 +42,7 @@ const Footer = () => {
             </div>
             <div className="fotCol">
                 <h3>Links <div className="underline"><span></span></div></h3>
-                <ul>
+                <ul className='footUl'>
                     <li><a href='/'>Home</a></li>
                     <li><a href='/'>Services</a></li>
                     <li><a href='/'>About Us</a></li>
@@ -52,7 +52,7 @@ const Footer = () => {
             </div>
             <div className="fotCol">
                 <h3>Contact Us <div className="underline"><span></span></div></h3>
-                <form>
+                <form className='footForm'>
                     <IconContext.Provider value={{className:'ev'}}> <FaRegEnvelope style={{fill: 'white'}}/> </IconContext.Provider>
                     <input type="email" placeholder="Enter your email-id" required/>
                     <button type="submit"><FaArrowRight style={{fill: 'white'}} className='arrow'/></button>
