@@ -1,8 +1,9 @@
+
 .mainHero{
     position: relative;
     width: 100vw;
     height: 92vh;
-    margin-top: -2%;
+    margin-top: -2%;    
 }
 .sideMainHero{
     display: flex;
@@ -14,11 +15,10 @@
     display: flex;
     flex-direction: column;
     margin-left: 10%;
-    color: wheat;
 }
 
 .headSide1{
-    color: var(--cream);
+    /* color: var(--cream); */
     font-family: 'DM Sans', sans-serif;
     font-size: 3rem;
     font-weight: 400 ;
@@ -26,7 +26,7 @@
     text-align: left;
 }
 .headSide2{
-    color: var(--cream);
+    /* color: var(--cream); */
     font-family: 'DM Sans', sans-serif;
     font-size: 4.5rem;
     line-height: 4rem;
@@ -34,16 +34,19 @@
     font-weight: 700 ;
 }
 .headSide3{
-    color: var(--cream);
+    /* color: var(--cream); */
     font-family: 'DM Sans', sans-serif;
     font-size: 3rem;
     text-align: left;
 }
 
 .sideHero2{
+    /* overflow-y: hidden; */
+    height: 700px;
+    width: 600px !important;
     position: absolute;
-    right: 25%;
-    top:50%;
+    right: 20%;
+    top:10%;
     color: var(--cream);
     font-family: 'DM Sans', sans-serif;
     font-size: 3rem;

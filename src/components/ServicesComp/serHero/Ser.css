@@ -1,0 +1,169 @@
+.serHero{
+    position: relative;
+    width: 100vw;
+    height: 35vh;
+    margin-top: -2%;  
+    display: grid;
+}
+
+.serSide{
+    background: linear-gradient(to left, rgb(34, 34, 34) , transparent) left center/50% no-repeat, linear-gradient(to right, rgb(34, 34, 34) , transparent) right center/51% no-repeat;
+    height: 35vh;
+    width: 100vw;
+}
+
+.serPos{
+    display: grid;
+    place-items: center;
+    top:50%;
+    transform: translateY(-50%);
+}
+
+.serPos p{
+    color: white;
+    font-size: 32px;
+    font-weight: 800;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.serPos p:nth-child(2){
+    border-top: 1px solid gray;
+}
+
+.serType span{
+    font-size: 34px;
+    font-weight: 500;
+    color: var(--blue);
+    font-family: 'Montserrat';
+}
+
+.serType .wideRange{
+    margin-top: 5%;
+    margin-bottom: -0.5%;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Montserrat';
+    letter-spacing: 1.25px;
+}
+
+.serSideBar{
+    padding: 3% 1%;
+    right: 2%;
+    overflow: auto;
+}
+
+.serSideBar p:nth-child(1){
+    text-align: left;
+    padding-left: 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.serfirstSidePar{
+    margin: 5% 7%;
+}
+
+.serfirstSide{
+    margin-left: 1%;
+    border-right: 3px solid rgba(211, 211, 211, 0.2);
+}
+
+.serfirstSide:nth-child(4){
+    margin-left: 1%;
+    border-right: 0px;
+}
+
+.serfirstSide p:nth-child(1){
+    font-size: 60px;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    text-align: left;
+    font-family: 'Inter';
+    color: rgba(211, 211, 211, 0.9);
+    color:rgba(110, 110, 110, 0.11);
+    margin-bottom: -15%;
+}
+
+.serfirstSide p:nth-child(2){
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    text-align: left;
+    font-family: 'Inter';
+}
+
+.serfirstSide p:nth-child(3){
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+    text-align: left;
+    font-family: 'Inter';
+}
+
+.serNicRow{
+    margin: 2% 0%;
+    margin-left: 7%;
+    box-shadow: rgba(214, 220, 224, 0.2) 0px 8px 24px;
+}
+
+.serNicRow li{
+    text-align: left;
+}
+
+.serAccordion{
+    margin: 3% 0;
+}
+
+.serAccordion li{
+    list-style: none;
+}
+
+.serAccordion li label{
+    cursor: pointer;
+}
+
+.serAccordion li label::before{
+    content: '\2715';
+    margin-right: 10px;
+
+}
+
+.serAccordion .serContent{
+    max-height: 0;
+    overflow: hidden;
+    text-align: left;
+    font-family: 'Inter';
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+.serAccordion input[type='radio']:checked + label + .serContent{
+    max-height: 400px;
+    padding: 10px;
+}
+
+.serAccordion input[type='radio']:checked + label::before{
+    font-size: 40px;
+    content: '\2713';
+}
+
+input[type='radio']{
+    display: none;
+}
+
+.serLabel{
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Inter';
+    align-self: left;
+}
+
+.serServices{
+    padding-left: 30px;
+}
+
+.serAiFill{
+    margin-right: 10px;
+    margin-bottom: -4px;
+}
+
+

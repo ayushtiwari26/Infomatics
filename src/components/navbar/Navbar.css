@@ -46,6 +46,10 @@ nav{
     text-decoration: none !important;
     margin: 0 0.7vw;
 }
+.navConButton:hover{
+    text-decoration: none !important;
+}
+
 .nav-links li {
     position: relative;
     color: black;
@@ -127,6 +131,11 @@ nav{
 
 .uProLine{
     font-size: 1.05rem;
+
+}
+
+.uProLine a{
+    font-weight: 550;
 }
 
 .navHead{

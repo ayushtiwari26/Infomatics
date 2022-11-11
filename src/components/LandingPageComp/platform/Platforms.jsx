@@ -5,8 +5,6 @@ import et from '../../../assets/images/et.png'
 import cloud from '../../../assets/images/cloud.png'
 import cpu from '../../../assets/images/cpu.png'
 
-
-
 const Platforms = () => {
     
   return (
@@ -42,13 +40,14 @@ const Platforms = () => {
     <div className='card'>
         <img src={cpu} class="card-img-top" alt="cpu-img"/>
         <div className='card-body'>
-        <h5 className='card-title C3'>ON-PREMISE</h5>
-        <p className='card-text'>Subscription based On-Premise Login Business Application</p>
-        <Button  className='butt'style={{color:"black"}}  variant="outlined">
-          View More
-        </Button>
+          <h5 className='card-title C3'>ON-PREMISE</h5>
+          <p className='card-text'>Subscription based On-Premise Login Business Application</p>
+          <Button  className='butt'style={{color:"black"}}  variant="outlined">
+            View More
+          </Button>
         </div>
     </div>
+
     </div>
 
     </div>

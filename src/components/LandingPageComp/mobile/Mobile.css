@@ -1,0 +1,85 @@
+.mobHead{
+    font-family: 'Inter';
+    margin-top: 5%;
+    margin-bottom: 1%;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.mobSubHead{
+    font-family: 'Inter';
+    margin-bottom: 5%;
+    font-size: 18px;
+}
+
+.mobileScreen{
+    height: 630px;
+}
+
+
+.mobAlign{
+    margin-top: 7%;
+    margin-bottom: 7%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+.mobAlign2{
+    margin-top: 7%;
+    margin-bottom: 7%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+.mobSideImgDiv{
+    position: relative;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    height: 100px;
+    width: 100px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10%;
+}
+
+
+.mobSideImg{
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    height: 69px;
+    width: 69px;
+    border-radius: 15px;
+}
+
+.mobSideImg:hover{
+    height: 79px;
+    width: 79px;
+}
+
+.mobSideTextDiv{
+    text-align: left;
+    width: 200px;
+    position: relative;
+    margin-top: 5%;
+}
+
+.mobSideTextDiv p:nth-child(1){
+    font-family: 'Inter';
+    font-size: 20px;
+    font-weight: 550;
+    letter-spacing: 0;
+}
+
+.mobSideTextDiv p:nth-child(2){
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0;  
+}
