@@ -82,7 +82,7 @@ let useClickOutside = (handler)=>{
               }
             </li>
 
-            <li><a href="#ss">Industries</a></li>
+            <li><a href="/industries">Industries</a></li>
 
             <li className={navResources===false?'uProLine':''}>
               {navResources ? 

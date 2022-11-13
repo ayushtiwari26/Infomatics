@@ -1,0 +1,114 @@
+.IndusRow{
+    display: flex;
+    flex-direction: column;
+}
+
+.Industries{
+    font-size: 50px;
+    font-weight: 900;
+    font-family: "Inter";
+    letter-spacing: 4px;
+}
+.InduSub{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Inter";
+}
+.IndusRow2{
+    margin: 0% 9%;
+    display: flex;
+    flex-direction: row;
+  
+   
+}
+.IndusImg {
+  
+    display: flex;
+    justify-content: center;
+    margin: 5% 0%;
+    
+    /* border: 1px solid red; */
+    
+}
+.Indusphoto{
+    width: 58%;
+    height: 460px;
+    border-radius: 3%;
+
+}
+.IndusWord{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.IndusWord2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 10%;
+    
+}
+.IndusIron{
+    justify-content: left;
+    text-align: left;
+    font-size: 30px;
+    font-weight: 800;
+    font-family: "Inter";
+
+}
+.IndusPara{
+    text-align: left;
+    width: 70%;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: "Inter";
+}
+.InduaBut{
+    text-align: left;
+}
+.IndusRow3{
+    margin: 0% 9%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.IndusImg2{
+    display: flex;
+    justify-content: left;
+    margin: 5% 0%;
+}
+
+@media (min-width:350px)and (max-width:700px){
+    .IndusImg{
+        justify-content: center;
+    }
+    .Indusphoto{
+        width: 100%;
+        height: 460px;
+        border-radius: 3%;
+    
+    }
+    .IndusWord2{
+        margin-top: 5%;
+        margin-bottom: 5%;
+        margin-left: 0%;
+        
+    }
+    
+}
+@media (min-width:700px)and (max-width:1200px){
+    .Indusphoto{
+        width: 100%;
+        height: 460px;
+    
+    }
+    .IndusPara{
+        text-align: left;
+        width: 100%;
+        font-size: 15px;
+      
+    }
+}

@@ -7,8 +7,9 @@ import Pages from './pages/Pages';
 import landingImg from '../src/assets/images/loading.gif'
 import Footer from './components/footer/Footer';
 
-function App() {
 
+function App() {
+  
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {

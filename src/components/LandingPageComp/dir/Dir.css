@@ -1,40 +1,165 @@
-
-.kkk{
-    padding-top: 100px ;
-    padding-bottom: 100px;
-    padding-left: 200px;
-    padding-right: 100px;
-}
-
-.back{
+.DirBase{
     background-color: rgb(249,248,249);
+    position: relative;
+    height: 600px;
+    width: 100%;
+ 
 }
-
-.h1{
-    font-family: 'Inter', sans-serif;
-    text-align: left;
-    font-weight:bolder;
-    
+.DirRight{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 10%;
+    top: 0%;
+    transform: translateY(30%);
+    width: 40%;
+ 
 }
-
-.p1{
+.Dirgirl{
+    position: absolute;
+    left: 60%;
+    top: 15%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+ 
+    width:30%;
+    height: 60%;
+}
+.DirPara{
     font-family: 'Inter', sans-serif;
     text-align: left;
     font-weight: bolder;
-    font-size: 25px;
+    font-size: 20px;
     letter-spacing: 0.2px;
 }
-.p2{
+.DirLiza{
     font-family: 'Inter', sans-serif;
     text-align: left;
     font-weight: 700;
-    color: aliceblue;
-    font-size: 18px;
+    color: rgb(18, 22, 25);
+    font-size: 20px;
+}
+.DirBut{
+    width: 50%;
+    font-weight: 500;
+    background-color: aquamarine;
+    color: black;
+    border-radius: 12px;
+    padding: 5px 12px;
+    text-align: center;
+    font-size: 15px;
+    margin-left: 0%;
+    margin-top: 2%;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white; 
+    border: 2px solid #4CAF50;
 }
 
+  
+.DirBut:hover {
+    background-color: #4CAF50;
+    color: white;
+}
 
-.img{
-    width: 450px;
-    margin-top: 10%;
-    margin-left: -20px;
+@media (min-width:800px) and (max-width:1028px){
+    .DirPara{
+        font-size: 15px;
+        
+    }
+    .DirLiza{
+         font-size: 14px;
+    }
+    .DirBut{
+        margin-left: 20%;
+    }
+    .Dirgirl{
+        width: 30%;
+        height: 40%;
+        /* top: 25%; */
+    }
+
+    
+}
+@media (min-width:600px) and (max-width:800px){
+    .DirPara{
+        font-size: 15px;
+        
+    }
+    .DirLiza{
+         font-size: 14px;
+    }
+    .DirBut{
+        margin-left: 20%;
+    }
+    .Dirgirl{
+        width: 30%;
+        height: 40%;
+    }
+    .Dirgirl{
+        top: 25%;
+    }
+}
+@media (min-width:400px) and (max-width:600px){
+    .DirBase{
+        height: 800px;
+    }
+    .DirRight{
+        top: -5%;
+        width: 80%;
+        position: relative;
+    }
+    .DirPara{
+        font-size: 15px;
+        text-align: center;
+        
+    }
+    .DirLiza{
+        font-size: 12px;
+        text-align: center;
+        
+    }
+    .Dirgirl{
+        left: 50%;
+        transform: translateX(-50%);
+        top:47%;
+        width: 60%;
+        height: 30%;
+    }
+    .DirBut{
+        margin-left: 20%;
+    }
+}
+@media (min-width:350px) and (max-width:400px){
+    .DirBase{
+        height: 800px;
+    }
+    .DirRight{
+        top: -5%;
+        width: 80%;
+        position: relative;
+    }
+    .DirPara{
+        font-size: 15px;
+        text-align: center;
+        
+    }
+    .DirLiza{
+        font-size: 12px;
+        text-align: center;
+        
+    }
+    .Dirgirl{
+        left: 50%;
+        transform: translateX(-50%);
+        top:60%;
+        width: 60%;
+        height: 30%;
+    }
+    .DirBut{
+        margin-left: 20%;
+    }
 }
