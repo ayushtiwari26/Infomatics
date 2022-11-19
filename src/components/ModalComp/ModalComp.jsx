@@ -44,7 +44,7 @@ const ModalComp = () => {
             >
               Cancel
             </button> */}
-            <button>Submit</button>
+            <a href="#" className="ModA"><span className="ModSub">Submit</span><i className="ModI"></i></a>
           </div>
           </div>
       </div>

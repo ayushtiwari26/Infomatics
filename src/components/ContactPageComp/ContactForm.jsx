@@ -12,7 +12,7 @@ const ContactForm = () => {
                 {/* <p className="ConBot">Privacy Policy- Moder Day Statement</p> */}
             </div>
             <div className="ConForm">
-            <p className="ConUs">Contact Us</p>
+            <a href='#'><p className="ConUs">Contact Us</p></a>
 
               <form>
                 <div className='FName'>

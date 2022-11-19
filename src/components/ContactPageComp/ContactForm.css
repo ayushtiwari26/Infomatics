@@ -5,6 +5,9 @@
     position: relative;
 
 }
+a:link{
+    text-decoration: none;
+  }
 .ConCard{
     background-color: #000000;
     position: absolute;

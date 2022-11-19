@@ -168,6 +168,7 @@ nav{
     display: none;
 }
 
+
 button:focus { outline: none !important;;}
 
 /*Stying for small screens*/
