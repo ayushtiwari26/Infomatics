@@ -1,13 +1,11 @@
 import React, { useEffect, useRef, useState } from 'react'
 import './Navbar.css'
 import infoLogo from '../../assets/images/infoLogo.png'
-import { IconContext } from "react-icons";
-import {RiArrowDropDownLine} from "react-icons/ri";
-import {ImCross} from 'react-icons/im'
 import styled, { keyframes} from 'styled-components';
 import {fadeInDown} from 'react-animations';
 import { Button } from '@mui/material';
 import { Link } from 'react-router-dom';
+import {navbarServicesDiv, navbarProductsDiv} from '../../assets/constants/navbarConstant'
 
 
 let useClickOutside = (handler)=>{
@@ -27,13 +25,9 @@ let useClickOutside = (handler)=>{
   return domNode
 }
 
-  export const NavContext = React.createContext()
-
-  const Navbar = ({children}) => {
+  const Navbar = () => {
     const [navChev, setNavchev] = useState(true)
     const [navProducts, setNavProducts] = useState(true)
-    const [navResources, setNavResources] = useState(true)
-    const[passNav, setPassNav] = useState()
 
   function handleChev(){
     setNavchev(!navChev)
@@ -41,6 +35,7 @@ let useClickOutside = (handler)=>{
 
   let domNode = useClickOutside(()=>{
     setNavchev(true)
+    setNavProducts(true)
   })
   return (
     <>
@@ -48,57 +43,27 @@ let useClickOutside = (handler)=>{
         <div className="logo">
           <a href='/'><img src={infoLogo} alt="Infomatics logo" /></a>  
         </div>
-        <div className="hamburger">
-            <div className="line1"></div>
-            <div className="line2"></div>
-            <div className="line3"></div>
-        </div>
         <ul className="nav-links uline">
             <li><a href='/about-us'>About us</a></li>
-            <li className={navChev===false?'uProLine':''}>
-              {navChev ? 
-                  <a href="#ssss" onClick={handleChev}>
-                  Services 
-                  <IconContext.Provider value={{className:'chever'}}> <RiArrowDropDownLine size={35}/> </IconContext.Provider>
-                  </a>
-              :
-              <a href="#ssss" onClick={handleChev}>
-              Services 
-              <IconContext.Provider value={{className:'chever2'}}> <ImCross size={11}/> </IconContext.Provider>
-              </a>
-              }
-            </li>
-            <li className={navProducts===false?'uProLine':''}>
-              {navProducts ? 
-                  <a href="#ssss" onClick={()=>{setNavProducts(!navProducts)}}>
-                  Products 
-                  <IconContext.Provider value={{className:'chever'}}> <RiArrowDropDownLine size={35}/> </IconContext.Provider>
-                  </a>
-              :
-              <a href="#ssss" onClick={()=>{setNavProducts(!navProducts)}}>
-              Products 
-              <IconContext.Provider value={{className:'chever2'}}> <ImCross size={11}/> </IconContext.Provider>
-              </a>
-              }
+
+            <li className={navChev===true?'navArrow':'navBackArrow uProLine'}>
+                  <span onClick={handleChev}>
+                  Services
+                  </span>
             </li>
 
-            <li><a href="#ss">Industries</a></li>
-
-            <li className={navResources===false?'uProLine':''}>
-              {navResources ? 
-                  <a href="#ssss" onClick={()=>{setNavResources(!navResources)}}>
-                  Resources 
-                  <IconContext.Provider value={{className:'chever'}}> <RiArrowDropDownLine size={35}/> </IconContext.Provider>
-                  </a>
-              :
-              <a href="#ssss" onClick={()=>{setNavResources(!navResources)}}>
-              Resources 
-              <IconContext.Provider value={{className:'chever2'}}> <ImCross size={11}/> </IconContext.Provider>
-              </a>
-              }
+            <li className={navProducts===true?'navArrow':'navBackArrow uProLine'}>
+                  <span onClick={()=>{setNavProducts(!navProducts)}}>
+                  Products
+                  </span>
             </li>
-            <li><a href="#ss">Clients</a></li>
-            <li><a href="#ss">Carrier</a></li>
+
+            <li><a href='/industries'>Industries</a></li>
+
+            <li><a href='#'>Resources</a></li>
+
+            <li><a href="#">Clients</a></li>
+            <li><a href="#">Carrier</a></li>
             <li><a href='/contact-us' className='navConButton'><Button style={{
                             borderRadius: 35,
                             padding: "10px 26px",
@@ -114,28 +79,53 @@ let useClickOutside = (handler)=>{
           <BouncyDiv ref={domNode} className='container-fluid'>
           <div className="row navHead">
             <div className="col-sm">
-              <Link to={'/services/product-development'} onClick={
-                                                          ()=>{
-                                                            setPassNav('product-development')
-                                                            setNavchev(!navChev)
-                                                          }
-                                                          }>
-                  <div className="row justify-content-left navBItem">Product development</div>
-              </Link>
-              <a href='#'><div className="row justify-content-left navBItem">Custom application development</div></a>
-            </div>
-            <div className="col-sm">
-              <a href='#'><div className="row justify-content-left navBItem">Enterprise application development</div></a>
-              <a href='#'><div className="row justify-content-left navBItem">Software implementation</div></a>
-            </div>
-            <div className="col-sm">
-              <Link to={'/services/web-based-software-development'}><div className="row justify-content-left navBItem">Web based Software development</div></Link>
-              <a href='#'><div className="row justify-content-left navBItem">Software maintenance and support</div></a>
-            </div>
-            <div className="col-sm">
-              <a href='#'><div className="row justify-content-left navBItem">Database maintenance</div></a>
-              <a href='#'><div className="row justify-content-left navBItem">Database support</div></a>
-            </div>
+
+              {navbarServicesDiv.map((item)=>{
+                return(
+                  <div className='row'>
+                    <div className="col">
+                      <Link reloadDocument to={`/services/${item.id1}`} onClick={
+                        ()=>{
+                          setNavchev(!navChev)
+                        }
+                        }>
+                          
+                        <div className="navBItem">
+                          {item.name1}
+                        </div>
+                      </Link>
+                    </div>
+
+
+                    <div className="col">
+                      <Link reloadDocument to={`/services/${item.id2}`} onClick={
+                        ()=>{
+                          setNavchev(!navChev)
+                        }
+                        }>
+                          
+                        <div className="navBItem">
+                          {item.name2}
+                        </div>
+                      </Link>
+                    </div>
+
+                    <div className="col">
+                      <Link reloadDocument to={`/services/${item.id3}`} onClick={
+                        ()=>{
+                          setNavchev(!navChev)
+                        }
+                        }>
+                          
+                        <div className="navBItem">
+                          {item.name3}
+                        </div>
+                      </Link>
+                    </div>
+                  </div>
+                )
+              })}
+            </div>  
           </div>
         </BouncyDiv>
         </>
@@ -146,85 +136,57 @@ let useClickOutside = (handler)=>{
           <BouncyDiv ref={domNode} className='container-fluid'>
           <div className="row navHead">
             <div className="col-sm">
-              <span className='row navHead justify-content-left'>Finance</span>
-              <a href='#'><div className="row justify-content-left navBItem">Accounting</div></a>
-              <a href='#'><div className="row justify-content-left navBItem">Invoicing</div></a>
-              <a href='#'><div className="row justify-content-left navBItem">Expenses</div></a>
-              <a href='#'><div className="row justify-content-left navBItem">Spreadsheet (BI)</div></a>
-              <a href='#'><div className="row justify-content-left navBItem">Sign</div></a>
-            </div>
-            <div className="col-sm">
-              <span className='row navHead justify-content-left'>Sales</span>
-              <a href='#'><div className="row justify-content-left navBItem">Subscription</div></a>
-              <a href='#'><div className="row justify-content-left navBItem">Rental</div></a>
-              <a href='#'><div className="row justify-content-left navBItem">Connector</div></a>
-              <a href='#'><div className="row justify-content-left navBItem">Sales (BI)</div></a>
-              <a href='#'><div className="row justify-content-left navBItem">Point of sale</div></a>
-            </div>
-            <div className="col-sm">
-              <span className='row navHead justify-content-left'>Human Resource</span>
-              <a href='#'><div className="row justify-content-left navBItem">Employees</div></a>
-              <a href='#'><div className="row justify-content-left navBItem">Recruitment</div></a>
-              <a href='#'><div className="row justify-content-left navBItem">Appraisels</div></a>
-              <a href='#'><div className="row justify-content-left navBItem">Time off</div></a>
-              <a href='#'><div className="row justify-content-left navBItem">Referrals</div></a>
-            </div>
-            <div className="col-sm">
-              <span className='row navHead justify-content-left'>Marketing</span>
-              <a href='#'><div className="row justify-content-left navBItem">Social marketing</div></a>
-              <a href='#'><div className="row justify-content-left navBItem">Email marketing</div></a>
-              <a href='#'><div className="row justify-content-left navBItem">SMS marketing</div></a>
-              <a href='#'><div className="row justify-content-left navBItem">Marketing Automation</div></a>
-              <a href='#'><div className="row justify-content-left navBItem">Events</div></a>
-            </div>
+
+              {navbarProductsDiv.map((item)=>{
+                return(
+                  <div className='row'>
+                    <div className="col">
+                      <Link reloadDocument to={`/products/${item.id1}`} onClick={
+                        ()=>{
+                          setNavProducts(!navProducts)
+                        }
+                        }>
+                          
+                        <div className="navBItem">
+                          {item.name1}
+                        </div>
+                      </Link>
+                    </div>
+
+
+                    <div className="col">
+                      <Link reloadDocument to={`/products/${item.id2}`} onClick={
+                        ()=>{
+                          setNavProducts(!navProducts)
+                        }
+                        }>
+                          
+                        <div className="navBItem">
+                          {item.name2}
+                        </div>
+                      </Link>
+                    </div>
+
+                    <div className="col">
+                      <Link reloadDocument to={`/products/${item.id3}`} onClick={
+                        ()=>{
+                          setNavProducts(!navProducts)
+                        }
+                        }>
+                          
+                        <div className="navBItem">
+                          {item.name3}
+                        </div>
+                      </Link>
+                    </div>
+                  </div>
+                )
+              })}
+            </div>  
           </div>
         </BouncyDiv>
         </>
     :null}
-
-
-{navResources===false?
-          <>
-          <BouncyDiv ref={domNode} className='container-fluid'>
-          <div className="row navHead">
-            <div className="col-sm">
-              <span className='row navHead justify-content-left'>Finance</span>
-              <a href='#'><div className="row justify-content-left navBItem">Accounting</div></a>
-              <a href='#'><div className="row justify-content-left navBItem">Invoicing</div></a>
-              <a href='#'><div className="row justify-content-left navBItem">Expenses</div></a>
-              <a href='#'><div className="row justify-content-left navBItem">Spreadsheet (BI)</div></a>
-              <a href='#'><div className="row justify-content-left navBItem">Sign</div></a>
-            </div>
-            <div className="col-sm">
-              <span className='row navHead justify-content-left'>Sales</span>
-              <a href='#'><div className="row justify-content-left navBItem">Subscription</div></a>
-              <a href='#'><div className="row justify-content-left navBItem">Rental</div></a>
-              <a href='#'><div className="row justify-content-left navBItem">Connector</div></a>
-              <a href='#'><div className="row justify-content-left navBItem">Sales (BI)</div></a>
-              <a href='#'><div className="row justify-content-left navBItem">Point of sale</div></a>
-            </div>
-            <div className="col-sm">
-              <span className='row navHead justify-content-left'>Human Resource</span>
-              <a href='#'><div className="row justify-content-left navBItem">Employees</div></a>
-              <a href='#'><div className="row justify-content-left navBItem">Recruitment</div></a>
-              <a href='#'><div className="row justify-content-left navBItem">Appraisels</div></a>
-              <a href='#'><div className="row justify-content-left navBItem">Time off</div></a>
-              <a href='#'><div className="row justify-content-left navBItem">Referrals</div></a>
-            </div>
-            <div className="col-sm">
-              <span className='row navHead justify-content-left'>Marketing</span>
-              <a href='#'><div className="row justify-content-left navBItem">Social marketing</div></a>
-              <a href='#'><div className="row justify-content-left navBItem">Email marketing</div></a>
-              <a href='#'><div className="row justify-content-left navBItem">SMS marketing</div></a>
-              <a href='#'><div className="row justify-content-left navBItem">Marketing Automation</div></a>
-              <a href='#'><div className="row justify-content-left navBItem">Events</div></a>
-            </div>
-          </div>
-        </BouncyDiv>
-        </>
-    :null}
-
-
     </>
   )
 }

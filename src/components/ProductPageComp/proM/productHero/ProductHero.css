@@ -1,0 +1,54 @@
+.prodImgContainer{
+    position: relative;
+    margin-top: -2%;
+
+}
+
+
+.prodImgContainer::after {
+    content: '';
+    transform: rotate(5deg);
+    /* border-bottom-left-radius: 10% 100%;
+    border-bottom-right-radius: 0% 100%; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -10;
+    width: 200%;
+    background-color: #f9f9f9;
+    /* background-color: #c00000; */
+    height: 100%;
+}
+
+.prodImgSize img{
+    height: 400px;
+    width: 700px;
+    transform: rotate(-10deg); 
+    transform-origin: left top;
+    margin-bottom: 2%;
+    margin-top: 15%;
+}
+
+
+.prodImgNichu{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    margin-top: 10%;
+}
+
+.prodImgNichu p{
+    text-align: left;
+}
+
+.prodImgNichu p:nth-child(1){
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'Inter';
+}
+
+.prodImgNichu p:nth-child(2){
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Inter';
+}

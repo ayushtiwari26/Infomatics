@@ -1,0 +1,66 @@
+.proIllusRowReverse{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.proIllusRow{
+    display: flex;
+    flex-direction: row;
+}
+
+.illusFinanceimgdiv{
+    align-self: center;
+}
+
+.illusFinanceimg{
+    height: 80%;
+    width: 60%;
+    max-height: 450px;
+}
+
+.proIlluslidiv{
+    align-self:center;
+    position: relative;
+}
+
+.proIlluslidiv p{
+    position: relative;
+    margin: 5% 0;
+    text-align: left;
+    font-family: 'Inter';
+    font-size: 300%;
+    font-weight: 500;
+}
+
+.proIllusRow .proIlluslidiv p::before{
+    content: '';
+    display: block;
+    bottom: 0;
+    width: 10%;
+    border-bottom: 6px solid var(--blue);
+    left: 10%;
+    position: absolute;
+    transform: translate(-50%,0);
+    width: 20%;
+    max-width: 120px;
+}
+
+.proIllusRowReverse .proIlluslidiv p::before{
+    content: '';
+    display: block;
+    bottom: 0;
+    width: 10%;
+    border-bottom: 6px solid red;
+    left: 10%;
+    position: absolute;
+    transform: translate(-50%,0);
+    width: 20%;
+    max-width: 120px;
+}
+
+.proIlluslidiv li{
+    margin: 3% 0;
+    text-align: left;
+    font-family: 'Inter';
+    font-size: 100%;
+}

@@ -255,3 +255,245 @@
         width: 60%;
     }
 }
+
+
+/* modal css */
+
+.ModalBack{
+    z-index: 10000000000;
+}
+.ModalBack, .overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+.overlay {
+    background: rgba(49,49,49,0.8);
+}
+.modalContent {
+  /* background-image: url("D:\projects\Info\Informatics3.0\Infomatics\src\assets\images\model.jpg"); */
+
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.4;
+  padding: 14px 28px;
+    width: 500px;
+    height: 500px;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+
+}
+.ModClose{
+  width: 30px;
+  position: absolute;
+  right: 10%;
+  border: none;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 5px;
+} 
+.modalContent .ModalTitle{
+    display: inline-block;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .titleCloseBtn {
+    display: flex;
+    justify-content: flex-end;
+  }
+.modalContent .Modfooter {
+    flex: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .ModalBut{
+    width: 100%;
+    align-items: center;
+  } 
+  .ModalBut button{
+    width: 150px;
+    height: 45px;
+    margin: 10px;
+    border: none;
+    background-color: cornflowerblue;
+    color: white;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+.modalContent .Modfooter button {
+    width: 150px;
+    height: 45px;
+    margin: 10px;
+    border: none;
+    background-color: cornflowerblue;
+    color: white;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  #cancelBtn {
+    background-color: crimson;
+  }
+  .ModalTitle{
+    font-size: 30px;
+    font-weight: 500;
+    width: 100%;
+    padding-top: 10px;
+  }
+  .ModalName{
+    margin-top: 5%;
+  
+  }
+  .ModalName label{
+    /* color: rgb(114, 26, 222); */
+    color: black;
+  }
+  .ModalEmail{
+    margin-top: 2%;
+
+  }
+  .ModalEmail label{
+    color: black;
+    /* color: rgb(114, 26, 222); */
+
+  }
+  .ModalPhoneNum{
+    margin-top: 2%;
+
+  }
+  .ModalPhoneNum label{
+    color: black;
+    /* color: rgb(114, 26, 222); */
+
+  }
+  .ModalMessage{
+    margin-top: 2%;
+
+  }
+  .ModalMessage label{
+    color: black;
+    /* color: rgb(5, 14, 110); */
+
+  }
+.ModA{
+  position: relative;
+  width: 150px;
+  height: 50px;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  gap: 10px;
+
+}
+.ModSub{
+  color:rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1em;
+  letter-spacing: 0.2em;
+  font-weight: 500;
+  display: inline-block;
+  z-index: 2;
+  transition: 0.5 ease-in-out;
+}
+.ModA::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:100%;
+  background: #359ad8;
+  transform: scaleX(0);
+  transition: transform 0.5s ease-in-out;
+  transform-origin: right;
+}
+.ModA:hover:before{
+  transform: scaleX(1);
+  transform-origin: left;
+
+
+}
+
+.ModA:hover .ModSub{
+  color: black;
+}
+a:link{
+  text-decoration: none;
+}
+a i{
+  position: relative;
+  display: inline-block;
+  width: 2px;
+  height: 30px;
+  background: #d3d363;
+  transition: 0.5s, width 0.5s, height 0.5s ;
+  transition-delay: 0s, 0.5s, 1s;
+}
+a:hover i{
+  width: 30px;
+  height: 2px;
+  background: #333;
+  transition: 0.5s, 1s, 0.5s ;
+  transition-delay: 0s, 1s, 0.5s;
+
+
+}
+a i::before{
+  content: '';
+  position: absolute;
+  top: 0.5px;
+  right: 0;
+  width: 50%;
+  height: 2px;
+  background: transparent;
+  rotate: 0;
+  transform-origin: right;
+  transition: 1s;
+}
+a:hover i::before{
+  background: #333;
+  transform: rotate(45deg);
+  transition-delay: 0.5s;
+}
+a i::after{
+  content: '';
+  position: absolute;
+  top: 0.5px;
+  right: 0;
+  width: 50%;
+  height: 2px;
+  background: transparent;
+  rotate: 0;
+  transform-origin: right;
+  transition: 1s;
+}
+a:hover i::after{
+  background: #333;
+  transform: rotate(-45deg);
+  transition-delay: 0.5s;
+}
+@media (min-width: 350px) and (max-width:570px){
+  .modalContent{
+    width: 300px;
+    height: 450px;
+  }
+  
+}

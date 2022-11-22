@@ -5,20 +5,14 @@ import serHeroImage from '../../../assets/images/serHeroImg.jpg'
 import TypeWriter from 'typewriter-effect'
 import {servicesPage} from '../../../assets/constants/servicesPage'
 import {AiFillCheckCircle} from 'react-icons/ai'
-import { useEffect } from 'react'
 
-
-const Ser = () => {
-  let params = useParams();
-
-  // useEffect(()=>{
-  //   Ser()
-  // },[params.serName])
+const Ser = (props) => {
 
     return (
       <>
       {servicesPage.map((item)=>{
-        if(params.serName===item.id){
+        if(props.params===item.id){
+          {console.log('i am here')}
           return(
             <>
             <div style={{

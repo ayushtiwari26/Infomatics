@@ -12,7 +12,7 @@ import { Variants, motion } from 'framer-motion';
 
 const testAnimate={
   offscreen:{
-    x:200,
+    x:-200,
     opacity:0
   },
   onscreen:{
@@ -59,7 +59,8 @@ const Testimony = () => {
       initial={'offscreen'}
       whileInView={'onscreen'}
       viewport={{once:false, amount:0.5}}
-      transition={{staggerChildren:0.5}}>
+      // transition={{staggerChildren:0.5}}
+      >
 
       <motion.div className="row"
         >

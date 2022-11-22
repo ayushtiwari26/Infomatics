@@ -1,10 +1,10 @@
 import React from 'react'
 import Dir from '../components/LandingPageComp/dir/Dir'
 import Hero from '../components/LandingPageComp/hero/Hero'
-import Journey from '../components/LandingPageComp/journey/Journey'
 import Mobile from '../components/LandingPageComp/mobile/Mobile'
 import Platforms from '../components/LandingPageComp/platform/Platforms'
 import Testimony from '../components/LandingPageComp/testimony/Testimony'
+// import ModalComp from '../components/ModalComp/ModalComp'
 
 
 const Landing = () => {
@@ -12,13 +12,13 @@ const Landing = () => {
     <div>
       <Hero/>
           <div className="row">
-            <Journey/>
-            <Platforms/>
+            {/* <Journey/> */}
             <Mobile/>
+            <Platforms/>
             <Dir/>
             <Testimony/>
-            </div>
-        
+            {/* <ModalComp/> */}
+          </div>
     </div>
   )
 }

@@ -1,3 +1,23 @@
-.red{
-    border: 1px solid red;
+
+
+.prodCard{
+    position: relative;
+    height: 100%;
+    margin: 0 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+
+.prodCard p{
+margin-left: 3%;
+text-align: left;
+}
+
+.prodCard span{
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
 }

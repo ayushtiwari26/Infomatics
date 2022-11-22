@@ -10,6 +10,7 @@ import 'aos/dist/aos.css';
 import facebook from '../../../assets/images/Facebook.png';
 import twitter from '../../../assets/images/twitter.png';
 import linkedin from '../../../assets/images/linkedin.png';
+import Tilt from 'react-tilt'
 
 
 function mediaIcon(){

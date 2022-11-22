@@ -21,6 +21,16 @@ nav{
     z-index: 10;
 }
 
+.navArrow::after{
+    font-size: 16px;
+    content: '\2B9F';
+}
+
+.navBackArrow::after{
+    font-size: 13px;
+    content: '\2B9D';    
+}
+
 /*Styling logo*/
 .logo{
     padding:0vh 1vw;
@@ -44,7 +54,14 @@ nav{
 .nav-links li a{
     color: black;
     text-decoration: none !important;
-    margin: 0 0.7vw;
+    margin: 0 0.2vw;
+}
+
+.nav-links li span{
+    color: black;
+    text-decoration: none !important;
+    margin: 0 0.2vw;
+    cursor: pointer;
 }
 .navConButton:hover{
     text-decoration: none !important;
@@ -131,10 +148,9 @@ nav{
 
 .uProLine{
     font-size: 1.05rem;
-
 }
 
-.uProLine a{
+.uProLine span{
     font-weight: 550;
 }
 
@@ -149,6 +165,7 @@ nav{
 }
 
 .navBItem{
+    display: flex;
     font-family: 'Inter', sans-serif;
     padding: 8px 0;
     font-size: 0.75rem;

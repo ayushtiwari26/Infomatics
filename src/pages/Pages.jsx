@@ -1,10 +1,11 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import ProM from '../components/ProductPageComp/proM/ProM'
 import About from './About'
 import ContactUs from './ContactUs'
 import Landing from './Landing'
 import Services from './Services'
+import Industries from '../components/Industries/IndusPage'
+import Products from './Products'
 
 const Pages = () => {
   return (
@@ -12,8 +13,9 @@ const Pages = () => {
         <Route path={'/'} element={<Landing />} />
         <Route exact path={'/about-us'} element={<About/>} />
         <Route exact path={'/contact-us'} element={<ContactUs/>} />
-        <Route path={'/services/:serName'} element={<Services />} />
-        <Route path={'/products/:productName'} element={<ProM/>} />
+        <Route exact path={'/services/:serName'} element={<Services />}/>
+        <Route path={'/products/:productName'} element={<Products/>} />
+        <Route exact path={'/industries'} element={<Industries/>} />
         {/* <Route path={'/recipe/:name'} element={<Recipe />} /> */}
     </Routes>
   )

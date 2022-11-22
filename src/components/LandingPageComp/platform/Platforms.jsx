@@ -4,10 +4,42 @@ import Button from '@mui/material/Button';
 import et from '../../../assets/images/et.png'
 import cloud from '../../../assets/images/cloud.png'
 import cpu from '../../../assets/images/cpu.png'
+import { TextField } from '@mui/material'
+import { useState } from 'react';
+
 
 const Platforms = () => {
-    
+  const [openModal, setOpenModal] = useState(false)
+
   return (
+    <>
+      {openModal && (
+        <div className="ModalBack">
+          <div onClick={()=>setOpenModal(!openModal)} className="overlay"></div>
+
+          
+          <div className="modalContent">
+              <button onClick={()=>setOpenModal(!openModal)} className="ModClose">X</button>
+            <div className='ModalTitle'>Book Demo</div>
+                <div className='ModalName'>
+                  <TextField id="standard-basic" label="Name*" variant="standard" className="modalInputSize"/>
+                </div>
+              <div className='ModalEmail'>
+                  <TextField id="standard-basic" label="Email*" variant="standard" className="modalInputSize"/>
+              </div>
+                  <div className='ModalPhoneNum'>
+                <TextField id="standard-basic" label="Phone Number" variant="standard" className="modalInputSize"/>
+            </div>
+            <div className='ModalMessage'>
+                <TextField id="standard-basic" label="Message*" variant="standard" className="modalInputSize"/>
+            </div>
+
+            <div className="Modfooter">
+              <a href="#" className="ModA"><span className="ModSub">Submit</span><i className="ModI"></i></a>
+            </div>
+            </div>
+        </div>
+  )}
     <div className='ak'>
     <div className='' >
         <div className='heading'>
@@ -22,8 +54,8 @@ const Platforms = () => {
         <div className='card-body'>
         <h5 className='card-title C1'>ENTERPRISE</h5>
         <p className='card-text'>Complete ERP Suite for all organizational levels</p>
-        <Button className='butt' style={{color:"black"}} variant="outlined">
-         View More
+        <Button className='butt' style={{color:"black"}} variant="outlined" onClick={()=>setOpenModal(!openModal)}>
+         Know More
         </Button>
         </div>
     </div>
@@ -32,8 +64,8 @@ const Platforms = () => {
         <div className='card-body'>
         <h5 className='card-title C2'>ON-CLOUD</h5>
         <p className='card-text'>Self servised cloud based ERP applications for SMEs</p>
-        <Button className='butt' style={{color:"black" }}  variant="outlined" >
-          View More
+        <Button className='butt' style={{color:"black" }}  variant="outlined" onClick={()=>setOpenModal(!openModal)}>
+          Know More
         </Button>
         </div>
     </div>
@@ -42,8 +74,8 @@ const Platforms = () => {
         <div className='card-body'>
           <h5 className='card-title C3'>ON-PREMISE</h5>
           <p className='card-text'>Subscription based On-Premise Login Business Application</p>
-          <Button  className='butt'style={{color:"black"}}  variant="outlined">
-            View More
+          <Button  className='butt'style={{color:"black"}}  variant="outlined" onClick={()=>setOpenModal(!openModal)}>
+            Know More
           </Button>
         </div>
     </div>
@@ -52,6 +84,7 @@ const Platforms = () => {
 
     </div>
     </div>
+    </>
   )
 }
 
