@@ -10,5 +10,10 @@ export const servicesPage =[
         index:2,
         id:'web-based-software-development',
         name:'Web Based Software Development',
+    },
+    {
+        index:3,
+        id:'software-implementation',
+        name:'Software implementation',
     }
 ]

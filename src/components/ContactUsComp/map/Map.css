@@ -1,3 +1,35 @@
 .PreMap{
-    margin: 0% 5%;
+    margin: 5% 0% 0% 0%;
+    height: 40vw;
+    position: relative;
+    overflow-y: hidden;
+}
+
+.MmaRightStyle{
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    color: white;
+    width: 30%;
+    height: 200%;
+    border-top-left-radius: 150%;
+    border-bottom-left-radius: 150%;
+    background-color: rgb(46,49,47, 0.95);
+    overflow-y: hidden;
+    
+}
+
+.pOfMmaRightStyle{
+    text-align: left;
+    margin-left: 15%;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: white;
+    font-family: 'DM Sans', sans-serif;
 }

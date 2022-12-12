@@ -8,7 +8,7 @@ export const productIllus = [
             {liData:'Complete functionality of Assets Opening, Addition, Transfer, Sale and Discard'},
             {liData:'Multiple groups can be defined in the Fixed Assets Module. Depreciation to be calculated separately, as per the Income Tax and Companies Act.'},
             {liData:'All details of fixed assets are recorded at the time of creating individual assets. These include details like quantity of fixed assets (for instance, number of chairs, tables etc.), original cost of asset, expenses incurred for capitalization, supplier related information and others.'},
-            {liData:'All Assets are uniquely identified by the unique serialization scheme at the time of creating individual assets.'}
+            {liData:'All Assets are uniquely identified by the unique serialization scheme at the time of creating individual assets.'},
         ],
         img:'/images/illusAssets.png',
     },
@@ -54,20 +54,23 @@ export const productIllus = [
         ],
         img:'/images/illusPlantMaintain.png',
     },
+]
+
+export const productCard = [
     {
-        sid:5,
-        productName:'Product Name',
-        productDescription:'Product Description',
-        title:'Plant UnMaintenance',
-        li:[
-            {liData:'UnFormation of Equipment in relation with Fix Assets'},
-            {liData:'Option to Breakdown assembly and sub assembly from an equipment'},
-            {liData:'Checklist Planning Equipment / Assembly, sub-assembly wise for Preventive Maintenance'},
-            {liData:'Requisition of Spares required against a maintenance Plan.'},
-            {liData:'Entry of job done during shutdown / Breakdown'}
-        ],
-        img:'/images/illusPlantMaintain.png',
+        title:'Title1',
+        data:'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia sit dignissimos soluta accusamus molestias placeat tenetur nemo vel quod nisi.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia sit dignissimos soluta accusamus molestias placeat tenetur nemo vel quod nisi.',
+        title2:'Title2',
+        data2:'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia sit dignissimos soluta accusamus molestias placeat tenetur nemo vel quod nisi.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia sit dignissimos soluta accusamus molestias placeat tenetur nemo vel quod nisi.',
+        title3:'Title3',
+        data3:'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia sit dignissimos soluta accusamus molestias placeat tenetur nemo vel quod nisi.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia sit dignissimos soluta accusamus molestias placeat tenetur nemo vel quod nisi.'
     },
-
-
+    {
+        title:'Title1',
+        data:'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia sit dignissimos soluta accusamus molestias placeat tenetur nemo vel quod nisi.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia sit dignissimos soluta accusamus molestias placeat tenetur nemo vel quod nisi.',
+        title2:'Title2',
+        data2:'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia sit dignissimos soluta accusamus molestias placeat tenetur nemo vel quod nisi.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia sit dignissimos soluta accusamus molestias placeat tenetur nemo vel quod nisi.',
+        title3:'Title3',
+        data3:'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia sit dignissimos soluta accusamus molestias placeat tenetur nemo vel quod nisi.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia sit dignissimos soluta accusamus molestias placeat tenetur nemo vel quod nisi.'
+    },
 ]

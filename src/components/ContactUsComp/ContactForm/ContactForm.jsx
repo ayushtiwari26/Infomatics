@@ -8,12 +8,10 @@ const ContactForm = () => {
     <div className="ConBG">
         <div className="ConCard">
             <div className="ConImg">
-                {/* <p className="ConWe">We'd love to hear from you</p> */}
-                {/* <p className="ConBot">Privacy Policy- Moder Day Statement</p> */}
+                {/* illustration */}
             </div>
             <div className="ConForm">
             <a href='#'><p className="ConUs">Contact Us</p></a>
-
               <form>
                 <div className='FName'>
                   <TextField id="standard-basic" label="First Name" variant="standard" />

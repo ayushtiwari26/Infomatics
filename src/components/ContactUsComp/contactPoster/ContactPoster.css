@@ -1,0 +1,12 @@
+.contactPosterDiv{
+    height: 400px;
+    width: 100vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+}
+
+.somelol{
+    display: flex;
+    background-color: #DBDBDB;
+}

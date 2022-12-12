@@ -1,35 +1,36 @@
 .ConBG{
-    /* background-color: #cf8f7a; */
+    z-index: 5;
     width: 100%;
     height: 650px;
     position: relative;
+    margin-top: 5%;
 
 }
 a:link{
     text-decoration: none;
   }
 .ConCard{
-    background-color: #000000;
     position: absolute;
     display: flex;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
-    width: 80%;
-    height: 80%;
+    width: 90%;
+    height: 100%;
 }
 .ConImg{
-    background-image: url("C:\Users\Harshit Tiwari\OneDrive\Desktop\Infomatics\info\src\assets\images\Conimg.jpg");
+    background-image: url("C:\Users\Harshit Tiwari\OneDrive\Desktop\Infomatics\info\public\images\getInTouch.png");
     background-position: 100%;
     object-fit: cover;
     background-repeat: no-repeat;
     background-size:100%;
     position: absolute;
+    bottom: 0;
     display: inline-block;
     width: 50%;
-    height: 100%;
-    
+    height: 100%;  
 }
+
 .ConWe{
     font-size: 37px;
     width: 55%;
@@ -62,7 +63,7 @@ a:link{
     right: 0%;
     width: 50%;
     height: 100%;
-    background-color: #e8e8e9;
+    /* background-color: #e8e8e9; */
 }
 
 .ConUs{
