@@ -1,7 +1,7 @@
 export const productIllus = [
     {
         sid:1,
-        productName:'Product Name',
+        productName:'i Boss Manufacturing',
         productDescription:'Product Description',
         title:'Fix Assets',
         li:[

@@ -43,27 +43,21 @@ const Ser = (props) => {
                               ],
                             }}
                             /></span>
-        <div className="row serfirstSidePar">
-            <div className="col serfirstSide">
-              <p>01</p>
-              <p>Lean product managment</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nisi itaque animi nemo autem aut libero porro rerum fugiat! Veniam, asperiores? Laudantium possimus deserunt accusamus expedita cupiditate repellat animi eius!</p>
-            </div>
-            <div className="col serfirstSide">
-              <p>02</p>
-              <p>Test Driven Development</p>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur expedita quis ipsam ratione omnis rerum est ex, quas minus, architecto autem tempore repellendus voluptatum delectus molestias! Eos hic earum inventore!</p>
-            </div>
-            <div className="col serfirstSide">
-            <p>03</p>
-              <p>DevSecOps Compliant</p>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur expedita quis ipsam ratione omnis rerum est ex, quas minus, architecto autem tempore repellendus voluptatum delectus molestias! Eos hic earum inventore!</p>
-            </div>
-            <div className="col serfirstSide">
-            <p>04</p>
-              <p>Site Reliability Engineering</p>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur expedita quis ipsam ratione omnis rerum est ex, quas minus, architecto autem tempore repellendus voluptatum delectus molestias! Eos hic earum inventore!</p>
-            </div>
+        <div className="row serfirstSidePar">          
+              {
+                item.content.map((AContent)=>{
+                  return(
+                    <>
+                    <div className="col serfirstSide">
+                      <p>{AContent.ActualId}</p>
+                      <p>{AContent.ActualTitle}</p>
+                      <p>{AContent.ActualContent}</p>
+                    </div>
+                    </>
+                  )
+                })
+              }
+            
         </div>           
         </div>
         </div>
@@ -73,14 +67,14 @@ const Ser = (props) => {
             <ul className='serAccordion'>
               <li>
                 <input type={'radio'} name='accordion' id='first' checked/>
-                <label for='first' className='serLabel'>What is product development</label>
-                <div className='serContent'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum dignissimos, vitae aspernatur asperiores cumque eius consectetur nemo in corrupti commodi veniam dolor est facilis neque omnis aperiam velit perspiciatis vel sunt? Unde iste optio hic, reprehenderit cumque ratione provident vero accusamus quaerat placeat facere ullam odit! Nisi dolorum aperiam, sunt enim labore vel quaerat voluptatibus hic rerum voluptatem soluta facere. Magni modi iusto repellat nemo, esse dignissimos deleniti dolorem neque?</div>
+                <label for='first' className='serLabel'>What is {item.name}</label>
+                <div className='serContent'>{item.whatIsId}</div>
               </li>
     
               <li>
                 <input type={'radio'} name='accordion' id='second'/>
                 <label for='second' className='serLabel'>What we offer</label>
-                <div className='serContent'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum dignissimos, vitae aspernatur asperiores cumque eius consectetur nemo in corrupti commodi veniam dolor est facilis neque omnis aperiam velit perspiciatis vel sunt? Unde iste optio hic, reprehenderit cumque ratione provident vero accusamus quaerat placeat facere ullam odit! Nisi dolorum aperiam, sunt enim labore vel quaerat voluptatibus hic rerum voluptatem soluta facere. Magni modi iusto repellat nemo, esse dignissimos deleniti dolorem neque?</div>
+                <div className='serContent'>{item.whatWeOffer}</div>
               </li>
             </ul>
           </div>
