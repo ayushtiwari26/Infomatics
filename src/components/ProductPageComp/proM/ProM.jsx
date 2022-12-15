@@ -3,30 +3,41 @@ import './ProM.css'
 import Tilt from 'react-tilt'
 import {productCard} from '../../../assets/constants/productsPage'
 
-const ProM = () => {
+const ProM = (props) => {
     return(
         <>
-    {productCard.map((item)=>{
-        return(
+        {productCard.map((parItem)=>{        
+        if(props.params === parItem.id)
+        { 
+            return(
             <>
-            <div className="prodCardGrandPar">
-                <div className="row prodCardPar">
-                    <Tilt options={{easing:"cubic-bezier(.03,.98,.52,.99)", scale:1.02}} className="col prodCard">
-                        <p className=''>{item.title}</p>
-                        <p>{item.data}</p>
-                    </Tilt>
-                    <Tilt options={{easing:"cubic-bezier(.03,.98,.52,.99)", scale:1.02}} className="col prodCard">
-                        <p className=''>{item.title2}</p>
-                        <p>{item.data2}</p>
-                    </Tilt>
-                    <Tilt options={{easing:"cubic-bezier(.03,.98,.52,.99)", scale:1.02}} className="col prodCard">
-                        <p className=''>{item.title3}</p>
-                        <p>{item.data3}</p>
-                    </Tilt>
-                </div>
-            </div>
-                </>
+                {
+                    parItem.content.map((item)=>{
+                        return(
+                            <>
+                                <div className="prodCardGrandPar">
+                                    <div className="row prodCardPar">
+                                        <Tilt options={{easing:"cubic-bezier(.03,.98,.52,.99)", scale:1.02}} className="col prodCard">
+                                            <p className=''>{item.title}</p>
+                                            <p>{item.data}</p>
+                                        </Tilt>
+                                        <Tilt options={{easing:"cubic-bezier(.03,.98,.52,.99)", scale:1.02}} className="col prodCard">
+                                            <p className=''>{item.title2}</p>
+                                            <p>{item.data2}</p>
+                                        </Tilt>
+                                        <Tilt options={{easing:"cubic-bezier(.03,.98,.52,.99)", scale:1.02}} className="col prodCard">
+                                            <p className=''>{item.title3}</p>
+                                            <p>{item.data3}</p>
+                                        </Tilt>
+                                    </div>
+                                </div>
+                            </>
+                        )
+                    })
+                }
+            </>
         )
+        }
     })}
     </>
     )

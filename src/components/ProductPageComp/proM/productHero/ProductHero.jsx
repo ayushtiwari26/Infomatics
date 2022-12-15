@@ -1,17 +1,28 @@
 import React from 'react'
 import './ProductHero.css'
-import dashboard from '../../../../assets/images/dashboard.png'
+import {productHero} from '../../../../assets/constants/productsPage'
 
-const ProductHero = () => {
+const ProductHero = (props) => {
   return (
     <>
     <div className="container-fluid prodImgContainer">
         <div className="row ">
-            <div className="col prodImgSize"><img src={dashboard}/></div>
-            <div className="col prodImgNichu">
-                <p>Product Name</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci, ipsum!</p>
-            </div>
+          {
+            productHero.map((item)=>{
+              if(props.params === item.id){
+                return(
+                  <>
+                  <div className="col prodImgSize"><img src={item.img}/></div>
+                  <div className="col prodImgNichu">
+                      <p>{item.title}</p>
+                      <p>{item.titleDesc}</p>
+                  </div>
+                  </>
+                )
+              }
+            })
+          }
+
         </div>
     </div>
     </>

@@ -12,7 +12,6 @@ const Ser = (props) => {
       <>
       {servicesPage.map((item)=>{
         if(props.params===item.id){
-          {console.log('i am here')}
           return(
             <>
             <div style={{
