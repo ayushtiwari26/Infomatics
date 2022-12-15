@@ -2,12 +2,13 @@ import React from 'react'
 import './ContactForm.css'
 import { TextField , Button} from '@mui/material'
 import SendIcon from '@mui/icons-material/Send';
+import getInTouch from "../../../assets/images/getInTouch.png"
 
 const ContactForm = () => {
   return (
     <div className="ConBG">
         <div className="ConCard">
-            <div className="ConImg">
+            <div className="ConImg" style={{backgroundImage:`url(${getInTouch})`}}>
                 {/* illustration */}
             </div>
             <div className="ConForm">

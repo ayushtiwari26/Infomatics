@@ -22,8 +22,9 @@ export const navbarProductsDiv = [
     {   sid:1,
         id1:'i-boss-manufacturing',
         id2:'i-boss-warehouse-and-logistics',
+        id3:'i-boss-trading',
         name1:'i boss Manufacturing',
         name2:'i boss Warehouse and logistics',
-        name3:'i boss trading'
+        name3:'i boss trading',
     },
 ]

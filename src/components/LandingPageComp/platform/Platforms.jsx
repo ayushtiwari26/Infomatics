@@ -6,6 +6,7 @@ import cloud from '../../../assets/images/cloud.png'
 import cpu from '../../../assets/images/cpu.png'
 import { TextField } from '@mui/material'
 import { useState } from 'react';
+import back from "../../../assets/images/back.jpg"
 
 
 const Platforms = () => {
@@ -40,7 +41,7 @@ const Platforms = () => {
             </div>
         </div>
   )}
-    <div className='ak'>
+    <div className='ak' style={{backgroundImage:`url(${back})`}}>
     <div className='' >
         <div className='heading'>
             <h1 className='head'>ERP Application Platforms</h1>
