@@ -1,6 +1,37 @@
-.contactPosterDiv{
-    height: 400px;
+.ContBack{
+    position: relative;
     width: 100vw;
+    height: 35vh;
+    margin-top: -2%;  
+    display: grid;
+}
+.ContHeading{
+    background: linear-gradient(to left, rgb(34, 34, 34) , transparent) left center/50% no-repeat, linear-gradient(to right, rgb(34, 34, 34) , transparent) right center/51% no-repeat;
+    height: 35vh;
+    width: 100vw;
+}
+.Contpara{
+    display: grid;
+    place-items: center;
+    top:50%;
+    transform: translateY(-50%);
+}
+.Contpara p{
+    color: white;
+    font-size: 62px;
+    font-weight: 800;
+    font-family: 'DM Sans', sans-serif;
+}
+.Contpara p:nth-child(2){
+    font-size: 32px;
+    border-top: 1px solid gray;
+}
+
+
+
+.contactPosterDiv{
+    height: 550px;
+    width: 100%;
     background-size: contain;
     background-repeat: no-repeat;
     opacity: 0.8;
@@ -8,5 +39,39 @@
 
 .somelol{
     display: flex;
+    object-fit: cover;
     background-color: #DBDBDB;
+    width: 100%;
+    height: 400px;
+
 }
+.somelol img{
+    width: 100%;
+}
+.contactRow{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 80px;
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+
+}
+.contactCol{
+    text-align: center;
+    margin-top: 10px;
+
+}
+.ConIcon{
+    margin-top: 5px;
+}
+.ConPara{
+    font-size: 18px;
+    font-weight: 500;
+
+}
+
+

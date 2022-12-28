@@ -1,3 +1,35 @@
+.IndusBack{
+    position: relative;
+    width: 100vw;
+    height: 35vh;
+    margin-top: -2%;  
+    display: grid;
+}
+.IndusHeading{
+    background: linear-gradient(to left, rgb(34, 34, 34) , transparent) left center/50% no-repeat, linear-gradient(to right, rgb(34, 34, 34) , transparent) right center/51% no-repeat;
+    height: 35vh;
+    width: 100vw;
+}
+.Induspara{
+    display: grid;
+    place-items: center;
+    top:50%;
+    transform: translateY(-50%);
+}
+.Induspara p{
+    color: white;
+    font-size: 62px;
+    font-weight: 800;
+    font-family: 'DM Sans', sans-serif;
+}
+.Induspara p:nth-child(2){
+    font-size: 32px;
+    border-top: 1px solid gray;
+}
+
+
+
+
 .IndusRow{
     display: flex;
     flex-direction: column;

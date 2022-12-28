@@ -52,3 +52,133 @@
     font-size: 3rem;
     font-weight: 700 ;
 }
+
+@media only screen and (max-width: 1200px) {
+    .mainHero {
+      height: 80vh;
+    }
+    .headSide1 {
+      font-size: 2.5rem;
+      line-height: 2.5rem;
+    }
+    .headSide2 {
+      font-size: 4rem;
+      line-height: 3.5rem;
+    }
+    .headSide3 {
+      font-size: 2.5rem;
+    }
+    .sideHero2 {
+      width: 500px !important;
+    }
+  }
+  
+  @media only screen and (max-width: 992px) {
+    .mainHero {
+      height: 70vh;
+    }
+    .headSide1 {
+      font-size: 2rem;
+      line-height: 2rem;
+    }
+    .headSide2 {
+      font-size: 3.5rem;
+      line-height: 3rem;
+    }
+    .headSide3 {
+      font-size: 2rem;
+    }
+    .sideHero {
+      margin-left: 5%;
+    }
+    .sideHero2 {
+      width: 400px !important;
+      top: 5%;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .mainHero {
+      height: 60vh;
+    }
+    .headSide1 {
+      font-size: 1.5rem;
+      line-height: 1.5rem;
+    }
+    .headSide2 {
+      font-size: 3rem;
+      line-height: 2.5rem;
+    }
+    .headSide3 {
+      font-size: 1.5rem;
+    }
+    .sideHero {
+      margin-left: 0;
+    }
+    .sideHero2 {
+      width: 300px !important;
+      top: 0;
+    }
+  }
+  
+  @media only screen and (max-width: 576px) {
+    .mainHero {
+      height: 50vh;
+    }
+    .headSide1 {
+      font-size: 1.25rem;
+      line-height: 1.25rem;
+    }
+    .headSide2 {
+      font-size: 2.5rem;
+      line-height: 2rem;
+    }
+    .headSide3 {
+      font-size: 1.25rem;
+    }
+    .sideHero2 {
+      width: 200px !important;
+      top: -5%;
+    }
+  }
+
+  @media only screen and (max-width: 350px) {
+    .mainHero {
+      width: 100vw;
+      height: 92vh;
+      margin-top: -2%;
+    }
+  
+    .sideMainHero {
+      display: flex;
+    }
+  
+    .sideHero {
+      top: 30%;
+      display: flex;
+      flex-direction: column;
+      margin-left: 10%;
+    }
+  
+    .headSide1 {
+      font-size: 2rem;
+      line-height: 2rem;
+    }
+  
+    .headSide2 {
+      font-size: 3rem;
+      line-height: 3rem;
+    }
+  
+    .headSide3 {
+      font-size: 2rem;
+    }
+  
+    .sideHero2 {
+      width: 90%;
+      top: 10%;
+      right: 5%;
+      font-size: 2rem;
+    }
+  }
+  
