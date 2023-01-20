@@ -7,6 +7,7 @@ import cpu from '../../../assets/images/cpu.png'
 import { TextField } from '@mui/material'
 import { useState } from 'react';
 import back from "../../../assets/images/back.jpg"
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 
 const Platforms = () => {
@@ -51,7 +52,7 @@ const Platforms = () => {
         </div>
     <div className='card-deck'>
     <div className='card'>
-        <img src={et} class="card-img-top" alt="enterprise-img"/>
+        <LazyLoadImage src={et} class="card-img-top" alt="enterprise-img" loading='lazy'/>
         <div className='card-body'>
         <h5 className='card-title C1'>ENTERPRISE</h5>
         <p className='card-text'>Complete ERP Suite for all organizational levels</p>
@@ -61,7 +62,7 @@ const Platforms = () => {
         </div>
     </div>
     <div className='card'>
-        <img src={cloud} class="card-img-top" alt="cloud-img"/>
+        <LazyLoadImage src={cloud} class="card-img-top" alt="cloud-img" loading='lazy'/>
         <div className='card-body'>
         <h5 className='card-title C2'>ON-CLOUD</h5>
         <p className='card-text'>Self servised cloud based ERP applications for SMEs</p>
@@ -71,7 +72,7 @@ const Platforms = () => {
         </div>
     </div>
     <div className='card'>
-        <img src={cpu} class="card-img-top" alt="cpu-img"/>
+        <LazyLoadImage src={cpu} class="card-img-top" alt="cpu-img" loading='lazy'/>
         <div className='card-body'>
           <h5 className='card-title C3'>ON-PREMISE</h5>
           <p className='card-text'>Subscription based On-Premise Login Business Application</p>

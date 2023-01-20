@@ -1,0 +1,33 @@
+.idkpar{
+    padding: 4% 6%;
+    background-color: #F9F8F9;
+    margin-bottom: 5%;
+    margin-top: -2%;
+}
+
+.leftIdk{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    text-align: left;
+}
+
+.leftIdk p:nth-child(1){
+    font-weight: 600;
+    font-size: 3rem;
+    font-family: 'Inter';
+    margin-bottom: 10%;
+}
+
+.leftIdk p:nth-child(2){
+    font-weight: 600;
+    font-size: 1.5rem;
+    font-family: 'Inter';
+    letter-spacing: -0.5px;
+    margin-bottom: 1%;
+}
+
+.leftIdk p:nth-child(3){
+    font-weight: 500;
+    font-size: 1rem;
+}

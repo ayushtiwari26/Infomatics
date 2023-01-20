@@ -1,0 +1,49 @@
+.openPosPar{
+    margin: 0% 15%;
+    padding: 1% 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    border-top: 1px solid rgb(211, 211, 211);
+    border-bottom: 1px solid rgb(211, 211, 211);
+}
+
+.openPosLeft{
+    margin-right: 25%;
+}
+
+.openTitle{
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: 'Inter';
+}
+
+.openMoto{
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Inter';
+    color: rgb(74, 74, 74)
+}
+
+.openBtnee{
+    margin-right: 1%;
+}
+.openBtnConfig{
+    pointer-events: none;
+    padding: 1% 3% !important;
+    border-color: black !important;
+    border-width: 1.5px !important;
+    border-top-left-radius: 20px !important;
+    border-top-right-radius: 20px !important;
+    border-bottom-left-radius: 20px !important;
+    border-bottom-right-radius: 20px !important;
+}
+
+.openPosLeft div span{
+    font-weight: 500;
+}
+
+.openPosRight{
+
+}

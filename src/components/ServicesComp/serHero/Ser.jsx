@@ -5,6 +5,7 @@ import serHeroImage from '../../../assets/images/serHeroImg.jpg'
 import TypeWriter from 'typewriter-effect'
 import {servicesPage} from '../../../assets/constants/servicesPage'
 import {AiFillCheckCircle} from 'react-icons/ai'
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Ser = (props) => {
 

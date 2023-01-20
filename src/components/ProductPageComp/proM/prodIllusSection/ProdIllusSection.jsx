@@ -1,6 +1,7 @@
 import React from 'react'
 import './ProdIllusSection.css'
 import {productIllus} from '../../../../assets/constants/productsPage'
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const ProdIllusSection = (props) => {
   return (
@@ -25,7 +26,7 @@ const ProdIllusSection = (props) => {
                                         })}
                                     </div>
                                     <div className="col illusFinanceimgdiv">
-                                        <img src={item.img} className='illusFinanceimg'/>
+                                        <LazyLoadImage src={item.img} className='illusFinanceimg' loading='lazy'/>
                                     </div>
                                 </div>
                                 </div>

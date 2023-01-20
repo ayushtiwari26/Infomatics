@@ -4,6 +4,7 @@ import './Hero.css'
 import erp3 from '../../../assets/images/pr10.jpg'
 import { Button } from '@mui/material'
 import { Parallax} from 'react-parallax';
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Hero = () => {
   return (
@@ -12,7 +13,7 @@ const Hero = () => {
             backgroundImage:`url(${erp3})`, 
             backgroundRepeat:'no-repeat', 
             backgroundSize:'cover', 
-            backgroundAttachment: 'fixed'
+            backgroundAttachment: 'fixed',
             }} 
         className='mainHero'>
             <div className="sideMainHero">
@@ -46,9 +47,5 @@ const Hero = () => {
 
 export default Hero
 
-  {/* <div className='headSide2'>We define the standards of ERP Software</div> */}
-  {/* <div className='sideHero2'>
-    We define the standards of ERP Software
-  </div> */}
 
 

@@ -7,6 +7,7 @@ import fleet from "../../assets/images/fleet.jpg"
 import real from "../../assets/images/real.jpg"
 import rice from "../../assets/images/rice.jpg"
 import indus from '../../../src/assets/images/indus.jpg'
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 
 const IndusPage = () => {
@@ -33,7 +34,7 @@ const IndusPage = () => {
         </div>
         <div className="row IndusRow2">
             <div className="col IndusImg">
-                 <img src={ImgFirst} className="Indusphoto"  alt='Iron'/>
+                 <LazyLoadImage src={ImgFirst} className="Indusphoto"  alt='Iron' loading='lazy'/>
             </div>
             <div className="col IndusWord">
                     <p className='IndusIron'>Sponge Iron and Steel</p>
@@ -47,7 +48,7 @@ const IndusPage = () => {
     <div className="container-fluid">
         <div className="row IndusRow3">
             <div className="col IndusImg2">
-                 <img src={Trading} className="Indusphoto"  alt='Iron'/>
+                 <LazyLoadImage src={Trading} className="Indusphoto"  alt='Iron' loading='lazy'/>
             </div>
             <div className="col IndusWord2">
                     <p className='IndusIron'> Trading</p>
@@ -62,7 +63,7 @@ const IndusPage = () => {
 
     <div className="row IndusRow2">
             <div className="col IndusImg">
-                 <img src={Dis} className="Indusphoto"  alt='Iron'/>
+                 <LazyLoadImage src={Dis} className="Indusphoto"  alt='Iron' loading='lazy'/>
             </div>
             <div className="col IndusWord">
                     <p className='IndusIron'>Distribution</p>
@@ -77,7 +78,7 @@ const IndusPage = () => {
     <div className="container-fluid">
         <div className="row IndusRow3">
             <div className="col IndusImg2">
-                 <img src={fleet} className="Indusphoto"  alt='Iron'/>
+                 <LazyLoadImage src={fleet} className="Indusphoto"  alt='Iron' loading='lazy'/>
             </div>
             <div className="col IndusWord2">
                     <p className='IndusIron'> Fleet Management</p>
@@ -93,7 +94,7 @@ const IndusPage = () => {
 
     <div className="row IndusRow2">
             <div className="col IndusImg">
-                 <img src={real} className="Indusphoto"  alt='Iron'/>
+                 <LazyLoadImage src={real} className="Indusphoto"  alt='Iron' loading='lazy'/>
             </div>
             <div className="col IndusWord">
                     <p className='IndusIron'>Construction [ Real Estate ]</p>
@@ -108,7 +109,7 @@ const IndusPage = () => {
     <div className="container-fluid">
         <div className="row IndusRow3">
             <div className="col IndusImg2">
-                 <img src={rice} className="Indusphoto"  alt='Iron'/>
+                 <LazyLoadImage src={rice} className="Indusphoto"  alt='Iron' loading='lazy'/>
             </div>
             <div className="col IndusWord2">
                     <p className='IndusIron'> Rice Mill</p>

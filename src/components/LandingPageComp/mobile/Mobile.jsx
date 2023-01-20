@@ -1,5 +1,6 @@
 import React from 'react'
 import './Mobile.css'
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Mobile = () => {
   return (
@@ -10,7 +11,7 @@ const Mobile = () => {
             <div className="col mobfirst">
                 <div className="col mobAlign2">
                     <div className='mobSideImgDiv'>
-                        <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="" className='mobSideImg'/>
+                        <LazyLoadImage src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="" className='mobSideImg' loading='lazy'/>
                     </div>
                     <div className='mobSideTextDiv'>
                         <p>LOGIC MWS</p>
@@ -19,7 +20,7 @@ const Mobile = () => {
                 </div>
                 <div className="col mobAlign2">
                     <div className='mobSideImgDiv'>
-                        <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="" className='mobSideImg'/>
+                        <LazyLoadImage src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="" className='mobSideImg' loading='lazy'/>
                     </div>
                     <div className='mobSideTextDiv'>
                         <p>LOGIC MWS</p>
@@ -28,7 +29,7 @@ const Mobile = () => {
                 </div>
                 <div className="col mobAlign2 ">
                     <div className='mobSideImgDiv'>
-                        <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="" className='mobSideImg'/>
+                        <LazyLoadImage src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="" className='mobSideImg' loading='lazy'/>
                     </div>
                     <div className='mobSideTextDiv'>
                         <p>LOGIC MWS</p>
@@ -44,7 +45,7 @@ const Mobile = () => {
             <div className="col">
             <div className="col mobAlign">
                     <div className='mobSideImgDiv'>
-                        <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="" className='mobSideImg'/>
+                        <LazyLoadImage src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="" className='mobSideImg' loading='lazy'/>
                     </div>
                     <div className='mobSideTextDiv'>
                         <p>LOGIC MWS</p>
@@ -53,7 +54,7 @@ const Mobile = () => {
                 </div>
                 <div className="col mobAlign">
                     <div className='mobSideImgDiv'>
-                        <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="" className='mobSideImg'/>
+                        <LazyLoadImage src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="" className='mobSideImg' loading='lazy'/>
                     </div>
                     <div className='mobSideTextDiv'>
                         <p>LOGIC MWS</p>
@@ -62,7 +63,7 @@ const Mobile = () => {
                 </div>
                 <div className="col mobAlign">
                     <div className='mobSideImgDiv'>
-                        <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="" className='mobSideImg'/>
+                        <LazyLoadImage src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="" className='mobSideImg' loading='lazy'/>
                     </div>
                     <div className='mobSideTextDiv'>
                         <p>LOGIC MWS</p>

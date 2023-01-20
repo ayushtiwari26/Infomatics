@@ -3,26 +3,27 @@ import './ContactPoster.css'
 import { FaRegEnvelope } from 'react-icons/fa';
 import { FiPhoneCall } from 'react-icons/fi';
 import contactus from "../../../assets/images/contactus.jpg";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+
+
 const ContactPoster = () => {
   return (
     <>
         <div className='contactPosterDiv'>
-            {/* <div className="somelol">
-                <img src='/images/contactus.jpg'/>
-            </div> */}
-
-            <div style={{
-                backgroundImage:`url(${contactus})`, 
-                backgroundRepeat:'no-repeat', 
-                backgroundSize:'cover', 
-                backgroundAttachment: 'fixed'
-                }} className='ContBack'>
-                <div className='ContHeading'>
-                    <div className='Contpara col'>
-                        <p>Contact Us</p>
-                        <p>Infomatics is ready to collaborate.</p>
+            <div>
+                <div alt='contact background Image' style={{
+                    backgroundImage:`url(${contactus})`, 
+                    backgroundRepeat:'no-repeat', 
+                    backgroundSize:'cover', 
+                    backgroundAttachment: 'fixed'
+                    }} className='ContBack'>
+                    <div className='ContHeading'>
+                        <div className='Contpara col'>
+                            <p>Contact Us</p>
+                            <p>Infomatics is ready to collaborate.</p>
+                        </div>
                     </div>
-                </div>
+                    </div>
                 </div>
             <div className='contactRow'>
             <div className="contactCol">

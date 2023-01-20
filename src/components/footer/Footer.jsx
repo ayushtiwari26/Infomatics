@@ -8,6 +8,7 @@ import linkedin from "../../assets/images/linkedin.png"
 import newlogo from '../../assets/images/infoNewLogo.png'
 import { Avatar } from '@mui/material';
 import { IconContext } from 'react-icons';
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function mediaIcon(){
 
@@ -27,7 +28,7 @@ const Footer = () => {
     <div className="footerMain">
         <div className="fotRow">
             <div className="fotCol">
-                <img className="footerinfoLogo" src={newlogo} alt='logo'/>
+                <LazyLoadImage className="footerinfoLogo" src={newlogo} alt='logo' loading='lazy'/>
                 <p>This footer is for infomatics. We can place anything here.
                   Now, i have no clue. so just typing anything
                 </p>

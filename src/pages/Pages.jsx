@@ -6,6 +6,7 @@ import Landing from './Landing'
 import Services from './Services'
 import Industries from '../components/Industries/IndusPage'
 import Products from './Products'
+import Carriers from './Carriers'
 
 const Pages = () => {
   return (
@@ -16,6 +17,7 @@ const Pages = () => {
         <Route exact path={'/services/:serName'} element={<Services />}/>
         <Route path={'/products/:productName'} element={<Products/>} />
         <Route exact path={'/industries'} element={<Industries/>} />
+        <Route exact path={'/carrier'} element={<Carriers/>} />
         {/* <Route path={'/recipe/:name'} element={<Recipe />} /> */}
     </Routes>
   )

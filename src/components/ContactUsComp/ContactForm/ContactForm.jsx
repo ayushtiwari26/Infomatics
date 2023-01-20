@@ -3,6 +3,7 @@ import './ContactForm.css'
 import { TextField , Button} from '@mui/material'
 import SendIcon from '@mui/icons-material/Send';
 import getInTouch from "../../../assets/images/getInTouch.png"
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const ContactForm = () => {
   return (

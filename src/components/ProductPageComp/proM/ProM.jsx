@@ -2,6 +2,7 @@ import React from 'react'
 import './ProM.css'
 import Tilt from 'react-tilt'
 import {productCard} from '../../../assets/constants/productsPage'
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const ProM = (props) => {
     return(

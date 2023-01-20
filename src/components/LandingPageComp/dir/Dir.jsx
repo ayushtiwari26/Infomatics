@@ -3,6 +3,7 @@ import React from 'react'
 import './Dir.css'
 import B2 from '../../../assets/images/B2.jpg'
 import {RiDoubleQuotesL} from 'react-icons/ri'
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Dir = () => {
   return (
@@ -33,7 +34,7 @@ const Dir = () => {
               </Button>
         </div>
         <div className='col-5'>
-        <img className='img' src={B2} alt='ayu'/>
+        <LazyLoadImage className='img' src={B2} alt="Director's pic" loading='lazy'/>
          </div>
         
         </div>
