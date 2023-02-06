@@ -7,6 +7,8 @@ import Services from './Services'
 import Industries from '../components/Industries/IndusPage'
 import Products from './Products'
 import Carriers from './Carriers'
+import Clients from './Clients'
+// import Clients from './Clients'
 
 const Pages = () => {
   return (
@@ -18,6 +20,7 @@ const Pages = () => {
         <Route path={'/products/:productName'} element={<Products/>} />
         <Route exact path={'/industries'} element={<Industries/>} />
         <Route exact path={'/carrier'} element={<Carriers/>} />
+        <Route exact path={'/client'} element={<Clients/>} />
         {/* <Route path={'/recipe/:name'} element={<Recipe />} /> */}
     </Routes>
   )

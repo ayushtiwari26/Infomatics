@@ -62,7 +62,7 @@ let useClickOutside = (handler)=>{
 
             <li><a href='#'>Resources</a></li>
 
-            <li><a href="#">Clients</a></li>
+            <li><a href="/clients">Clients</a></li>
             <li><a href="/carrier">Carrier</a></li>
             <li><a href='/contact-us' className='navConButton'><Button style={{
                             borderRadius: 35,

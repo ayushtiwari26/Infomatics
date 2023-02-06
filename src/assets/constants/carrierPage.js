@@ -29,7 +29,7 @@ export const openPositions = [
     employementType:'Full-Time',
     id:2,
     },
-    {   post:'SQL Developer',
+    {post:'SQL Developer',
     postMoto :"We're looking for an Experienced SQL Developer with an experience of 3-8 years to join our team",
     workLocation:'Remote',
     employementType:'Part-Time',

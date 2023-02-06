@@ -173,6 +173,14 @@ nav{
     opacity: 0.7;
 }
 
+.Hamberger{
+    /* box-shadow: rgba(54, 55, 56, 0.2) 0px -8px 24px; */
+    /* box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset; */
+    box-shadow:  inset -1.5px -1.5px 5px rgba(0, 0, 0, 0.06),
+        inset 1.5px 1.5px 5px rgba(0, 0, 0, 0.06);
+    border-radius: 20% ;
+}
+
 /*Styling Hamburger Icon*/
 .hamburger div{
     width: 30px;
@@ -190,3 +198,104 @@ button:focus { outline: none !important;}
 button:hover{
     outline: none !important;
 }
+
+.MyNav .NavLinks{
+    display: none;
+    
+}
+
+@media (max-width: 1200px){
+    .MyNav .Navbar{
+        display: none;
+    }
+    .NavContainer{
+        overflow-y: auto;
+    }
+    .MyNav .NavLinks 
+    {
+        display: flex;
+    }
+    .MyNav .NavLinks .Nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between ;
+
+    }
+    .MyNav .NavLinks .Hamberger{
+        position: absolute;
+        right: 3%;
+        top: 5%;
+        cursor: pointer;
+        z-index: 1000;
+        
+    }
+    .MyNav .NavLinks .NavContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+        width: 30%;
+        background-color: white;
+        
+    }
+    .MyNav .NavLinks .NavContainer .Navbar{
+        display: block;
+        flex-direction: column;
+        height: 80%;
+    }
+    .MyNav .NavLinks .NavContainer .Navbar div{
+        /* border: 1px solid red; */
+        margin: 7% 10%;
+        font-size: 1rem;
+        color: #000000;
+       
+        text-align: left;
+    }
+    .MyNav .NavLinks .NavContainer .Navbar a{
+        font-family: "Inter";
+        color: black;
+    }
+    /* .MyNav .NavLinks .NavContainer .Navbar div:hover{
+        background-color: silver;
+        border-radius: 10px;
+    } */
+    .childSerSmallScreen{
+        padding-left: 10%;
+        text-align: left;
+    } 
+    a{
+        text-align: left;
+    }
+    .navbar div Button{
+        display: flex !important;
+        justify-content: flex-start !important;
+        align-items: flex-start !important;
+    }
+
+    .klmnop:hover{
+        background-color: silver !important;
+        border-radius: 10px;
+    }
+
+
+    .linkChildFOntSize{
+        font-size: 0.8rem;
+    }
+
+    .Navbar div Button:hover{
+        display: flex !important;
+        justify-content: flex-start !important;
+        align-items: flex-start !important;
+        width: 100% !important;
+        background-color: silver !important;
+        border-radius: 10px !important;
+    }
+
+}
+
+@media (max-width: 900px) and (min-width:600px){
+    .MyNav .NavLinks .NavContainer{
+        width: 35%;
+    }
+}
+

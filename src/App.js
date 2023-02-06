@@ -6,6 +6,7 @@ import Navbar from './components/navbar/Navbar';
 import Pages from './pages/Pages';
 import landingImg from '../src/assets/images/loading.gif'
 import Footer from './components/footer/Footer';
+import MyNav from './components/navbar/MyNav';
 
 function App() {
 
@@ -30,7 +31,7 @@ function App() {
 
       (  
       <div className="App">
-        <Navbar/>
+        <MyNav/>
         <Pages/>
         <Footer/>
       </div>)

@@ -4,7 +4,6 @@ import Hero from '../components/LandingPageComp/hero/Hero'
 import Mobile from '../components/LandingPageComp/mobile/Mobile'
 import Platforms from '../components/LandingPageComp/platform/Platforms'
 import Testimony from '../components/LandingPageComp/testimony/Testimony'
-// import ModalComp from '../components/ModalComp/ModalComp'
 
 
 const Landing = () => {
@@ -12,12 +11,10 @@ const Landing = () => {
     <div>
       <Hero/>
           <div className="row">
-            {/* <Journey/> */}
             <Mobile/>
             <Platforms/>
             <Dir/>
-            <Testimony/>
-            {/* <ModalComp/> */}
+            {/* <Testimony/> */}
           </div>
     </div>
   )

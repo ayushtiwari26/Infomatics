@@ -10,7 +10,7 @@ const useStyles = makeStyles({
   },
   stepper: {
     background: 'linear-gradient(to right, #ffffff, #ffffff)',
-    boxShadow: '0 10px 20px rgba(0,0,0,0.10), 0 6px 6px rgba(0,0,0,0.13)',
+    boxShadow: '0 5px 10px rgba(0,0,0,0.10), 0 4px 4px rgba(0,0,0,0.13)',
     borderRadius: '10px',
   },
   stepIcon: {
