@@ -1,8 +1,7 @@
 .IndusBack{
     position: relative;
     width: 100vw;
-    height: 35vh;
-    margin-top: -2%;  
+    height: 35vh; 
     display: grid;
 }
 .IndusHeading{

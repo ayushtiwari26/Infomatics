@@ -8,6 +8,7 @@
 }
 body{
     overflow-x: hidden;
+    padding-top: 4rem;
 }
 
 nav{
@@ -15,10 +16,11 @@ nav{
     width: 100vw;
     background-color: #fff;
     font-size: 0.9rem;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.1);
     display: flex;
     position: fixed;
-    z-index: 100;
+    top:0;
+    z-index: 100000000000000;
 }
 
 .navArrow::after{
@@ -108,22 +110,7 @@ nav{
     border:1.5px solid #f2f5f7;
     transition: all ease-in-out 350ms;
 }
-.join-button{
-    color: #131418;
-    background-color: var(--blue);
-    border: none;
-    border-radius: 2em;
-    padding: 0.6rem 0.8rem;
-    font-size: 1rem;
-    cursor: pointer;
-}
-.join-button:hover {
-    background: black !important;
-    color: white;
-    background-color: transparent;
-    border:1.5px solid #f2f5f7;
-    transition: all ease-in-out 350ms;
-}
+
 
 /* styling chevron */
 .chever{
@@ -270,6 +257,10 @@ button:hover{
         display: flex !important;
         justify-content: flex-start !important;
         align-items: flex-start !important;
+    }
+
+    .navbar div Button a{
+        width: 100% !important;
     }
 
     .klmnop:hover{

@@ -1,3 +1,4 @@
+
 import React from 'react'
 import './Platforms.css';
 import Button from '@mui/material/Button';
@@ -8,39 +9,41 @@ import { TextField } from '@mui/material'
 import { useState } from 'react';
 import back from "../../../assets/images/back.jpg"
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import Modal from '../../Modal';
 
 
 const Platforms = () => {
   const [openModal, setOpenModal] = useState(false)
 
+
   return (
     <>
       {openModal && (
-        <div className="ModalBack">
-          <div onClick={()=>setOpenModal(!openModal)} className="overlay"></div>
+    <div className="ModalBack">
+      <div onClick={()=>setOpenModal(!openModal)} className="overlay"></div>
 
-          
-          <div className="modalContent">
-              <button onClick={()=>setOpenModal(!openModal)} className="ModClose">X</button>
-            <div className='ModalTitle'>Book Demo</div>
-                <div className='ModalName'>
-                  <TextField id="standard-basic" label="Name*" variant="standard" className="modalInputSize"/>
-                </div>
-              <div className='ModalEmail'>
-                  <TextField id="standard-basic" label="Email*" variant="standard" className="modalInputSize"/>
-              </div>
-                  <div className='ModalPhoneNum'>
-                <TextField id="standard-basic" label="Phone Number" variant="standard" className="modalInputSize"/>
+      
+      <div className="modalContent">
+          <button onClick={()=>setOpenModal(!openModal)} className="ModClose">X</button>
+        <div className='ModalTitle'>Book Demo</div>
+            <div className='ModalName'>
+              <TextField id="standard-basic" label="Name*" variant="standard" className="modalInputSize"/>
             </div>
-            <div className='ModalMessage'>
-                <TextField id="standard-basic" label="Message*" variant="standard" className="modalInputSize"/>
-            </div>
-
-            <div className="Modfooter">
-              <a href="#" className="ModA"><span className="ModSub">Submit</span><i className="ModI"></i></a>
-            </div>
-            </div>
+          <div className='ModalEmail'>
+              <TextField id="standard-basic" label="Email*" variant="standard" className="modalInputSize"/>
+          </div>
+              <div className='ModalPhoneNum'>
+            <TextField id="standard-basic" label="Phone Number" variant="standard" className="modalInputSize"/>
         </div>
+        <div className='ModalMessage'>
+            <TextField id="standard-basic" label="Message*" variant="standard" className="modalInputSize"/>
+        </div>
+
+        <div className="Modfooter">
+          <a href="#" className="ModA"><span className="ModSub">Submit</span><i className="ModI"></i></a>
+        </div>
+        </div>
+    </div>
   )}
     <div className='ak' style={{backgroundImage:`url(${back})`}}>
     <div className='' >

@@ -6,19 +6,19 @@ import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
 import PersonRoundedIcon from '@mui/icons-material/PersonRounded';
 import ConstructionRoundedIcon from '@mui/icons-material/ConstructionRounded';
 import DomainRoundedIcon from '@mui/icons-material/DomainRounded';
-import ImportExportRoundedIcon from '@mui/icons-material/ImportExportRounded';
 import Diversity1RoundedIcon from '@mui/icons-material/Diversity1Rounded';
 import AddIcCallRoundedIcon from '@mui/icons-material/AddIcCallRounded';
 import WorkRoundedIcon from '@mui/icons-material/WorkRounded';
 import BlurOnRoundedIcon from '@mui/icons-material/BlurOnRounded';
 import CategoryRoundedIcon from '@mui/icons-material/CategoryRounded';
-import ClearAllRoundedIcon from '@mui/icons-material/ClearAllRounded';
-import { Button} from '@mui/material';
+import FlipToFrontRoundedIcon from '@mui/icons-material/FlipToFrontRounded';
+import {Button} from '@mui/material';
 import { HiMenu } from 'react-icons/hi'
 import {VscChromeClose} from 'react-icons/vsc'
 import { Link } from 'react-router-dom';
 import {servicesPage} from '../../assets/constants/servicesPage'
 import {productHero} from '../../assets/constants/productsPage'
+
 
 
 const NavLinks = (props) => {
@@ -32,14 +32,11 @@ const NavLinks = (props) => {
 
   function handleServiceChildStatus(){
     setServiceChild(!serviceChild)
-    console.log('hello')
   }
 
   const animateFrom={opacity:0, y:-40}
   const animateTo={opacity:1, y:0}
 
-
-  
     return (
         <>
         
@@ -80,7 +77,7 @@ const NavLinks = (props) => {
                     >
                     <Button startIcon={<ConstructionRoundedIcon /> }  onClick={handleServiceChildStatus}
                       sx={{marginBottom:1}}>
-                      <Link to='#'>Servies</Link>
+                      <Link to='#'>Services</Link>
                     </Button>
                   
                     {serviceChild===true && servicesPage.map((item)=>{
@@ -108,7 +105,7 @@ const NavLinks = (props) => {
                       {productChild===true && productHero.map((item)=>{
                       return(
                         <p className='childSerSmallScreen'>
-                        <Button startIcon={<ClearAllRoundedIcon />} onClick={handleServiceChildStatus} >
+                        <Button startIcon={<FlipToFrontRoundedIcon />} onClick={handleServiceChildStatus} >
                           <Link to='#' className='linkChildFOntSize'>{item.title}</Link>
                         </Button>
                       </p>
@@ -124,12 +121,12 @@ const NavLinks = (props) => {
                     <Button startIcon={<DomainRoundedIcon />}> <a href='/industries'>Industries</a></Button>
                   </motion.div>
 
-                  <motion.div className="NavRev"
+                  {/* <motion.div className="NavRev"
                    initial={animateFrom}
                    animate={animateTo}
                    transition={{delay:0.60}}>
                   <Button startIcon={<ImportExportRoundedIcon />}> <a href='#'>Resourse</a></Button>
-                  </motion.div>
+                  </motion.div> */}
 
                   <motion.div className="NavCli"
                    initial={animateFrom}
@@ -149,7 +146,11 @@ const NavLinks = (props) => {
                    initial={animateFrom}
                    animate={animateTo}
                    transition={{delay:0.90}}>
-                  <Button startIcon={<AddIcCallRoundedIcon />}><a href='/contact-us'>Contact-Us</a></Button>
+
+                  <Button startIcon={<AddIcCallRoundedIcon />} endIcon={<AddIcCallRoundedIcon />}>
+                    <a href='/contact-us' style={{marginRight:'2rem'}}>Contact-Us</a>
+                  </Button>
+                  
                   </motion.div>
 
               </div>

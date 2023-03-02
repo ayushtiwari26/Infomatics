@@ -9,7 +9,7 @@ const Services = () => {
 
   return (
     <>
-    <Idk/>
+    {/* <Idk/> */}
     <Ser params={serName}/>
     </>
   )

@@ -2,6 +2,7 @@
 
 export const servicesPage =[
     {   id:'product-development',
+        sid:1,
         name:'Product Development',
 
         content : [
@@ -36,6 +37,7 @@ export const servicesPage =[
 
 
     {   id:'web-based-software-development',
+        sid:2,
         name:'Web Based Software Development',
         content:[],
         whatIsId:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum dignissimos, vitae aspernatur asperiores cumque eius consectetur nemo in corrupti commodi veniam dolor est facilis neque omnis aperiam velit perspiciatis vel sunt? Unde iste optio hic, reprehenderit cumque ratione provident vero accusamus quaerat placeat facere ullam odit! Nisi dolorum aperiam, sunt enim labore vel quaerat voluptatibus hic rerum voluptatem soluta facere. Magni modi iusto repellat nemo, esse dignissimos deleniti dolorem neque?',
@@ -45,9 +47,10 @@ export const servicesPage =[
 
     
     {   id:'software-implementation',
+        sid:3,
         name:'Software implementation',
         content:[],
         whatIsId:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum dignissimos, vitae aspernatur asperiores cumque eius consectetur nemo in corrupti commodi veniam dolor est facilis neque omnis aperiam velit perspiciatis vel sunt? Unde iste optio hic, reprehenderit cumque ratione provident vero accusamus quaerat placeat facere ullam odit! Nisi dolorum aperiam, sunt enim labore vel quaerat voluptatibus hic rerum voluptatem soluta facere. Magni modi iusto repellat nemo, esse dignissimos deleniti dolorem neque?',
         whatWeOffer:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum dignissimos, vitae aspernatur asperiores cumque eius consectetur nemo in corrupti commodi veniam dolor est facilis neque omnis aperiam velit perspiciatis vel sunt? Unde iste optio hic, reprehenderit cumque ratione provident vero accusamus quaerat placeat facere ullam odit! Nisi dolorum aperiam, sunt enim labore vel quaerat voluptatibus hic rerum voluptatem soluta facere. Magni modi iusto repellat nemo, esse dignissimos deleniti dolorem neque?',
-    }
+    },
 ]

@@ -60,19 +60,22 @@ let useClickOutside = (handler)=>{
 
             <li><a href='/industries'>Industries</a></li>
 
-            <li><a href='#'>Resources</a></li>
+            {/* <li><a href='#'>Resources</a></li> */}
 
             <li><a href="/clients">Clients</a></li>
             <li><a href="/carrier">Carrier</a></li>
-            <li><a href='/contact-us' className='navConButton'><Button style={{
+            <li>
+              <a href='/contact-us' className='navConButton'><Button style={{
                             borderRadius: 35,
                             padding: "10px 26px",
                             fontSize: "18px"
                         }}
-                    variant="outlined">Contact us</Button></a></li>
+                    variant="outlined">Contact us</Button>
+              </a>
+                    
+            </li>
         </ul>
     </nav>
-    <br/><br/><br/><br/>
 
 {navChev===false?
           <>

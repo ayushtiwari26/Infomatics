@@ -1,0 +1,129 @@
+.MainBene{
+    display: flex;
+    flex-direction: column;
+    margin: 5% 10%;
+}
+.imgdiv{
+    display: flex;
+    flex-direction: row;
+    margin: 2% 2%;
+    justify-content: space-around;
+    /* gap: 5%; */
+}
+.bigimg{
+    position: relative;
+    width: 100%;
+    height: 30rem;
+
+}
+.bigimg img{
+    position: absolute;
+    width: 100% ;
+    height: 100%;
+    left: 0;
+}
+
+.smallimg{
+    position: relative;
+    width: 60%;
+    height: 30rem;
+}
+.smallimg img {
+    position: absolute;
+    width: 90% ;
+    height: 60%;
+    right: 0;
+}
+
+.textdiv{
+    /* border: 1px solid red; */
+}
+.headdiv{
+    /* border: 1px solid red; */
+    width: 100%;
+    text-align: left;
+
+}
+.headdiv h2{
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'Inter';
+}
+.pointdiv{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    margin-left: 20%;
+}
+.firstdiv{
+    text-align: left;
+}
+.firstdiv h4{
+    font-weight: 500;
+    font-family: 'Inter';
+}
+.firstdiv p{
+    font-weight: 200;
+    font-family: sans-serif;
+    margin-top: 3%;
+}
+.secdiv{
+    text-align: left;
+}
+.secdiv h4{
+    font-weight: 500;
+    font-family: 'Inter';
+}
+.secdiv p{
+    font-weight: 200;
+    font-family: sans-serif;
+    margin-top: 3%;
+}
+.thirddiv{
+    text-align: left;
+}
+.thirddiv h4{
+    font-weight: 500;
+    font-family: 'Inter';
+}
+.thirddiv p{
+    font-weight: 200;
+    font-family: sans-serif;
+    margin-top: 3%;
+}
+.fourdiv{
+    text-align: left;
+}
+.fourdiv h4{
+    font-weight: 500;
+    font-family: 'Inter';
+}
+.fourdiv p{
+    font-weight: 200;
+    font-family: sans-serif;
+    margin-top: 3%;
+}
+.fivediv{
+    text-align: left;
+}
+.fivediv h4{
+    font-weight: 500;
+    font-family: 'Inter';
+}
+.fivediv p{
+    font-weight: 200;
+    font-family: sans-serif;
+    margin-top: 3%;
+}
+.sixdiv{
+    text-align: left;
+}
+.sixdiv h4{
+    font-weight: 500;
+    font-family: 'Inter';
+}
+.sixdiv p{
+    font-weight: 200;
+    font-family: sans-serif;
+    margin-top: 3%;
+}

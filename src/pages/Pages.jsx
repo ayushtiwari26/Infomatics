@@ -20,7 +20,7 @@ const Pages = () => {
         <Route path={'/products/:productName'} element={<Products/>} />
         <Route exact path={'/industries'} element={<Industries/>} />
         <Route exact path={'/carrier'} element={<Carriers/>} />
-        <Route exact path={'/client'} element={<Clients/>} />
+        <Route exact path={'/clients'} element={<Clients/>} />
         {/* <Route path={'/recipe/:name'} element={<Recipe />} /> */}
     </Routes>
   )

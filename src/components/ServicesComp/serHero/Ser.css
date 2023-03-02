@@ -101,8 +101,7 @@
 }
 
 .serNicRow{
-    margin: 2% 0%;
-    margin-left: 7%;
+    margin: 2% 5%;
     box-shadow: rgba(214, 220, 224, 0.2) 0px 8px 24px;
 }
 
@@ -157,8 +156,24 @@ input[type='radio']{
     align-self: left;
 }
 
+.otherServicesTitle{
+    font-weight: 550;
+    font-family: 'Inter';
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 2%;
+}
+
 .serServices{
-    padding-left: 30px;
+   display: inline-block;
+}
+.servicesExtraimg{
+    height: 10%;
+    width: 10%;
+}
+.serviceExtraLink:hover{
+    scale: 200%;
+    text-decoration: solid;
 }
 
 .serAiFill{

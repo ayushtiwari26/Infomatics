@@ -1,12 +1,6 @@
 import React from 'react'
 import './ClientsPoster.css'
 import bg from '../../../assets/images/Clients.jpg'
-import logo1 from '../../../assets/images/logo1.jpg'
-import facebook from "../../../assets/images/sa.jpg"
-import face from "../../../assets/images/powerBi.png"
-import twitter from "../../../assets/images/whoAreWe.png"
-import linkedin from "../../../assets/images/sql.png"
-import linked from "../../../assets/images/sap.png"
 import { Button } from '@mui/material'
 import {blabla} from '../../../assets/constants/testimonyCheck'
 
