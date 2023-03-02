@@ -35,6 +35,7 @@ function App() {
         <Pages/>
         <Footer/>
       </div>)
+      //kuch aur
     }
     </>
   );
