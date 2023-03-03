@@ -1,5 +1,96 @@
+.back{
+    display: flex;
+    margin: 5% 0%;
 
+}
+.Backu{
+    display: flex;
+    flex-direction: row;
+    margin: 5% 5%;
+}
 .kkk{
+    display: flex;
+    flex-direction: column;
+    margin: 0% 5%;
+    text-align: left;
+    width: 50%;
+}
+.k2{
+    width: 30%;
+    height: 50vh;
+    position: relative;
+}
+.k2 img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+}
+.p1{
+    font-family: 'Inter', sans-serif;
+    text-align: left;
+    font-weight: 300;
+    font-size: 1.5rem;
+    letter-spacing: 0.2px;
+}
+.p2{
+    font-family: 'Inter', sans-serif;
+    text-align: left;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin: 5% 0%;
+}
+@media (max-width: 1000px) {
+    .k2{
+        width: 30%;
+        height: 35vh;
+    }
+    .p1{
+        font-size: 1.15rem;
+    }
+    .p2{
+        font-size: 1.02rem;
+    }
+}
+@media (max-width: 750px) {
+    .back{
+        margin-top: 10%;
+    }
+    .Backu{
+        flex-direction: column-reverse;
+        margin: 10% 10%;
+
+    }
+    .k2{
+        margin: 5% 0%;
+        width: 60%;
+        height: 30vh;
+
+    }
+    .p1{
+        font-size: 1.15rem;
+    }
+    .p2{
+        font-size: 1.02rem;
+    }
+    .Backu{
+        margin: 0% 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .kkk{
+        display: flex;
+        flex-direction: column;
+        margin: 0% 0%;
+        text-align: center;
+        width: 80%;
+    }
+  
+   
+    
+}
+/* .kkk{
     padding-top: 100px ;
     padding-bottom: 100px;
     padding-left: 200px;
@@ -37,4 +128,4 @@
     width: 450px;
     margin-top: 10%;
     margin-left: -20px;
-}
+} */

@@ -34,9 +34,7 @@ function App() {
         <MyNav/>
         <Pages/>
         <Footer/>
-      </div>
-      // Branch changed
-      )
+      </div>)
     }
     </>
   );

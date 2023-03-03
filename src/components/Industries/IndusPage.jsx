@@ -1,5 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react';
 import "./IndusPage.css"
+import DemoForm from "../demoForm/DemoForm"
+
 import ImgFirst from "../../assets/images/ImgFirst.jpg"
 import Trading from "../../assets/images/Trading.jpg"
 import Dis from "../../assets/images/dis.jpg"
@@ -11,6 +13,12 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 
 
 const IndusPage = () => {
+    const [showForm, setShowForm] = useState(false);
+
+    const handleButtonClick = () => {
+      setShowForm(!showForm);
+  
+    };
   return (
     <>
      <div style={{
@@ -41,7 +49,7 @@ const IndusPage = () => {
                     <p className='IndusPara'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, 
                                             sit perferendis nulla, repellendus temporibus dolores distinctio quaerat aliquid officia possimus 
                                             voluptatum nostrum quod error repudiandae consequuntur, tenetur neque eaque earum.</p>
-                    <p className='InduaBut'><a href='#'>View More</a></p>
+                    <p className='InduaBut'><a href='#' onClick={handleButtonClick}>Know More</a></p>
             </div>
         </div>
     </div>
@@ -55,7 +63,7 @@ const IndusPage = () => {
                     <p className='IndusPara'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, 
                                             sit perferendis nulla, repellendus temporibus dolores distinctio quaerat aliquid officia possimus 
                                             voluptatum nostrum quod error repudiandae consequuntur, tenetur neque eaque earum.</p>
-                    <p className='InduaBut'><a href='#'>View More</a></p>
+                    <p className='InduaBut'><a href='#' onClick={handleButtonClick} >Know More</a></p>
             </div>
         </div>
     </div>
@@ -70,7 +78,7 @@ const IndusPage = () => {
                     <p className='IndusPara'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, 
                                             sit perferendis nulla, repellendus temporibus dolores distinctio quaerat aliquid officia possimus 
                                             voluptatum nostrum quod error repudiandae consequuntur, tenetur neque eaque earum.</p>
-                    <p className='InduaBut'><a href='#'>View More</a></p>
+                    <p className='InduaBut'><a href='#' onClick={handleButtonClick}>Know More</a></p>
             </div>
         </div>
     </div>
@@ -85,7 +93,7 @@ const IndusPage = () => {
                     <p className='IndusPara'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, 
                                             sit perferendis nulla, repellendus temporibus dolores distinctio quaerat aliquid officia possimus 
                                             voluptatum nostrum quod error repudiandae consequuntur, tenetur neque eaque earum.</p>
-                    <p className='InduaBut'><a href='#'>View More</a></p>
+                    <p className='InduaBut'><a href='#' onClick={handleButtonClick}>Know More</a></p>
             </div>
         </div>
     </div>
@@ -101,7 +109,7 @@ const IndusPage = () => {
                     <p className='IndusPara'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, 
                                             sit perferendis nulla, repellendus temporibus dolores distinctio quaerat aliquid officia possimus 
                                             voluptatum nostrum quod error repudiandae consequuntur, tenetur neque eaque earum.</p>
-                    <p className='InduaBut'><a href='#'>View More</a></p>
+                    <p className='InduaBut'><a href='#' onClick={handleButtonClick}>Know More</a></p>
             </div>
         </div>
     </div>
@@ -116,10 +124,11 @@ const IndusPage = () => {
                     <p className='IndusPara'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, 
                                             sit perferendis nulla, repellendus temporibus dolores distinctio quaerat aliquid officia possimus 
                                             voluptatum nostrum quod error repudiandae consequuntur, tenetur neque eaque earum.</p>
-                    <p className='InduaBut'><a href='#'>View More</a></p>
+                    <p className='InduaBut'><a href='#' onClick={handleButtonClick}>Know More</a></p>
             </div>
         </div>
     </div>
+    {showForm && <DemoForm openmodal={showForm} setopenmodal={setShowForm}/>}
     </>
   )
 }
