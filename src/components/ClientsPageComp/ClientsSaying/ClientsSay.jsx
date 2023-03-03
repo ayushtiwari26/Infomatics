@@ -30,8 +30,9 @@ const ClientsSay = () => {
   return (
     <>
     <div className='SayBg'>
+    <div className="Saynew"><div className='Client'>What Our Customer Are Saying</div></div>
     <div className="Sayback">
-        <div className="Sayleft"><div className='ClientWhat'>What Our Customer Are Saying</div></div>
+      <div className="Sayleft"><div className='ClientWhat'>What Our Customer Are Saying</div></div>
         <div className="Sayright">
             <div className="Sayhead">{testimonyCheck[testNum].testTestimonyTitle}</div>
             <div className="SayPara">{testimonyCheck[testNum].testTestimony}</div>

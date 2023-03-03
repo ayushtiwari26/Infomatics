@@ -259,10 +259,6 @@ button:hover{
         align-items: flex-start !important;
     }
 
-    .navbar div Button a{
-        width: 100% !important;
-    }
-
     .klmnop:hover{
         background-color: silver !important;
         border-radius: 10px;
@@ -289,4 +285,24 @@ button:hover{
         width: 35%;
     }
 }
+@media (max-width: 600px){
+    .logow{
+       
+        display: flex;
+        width: 50%;
 
+    }
+ 
+}
+@media (max-width: 600px)
+{
+    .logow{
+       
+        display: flex;
+        width: 50%;
+
+    }
+    .MyNav .NavLinks .NavContainer{
+        width:80%;
+    }
+}

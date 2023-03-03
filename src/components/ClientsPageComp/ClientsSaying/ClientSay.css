@@ -2,17 +2,21 @@
     border: 1px solid whitesmoke;
     border-radius: 20px;
     background-color: whitesmoke;
-    height: 90vh;
+    height: 45rem;
     width: 90%;
     margin: 0% 6%;
+    position: relative;
 }
 
 .Sayback{
     background-color: white;
-    height: 80vh;
+    height: 40rem;
     width: 80%;
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    transform: translateX(-50%);
     display: flex;
-    margin: 3% 8% ;
 }
 
 .Sayleft{
@@ -26,12 +30,16 @@
     border-bottom-right-radius: 80px;
     
 }
+.Saynew{
+    display: none;
+}
 
 .ClientWhat{
     font-size: 40px;
-    width: 50%;
+    width: 90%;
     font-weight: 600;
     color: white;
+    line-height: 90px;
     font-family: Georgia, 'Times New Roman', Times, serif 
 }
 
@@ -42,10 +50,10 @@
 }
 
 .Sayhead{
-    width: 30%;
+    width: 40%;
     margin-top: 15%;
     font-weight: 600;
-    font-size: 23px;
+    font-size: 30px;
     color: black;
     font-family:Arial, Helvetica, sans-serif  
 }
@@ -81,4 +89,56 @@
     left:30%;
     top:22%;
     font-size: 0.9rem;
+}
+@media (min-width:950px) and (max-width:1400px){
+    .ClientWhat{
+        font-size: 1.9rem;
+        width: 90%;
+        line-height: 90px;
+    }
+    
+}
+@media (min-width:640px) and (max-width:950px){
+    .SayBg{
+        height: 45rem;
+    }
+    .Sayback{
+        height: 35rem;
+        width: 80%;
+        position: absolute;
+        left: 50%;
+        top: 15%;
+        transform: translateX(-50%);
+        display: flex;
+    }    
+    .Sayleft{
+            display: none;
+        }
+        .Saynew{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            align-self: center;
+            width: 100%;
+            margin-top: 2%;
+            height: 5rem;
+            font-size: 2rem;
+        }
+       
+        .Sayhead{
+            width: 100%;
+            margin-top: 5%;
+            font-size: 2rem;
+        }
+        .SayPara{
+            width: 90%;
+        }
+        .ClientconMar{
+            margin-top: 8%;
+        }
+        .Client{
+            width: 90%;
+            font-weight: 800;
+            /* box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+        }
 }
