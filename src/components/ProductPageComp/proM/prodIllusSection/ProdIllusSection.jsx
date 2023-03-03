@@ -15,7 +15,7 @@ const ProdIllusSection = (props) => {
                     parItem.content.map((item)=>{
                         return(
                             <>
-                                <div className="container">
+                                <div className="container proBg">
                                 <div className={item.sid % 2 === 0?'proIllusRow':'proIllusRowReverse'}>
                                     <div className="col proIlluslidiv">
                                         <p>{item.title}</p>

@@ -1,7 +1,8 @@
 .IndusBack{
     position: relative;
     width: 100vw;
-    height: 35vh; 
+    height: 35vh;
+    margin-top: -2%;  
     display: grid;
 }
 .IndusHeading{
@@ -17,18 +18,14 @@
 }
 .Induspara p{
     color: white;
-    font-size: 62px;
+    font-size: 5rem;
     font-weight: 800;
     font-family: 'DM Sans', sans-serif;
 }
 .Induspara p:nth-child(2){
-    font-size: 32px;
+    font-size: 2rem;
     border-top: 1px solid gray;
 }
-
-
-
-
 .IndusRow{
     display: flex;
     flex-direction: column;
@@ -53,19 +50,14 @@
    
 }
 .IndusImg {
-  
     display: flex;
     justify-content: center;
-    margin: 5% 0%;
-    
-    /* border: 1px solid red; */
-    
+    margin: 5% 0%;    
 }
 .Indusphoto{
     width: 58%;
     height: 460px;
     border-radius: 3%;
-
 }
 .IndusWord{
     display: flex;
@@ -113,12 +105,21 @@
 }
 
 @media (min-width:350px)and (max-width:700px){
+   
+    .Induspara p{
+        font-size: 3rem;
+    }
+    .Induspara p:nth-child(2){
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
     .IndusImg{
         justify-content: center;
     }
     .Indusphoto{
-        width: 100%;
-        height: 460px;
+        width: 90%;
+        height: 40vh;
         border-radius: 3%;
     
     }
