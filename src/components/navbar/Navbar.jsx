@@ -96,7 +96,7 @@ let useClickOutside = (handler)=>{
 
               {navbarServicesDiv.map((item)=>{
                 return(
-                  <div className='row'>
+                  <div className='row rowServicesBorder'>
                     <div className="col">
                       <Link reloadDocument to={`/services/${item.id1}`} onClick={
                         ()=>{
@@ -208,7 +208,7 @@ let useClickOutside = (handler)=>{
 const bounceAnimation = keyframes`${fadeInDown}`;
 const BouncyDiv = styled.div`
   position: fixed;
-  padding-top: 0.5%;
+  border-top: 2px solid var(--blue);
   padding-left: 7%;
   top:4rem;
   z-index: 1000;
