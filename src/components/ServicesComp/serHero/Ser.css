@@ -7,7 +7,7 @@
 }
 
 .serSide{
-    background: linear-gradient(to left, rgb(34, 34, 34) , transparent) left center/50% no-repeat, linear-gradient(to right, rgb(34, 34, 34) , transparent) right center/51% no-repeat;
+    background: linear-gradient(to left, rgb(53, 53, 53) , transparent) left center/50% no-repeat, linear-gradient(to right, rgb(52, 51, 51) , transparent) right center/51% no-repeat;
     height: 35vh;
     width: 100vw;
 }

@@ -57,12 +57,23 @@ nav{
     color: black;
     text-decoration: none !important;
     margin: 0 0.2vw;
+    font-family: 'Inter';
+    /* padding: 8px 0; */
+    font-size: 14.5px;
+    font-weight: 600;
+    opacity: 1;
+    line-height: 1.3rem;
 }
 .nav-links li span{
     color: black;
     text-decoration: none !important;
     margin: 0 0.2vw;
     cursor: pointer;
+    font-family: 'Inter';
+    font-size: 14.5px;
+    font-weight: 600;
+    opacity: 1;
+    line-height: 1.3rem;
 }
 
 .nav-links li {
@@ -130,25 +141,30 @@ nav{
 
 .navBItem{
     display: flex;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter';
     padding: 8px 0;
-    font-size: 13px;
-    font-weight: 510;
-    opacity: 0.75;
+    font-size: 14.5px;
+    font-weight: 600;
+    opacity: 1;
     line-height: 1.3rem;
 }
 
 .rowServicesBorder{
     border-bottom: 1px solid rgba(211, 211, 211, 0.4);
+    /* border: 2px solid red; */
 }
 
+
 .navBItem:hover{
-    text-decoration: underline;
-    text-underline-offset: 6px;
+    /* text-decoration: underline;
+    text-underline-offset: 6px; */
+    padding-left: 5%;
     opacity: 1.2;
-    scale: 1.1;
+    scale: 1;
     transform-origin: left;
     color: rgb(51, 157, 238);
+    background-color: rgba(211, 211, 211, 0.15);
+    transition-duration: 660ms;
 }
 
 .Hamberger{
