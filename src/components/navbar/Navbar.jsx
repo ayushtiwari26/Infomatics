@@ -66,9 +66,9 @@ let useClickOutside = (handler)=>{
             <li><a href="/carrier">Carrier</a></li>
             <li>
               <a href='/contact-us' className='navConButton'><Button style={{
-                            borderRadius: 35,
-                            padding: "10px 26px",
-                            fontSize: "18px"
+                      borderRadius: 35,
+                      padding: "10px 26px",
+                      fontSize: "18px"
                         }}
                     variant="outlined">Contact us</Button>
               </a>
@@ -196,13 +196,14 @@ let useClickOutside = (handler)=>{
 
 const bounceAnimation = keyframes`${fadeInDown}`;
 const BouncyDiv = styled.div`
-  position: fixed;
+  position: absolute;
   padding-left: 7%;
-  top:8.1%;
+  top:4rem;
   z-index: 1000;
   background-color: white;
   animation: 1s ${bounceAnimation};
 `;
+
 
 
 
