@@ -6,6 +6,21 @@ import {fadeInDown} from 'react-animations';
 import { Button } from '@mui/material';
 import { Link } from 'react-router-dom';
 import {navbarServicesDiv, navbarProductsDiv} from '../../assets/constants/navbarConstant'
+import { makeStyles } from "@material-ui/core/styles";
+
+const useStyles = makeStyles((theme) => ({
+  button: {
+    borderRadius: 35,
+    padding: "10px 22px",
+    fontSize: "18px",
+    textDecoration: "none",
+    "&:hover": {
+      textDecoration: "none",
+      boxShadow: "none",
+      scale: "1",
+    },
+  },
+}));
 
 
 let useClickOutside = (handler)=>{
@@ -26,6 +41,7 @@ let useClickOutside = (handler)=>{
 }
 
   const Navbar = () => {
+    const classes = useStyles();
     const [navChev, setNavchev] = useState(true)
     const [navProducts, setNavProducts] = useState(true)
 
@@ -65,14 +81,9 @@ let useClickOutside = (handler)=>{
             <li><a href="/clients">Clients</a></li>
             <li><a href="/carrier">Carrier</a></li>
             <li>
-              <a href='/contact-us' className='navConButton'><Button style={{
-                      borderRadius: 35,
-                      padding: "10px 26px",
-                      fontSize: "18px"
-                        }}
-                    variant="outlined">Contact us</Button>
-              </a>
-                    
+              <a href='/contact-us' >
+                <Button className={classes.button} variant="outlined">Contact us</Button>
+              </a>     
             </li>
         </ul>
     </nav>
@@ -196,7 +207,8 @@ let useClickOutside = (handler)=>{
 
 const bounceAnimation = keyframes`${fadeInDown}`;
 const BouncyDiv = styled.div`
-  position: absolute;
+  position: fixed;
+  padding-top: 0.5%;
   padding-left: 7%;
   top:4rem;
   z-index: 1000;
