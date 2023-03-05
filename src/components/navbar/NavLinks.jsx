@@ -61,7 +61,7 @@ const NavLinks = (props) => {
                     animate={animateTo}
                     transition={{delay:0.10}}>
                       <Button startIcon={<HomeRoundedIcon />} className='hoverNavbarSideDiv'>
-                        <a href='/' >Home</a>
+                        <a href='/'>Home</a>
                       </Button>
                   </motion.div>
                 

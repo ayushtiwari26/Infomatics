@@ -2,7 +2,7 @@
     border: 1px solid whitesmoke;
     border-radius: 20px;
     background-color: whitesmoke;
-    height: 45rem;
+    height: 46rem;
     width: 90%;
     margin: 0% 6%;
     position: relative;
@@ -98,9 +98,10 @@
     }
     
 }
-@media (min-width:640px) and (max-width:950px){
+@media (min-width:730px) and (max-width:950px){
     .SayBg{
         height: 45rem;
+        margin-top: -15%;
     }
     .Sayback{
         height: 35rem;
@@ -139,6 +140,163 @@
         .Client{
             width: 90%;
             font-weight: 800;
+            color: rgb(76, 85, 179);
+            text-shadow: 1px 1px 8px rgb(184, 162, 162);
+     
             /* box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px; */
         }
+}
+@media (min-width:350px) and (max-width:730px){
+    .SayBg{
+        border-radius: 0px;
+        width: 100%;
+        margin-left: 0%;
+        margin-top: 0px;
+        margin-bottom: 10%;
+        background-color: white;
+    }
+    .Sayback{
+        background-color: white;
+        height: 40rem;
+        width: 80%;
+        position: relative;
+        left: 50%;
+        top: 5%;
+        transform: translateX(-50%);
+        display: flex;
+    }   
+    .Sayleft{
+        display: none;
+    }
+    .Saynew{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        width: 100%;
+        margin-top: 2%;
+        height: 5rem;
+        font-size: 2rem;
+        }
+    .Sayhead{
+        width: 100%;
+        margin-top: 5%;
+        font-size: 2rem;
+    }
+    .SayPara{
+        width: 90%;
+    }
+    .ClientconMar{
+        margin-top: 8%;
+    }
+    .Client{
+        width: 90%;
+        font-weight: 800;
+        /* box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    }
+        .Sayhead{
+            width: 100%;
+            margin-top: 5%;
+            font-size: 2rem;
+        }
+        .SayPara{
+            width: 90%;
+        }
+        .ClientconMar{
+            margin-top: 8%;
+        }
+        .Client{
+            width: 90%;
+            font-weight: 800;
+            /* box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+        }
+        .ClientconMar{
+            max-width: 590px;
+        }
+        
+        .ClientavatarCss{
+            top: 50%;
+            transform: translateY(-50%);
+            margin-left: 190px;
+        }
+        
+        .ClientDirName{
+            position: relative;
+            left:30%;
+            top:22%;
+        }
+        
+        .ClientDirDes{
+            position: relative;
+            left:30%;
+            top:22%;
+            font-size: 0.9rem;
+        }
+        .Client{
+            color: rgb(76, 85, 179);
+            text-shadow: 1px 1px 8px rgb(184, 162, 162);
+        }
+
+    
+}
+@media (min-width:450px) and (max-width:575px){
+    .ClientconMar{
+        max-width: 500px;
+    }
+    
+    .ClientavatarCss{
+        top: 50%;
+        transform: translateY(-50%);
+        margin-left: 140px;
+    }
+    
+    .ClientDirName{
+        position: relative;
+        left:30%;
+        top:22%;
+    }
+    
+    .ClientDirDes{
+        position: relative;
+        left:30%;
+        top:22%;
+        font-size: 0.9rem;
+    }
+    .Client{
+        color: rgb(76, 85, 179);
+        text-shadow: 1px 1px 8px rgb(184, 162, 162);
+    }
+
+}
+@media (min-width:350px) and (max-width:450px){
+    .Client{
+        color: rgb(76, 85, 179);
+        text-shadow: 1px 1px 8px rgb(184, 162, 162);
+    }
+    .ClientconMar{
+        max-width: 450px;
+        height: 60px;
+    }
+    
+    .ClientavatarCss{
+        top: 40%;
+        transform: translateY(-50%);
+        margin-left: 95px;
+
+    }
+    
+    .ClientDirName{
+        position: relative;
+        left:25%;
+        top:22%;
+    }
+    
+    .ClientDirDes{
+        position: relative;
+        left:25%;
+
+        top:22%;
+        font-size: 0.9rem;
+    }
+
 }
