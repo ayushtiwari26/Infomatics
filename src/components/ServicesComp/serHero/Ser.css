@@ -150,12 +150,12 @@
 
 .SerwhatweofferP{
     text-align: left;
-    font-size: 1.45rem;
+    font-size: 1.30rem;
     font-family: 'Slabo 27px', serif;
     text-transform: capitalize;
-    font-style: italic;
-    font-weight: 400;
-    /* color: rgba(0, 0, 0, 0.85); */
+    /* font-style: italic; */
+    letter-spacing: 0.5px;
+    font-weight: 500;
 }
 
 .serHIghlightsTitle{
