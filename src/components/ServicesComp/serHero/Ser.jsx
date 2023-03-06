@@ -14,7 +14,7 @@ const Ser = (props) => {
       {selectedService && (
         <>
           <div style={{
-            backgroundImage:`url(${serHeroImage})`, 
+            backgroundImage:`url(/images/servicesHeroMain/${selectedService.sid}.jpg)`, 
             backgroundRepeat:'no-repeat', 
             backgroundSize:'cover', 
             backgroundAttachment: 'fixed'
