@@ -40,7 +40,11 @@ const Ser = (props) => {
                       'Product development',
                       'Custom application development',
                       'Web based software development',
-                      'Enterprise application development'
+                      'Enterprise application development',
+                      'Software Implementation',
+                      'Software Maintenance and Support',
+                      'Mobile App Development',
+                      'Database Admin Services'
                     ],
                   }}
                 />

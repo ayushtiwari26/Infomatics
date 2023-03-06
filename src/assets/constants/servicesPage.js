@@ -222,7 +222,7 @@ export const servicesPage =[
             ActualContent: 'We ensure seamless integration of your mobile app with your existing systems, such as your CRM or ERP system. This helps to streamline operations and increase efficiency, allowing your team to work more productively.'
         },
         {
-            ActualId: '08',
+            ActualId: '04',
             ActualTitle: 'Mobile App Analytics and Reporting',
             ActualContent: 'We offer mobile app analytics and reporting services to help you understand how your app is performing and how users are interacting with it. Our team can help you set up analytics tools and generate reports that provide insights into user behavior and app performance.'
         }

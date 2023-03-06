@@ -33,7 +33,8 @@
 .serType span{
     font-size: 34px;
     font-weight: 500;
-    color: var(--blue);
+    /* color: var(--blue); */
+    color: red;
     font-family: 'Montserrat';
 }
 
