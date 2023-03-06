@@ -6,107 +6,95 @@ import TypeWriter from 'typewriter-effect'
 import {servicesPage} from '../../../assets/constants/servicesPage'
 
 const Ser = (props) => {
-    return (
-      <>
-      {servicesPage.map((item)=>{
-        if(props.params===item.id){
-          return(
-            <>
-            <div style={{
-              backgroundImage:`url(${serHeroImage})`, 
-              backgroundRepeat:'no-repeat', 
-              backgroundSize:'cover', 
-              backgroundAttachment: 'fixed'
-              }} className='serHero'>
+  const { id } = useParams();
+  const selectedService = servicesPage.find((service) => service.id === id);
+
+  return (
+    <>
+      {selectedService && (
+        <>
+          <div style={{
+            backgroundImage:`url(${serHeroImage})`, 
+            backgroundRepeat:'no-repeat', 
+            backgroundSize:'cover', 
+            backgroundAttachment: 'fixed'
+          }} className='serHero'>
             <div className='serSide'>
               <div className='serPos col'>
-                <p>{item.name}</p>
-                <p>Always deliver more than expected</p>
-              </div>
-          </div>
-        </div>
-        <div className="row">
-        <div className="col serType"><p className='wideRange'>We offer wide range of services :  {' '}</p>
-                            <span><TypeWriter
-                            options={{
-                              autoStart:true,
-                              loop:true,
-                              delay:40,
-                              strings:[
-                                'Product development',
-                                'Custom application development',
-                                'Web based software development',
-                                'Enterprise application development'
-                              ],
-                            }}
-                            /></span>
-        <div className="row serfirstSidePar">          
-              {
-                item.content.map((AContent)=>{
-                  return(
-                    <>
-                    <div className="col serfirstSide">
-                      <p>{AContent.ActualId}</p>
-                      <p>{AContent.ActualTitle}</p>
-                      <p>{AContent.ActualContent}</p>
-                    </div>
-                    </>
-                  )
-                })
-              }
-            
-        </div>           
-        </div>
-        </div>
-    
-        <div className='row'>
-          <div className="col serNicRow">
-            <ul className='serAccordion'>
-              <li>
-                <input type={'radio'} name='accordion' id='first' checked/>
-                <label for='first' className='serLabel'>What is {item.name}</label>
-                <div className='serContent'>{item.whatIsId}</div>
-              </li>
-    
-              <li>
-                <input type={'radio'} name='accordion' id='second'/>
-                <label for='second' className='serLabel'>What we offer</label>
-                <div className='serContent'>{item.whatWeOffer}</div>
-              </li>
-            </ul>
-          </div>
-          <br/>
-        </div>
-        <div className='otherServicesTitle'>Other Services</div>
-          </>
-          )
-        }
-        else{
-
-          return(
-          <>
-            <div className="serServices">
-              <img src={`/images/servicesIcon${item.sid}.png`} className='servicesExtraimg'/>
-              <div style={{marginBottom:'4%'}}>
-                <Link to={'/'} style={{color:'black'}} >
-                  {item.name}
-                </Link>              
+                <p>{selectedService.name}</p>
+                <p className='serMotoDesign'>{selectedService.moto}</p>
               </div>
             </div>
-          </>
-      
-          )
-        }
-      }
+          </div>
+
+          <div className="row">
+            <div className="col serType">
+              <p className='wideRange'>We offer wide range of services :  {' '}</p>
+              <span>
+                <TypeWriter
+                  options={{
+                    autoStart:true,
+                    loop:true,
+                    delay:40,
+                    strings:[
+                      'Product development',
+                      'Custom application development',
+                      'Web based software development',
+                      'Enterprise application development'
+                    ],
+                  }}
+                />
+              </span>
+
+          <div className='row' style={{margin:'5% 3%'}}>
+            <div className="col-lg-8 col-md-12 col-sm-12">
+              <p className='SerwhatweofferP'>{selectedService.whatWeOffer}</p>
+            </div>
+            <div className="col-lg-4 col-md-12 col-sm-12 serStartRightSide">
+              <img src={`/images/servicesSide/${selectedService.id}.jpg`}
+                           style={{
+                            maxHeight:'350px',
+                            width:'90%',
+                            maxWidth:'500px'
+                            }}/>
+            </div>
+          </div>
+              <p className='serHIghlightsTitle'>Highlights</p>
+              <div className="row serfirstSidePar"> 
+                       
+                {selectedService.content.map((AContent) => (
+                  <div key={AContent.ActualId} className="col serfirstSide">
+                    <p>{AContent.ActualId}</p>
+                    <p>{AContent.ActualTitle}</p>
+                    <p>{AContent.ActualContent}</p>
+                  </div>
+                ))}
+              </div>           
+            </div>
+          </div>
+
+          <div className='otherServicesTitle'>Other Services</div>
+        </>
+      )}
+
+      {servicesPage.map((item) => (
+        item.id !== id && (
+          <div key={item.id} className="serServices">
+            <img src={`/images/servicesIcon${item.sid}.png`} className='servicesExtraimg'/>
+            <div style={{marginBottom:'4%'}}>
+              <a href={`/services/${item.id}`} style={{color:'black'}} >
+                {item.name}
+              </a>              
+            </div>
+          </div>
         )
-      }
-      </>
-    )
-  
-
-
+      ))}
+    </>
+  )
 }
 
-export default Ser
+export default Ser;
+
+
 
 

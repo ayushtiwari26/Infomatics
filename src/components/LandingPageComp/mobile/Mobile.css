@@ -41,9 +41,9 @@
     position: relative;
     margin-top: 5%;
     margin-bottom: 5%;
-    height: 100px;
+    height: 90px;
     width: 100px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 1.5px 6px 0px;
     border-radius: 10%;
 }
 

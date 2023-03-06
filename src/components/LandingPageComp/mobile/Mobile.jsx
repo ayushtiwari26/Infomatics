@@ -45,63 +45,65 @@ const Mobile = () => {
             <div className="col mobfirst">
                 <motion.div variants={testAnimate2} className="col mobAlign2">
                     <div className='mobSideImgDiv'>
-                        <LazyLoadImage src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="" className='mobSideImg' loading='lazy'/>
+                        <LazyLoadImage src="/images/mobProjectManagment.png" alt="" className='mobSideImg' loading='lazy'/>
                     </div>
                     <div className='mobSideTextDiv'>
-                        <p>LOGIC MWS1</p>
-                        <p>This app improves workflow and efficiency of the warehouse process</p>
+                        <p>Project managment</p>
+                        <p>Plan, organize, and manage projects efficiently.</p>
                     </div>
                 </motion.div>
                 <motion.div variants={testAnimate2} className="col mobAlign2">
                     <div className='mobSideImgDiv'>
-                        <LazyLoadImage src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="" className='mobSideImg' loading='lazy'/>
+                        <LazyLoadImage src="/images/mobTransportManagment.png" alt="" className='mobSideImg' loading='lazy'/>
                     </div>
                     <div className='mobSideTextDiv'>
-                        <p>LOGIC MWS2</p>
-                        <p>This app improves workflow and efficiency of the warehouse process</p>
+                        <p>Transport Managment</p>
+                        <p> Optimize transportation of goods and services while reducing costs.</p>
                     </div>
                 </motion.div>
                 <motion.div variants={testAnimate2} className="col mobAlign2 ">
                     <div className='mobSideImgDiv'>
-                        <LazyLoadImage src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="" className='mobSideImg' loading='lazy'/>
+                        <LazyLoadImage src="/images/mobHRManagment.png" alt="" className='mobSideImg' loading='lazy'/>
                     </div>
                     <div className='mobSideTextDiv'>
-                        <p>LOGIC MWS3</p>
-                        <p>This app improves workflow and efficiency of the warehouse process</p>
+                        <p>HR</p>
+                        <p>Streamline human resources processes from recruitment to payroll.</p>
                     </div>
                 </motion.div>
             </div>
 
             <div className="col mobileScreen d-none d-md-none d-lg-block">
+            {/* <iframe src='https://my.spline.design/iphone14procopy-d7fcd295886ff8ccf3dbf712d86aa587/' frameborder='0' height='100%'></iframe> */}
+            {/* <iframe src='https://my.spline.design/iphone14procopy-d7fcd295886ff8ccf3dbf712d86aa587/' frameborder='0' height='100%'></iframe> */}
             <iframe src='https://my.spline.design/iphone14procopy-d7fcd295886ff8ccf3dbf712d86aa587/' frameborder='0' height='100%'></iframe>
             </div>
             
             <div className="col">
             <motion.div variants={testAnimate} className="col mobAlign">
                     <div className='mobSideImgDiv'>
-                        <LazyLoadImage src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="" className='mobSideImg' loading='lazy'/>
+                        <LazyLoadImage src="/images/mobWarehouseManagment.png" alt="" className='mobSideImg' loading='lazy'/>
                     </div>
                     <div className='mobSideTextDiv'>
-                        <p>LOGIC MWS4</p>
-                        <p>This app improves workflow and efficiency of the warehouse process</p>
+                        <p>WMS (Warehouse Managment)</p>
+                        <p>Improve warehouse operations and inventory accuracy.</p>
                     </div>
                 </motion.div>
                 <motion.div variants={testAnimate} className="col mobAlign">
                     <div className='mobSideImgDiv'>
-                        <LazyLoadImage src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="" className='mobSideImg' loading='lazy'/>
+                        <LazyLoadImage src="/images/mobProcurementManagment.png" alt="" className='mobSideImg' loading='lazy'/>
                     </div>
                     <div className='mobSideTextDiv'>
-                        <p>LOGIC MWS5</p>
-                        <p>This app improves workflow and efficiency of the warehouse process</p>
+                        <p>Eprocurement </p>
+                        <p>Simplify procurement processes from requisition to payment.</p>
                     </div>
                 </motion.div>
                 <motion.div variants={testAnimate} className="col mobAlign">
                     <div className='mobSideImgDiv'>
-                        <LazyLoadImage src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="" className='mobSideImg' loading='lazy'/>
+                        <LazyLoadImage src="/images/mobSalesManagment.png" alt="" className='mobSideImg' loading='lazy'/>
                     </div>
                     <div className='mobSideTextDiv'>
-                        <p>LOGIC MWS6</p>
-                        <p>This app improves workflow and efficiency of the warehouse process</p>
+                        <p>Sales</p>
+                        <p>Manage sales process from lead generation to order fulfillment.</p>
                     </div>
                 </motion.div>
             </div>

@@ -26,8 +26,8 @@
     font-family: 'DM Sans', sans-serif;
 }
 
-.serPos p:nth-child(2){
-    border-top: 1px solid gray;
+.serPos p:nth-child(1){
+    border-bottom: 1px solid gray;
 }
 
 .serType span{
@@ -100,54 +100,7 @@
     font-family: 'Inter';
 }
 
-.serNicRow{
-    margin: 2% 5%;
-    box-shadow: rgba(214, 220, 224, 0.2) 0px 8px 24px;
-}
 
-.serNicRow li{
-    text-align: left;
-}
-
-.serAccordion{
-    margin: 3% 0;
-}
-
-.serAccordion li{
-    list-style: none;
-}
-
-.serAccordion li label{
-    cursor: pointer;
-}
-
-.serAccordion li label::before{
-    content: '\2715';
-    margin-right: 10px;
-
-}
-
-.serAccordion .serContent{
-    max-height: 0;
-    overflow: hidden;
-    text-align: left;
-    font-family: 'Inter';
-    transition: max-height 0.5s, padding 0.5s;
-}
-
-.serAccordion input[type='radio']:checked + label + .serContent{
-    max-height: 400px;
-    padding: 10px;
-}
-
-.serAccordion input[type='radio']:checked + label::before{
-    font-size: 40px;
-    content: '\2713';
-}
-
-input[type='radio']{
-    display: none;
-}
 
 .serLabel{
     font-size: 30px;
@@ -165,11 +118,18 @@ input[type='radio']{
 }
 
 .serServices{
-   display: inline-block;
+    display:inline-table;
+    width: 12%;
+    align-self: flex-start;
+    margin: 1%;
+}
+.serServices:hover{
+    text-decoration: underline;
+    scale: 1.1;
 }
 .servicesExtraimg{
     height: 10%;
-    width: 10%;
+    width: 40%;
 }
 .serviceExtraLink:hover{
     scale: 200%;
@@ -179,6 +139,35 @@ input[type='radio']{
 .serAiFill{
     margin-right: 10px;
     margin-bottom: -4px;
+}
+
+.serMotoDesign{
+    font-family: 'Rochester' !important;
+    font-style: italic;
+    font-weight: 200 !important;
+    font-size: 28px !important;
+}
+
+.SerwhatweofferP{
+    text-align: left;
+    font-size: 1.45rem;
+    font-family: 'Slabo 27px', serif;
+    text-transform: capitalize;
+    font-style: italic;
+    font-weight: 400;
+    /* color: rgba(0, 0, 0, 0.85); */
+}
+
+.serHIghlightsTitle{
+    font-size: 2rem;
+    font-family: 'Eczar', serif;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.serStartRightSide{
+    display: flex;
+    align-items: center;
 }
 
 
