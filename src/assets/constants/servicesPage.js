@@ -34,7 +34,7 @@ export const servicesPage =[
 
         whatIsId:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum dignissimos, vitae aspernatur asperiores cumque eius consectetur nemo in corrupti commodi veniam dolor est facilis neque omnis aperiam velit perspiciatis vel sunt? Unde iste optio hic, reprehenderit cumque ratione provident vero accusamus quaerat placeat facere ullam odit! Nisi dolorum aperiam, sunt enim labore vel quaerat voluptatibus hic rerum voluptatem soluta facere. Magni modi iusto repellat nemo, esse dignissimos deleniti dolorem neque?',
 
-        whatWeOffer:'we believe in creating innovative and custom-built products that cater to your specific business needs. Our expertise lies in product development, where we have worked with various clients to deliver tailored solutions that provide tangible value to their operations.Our product development services cover a range of areas, including web and mobile applications, enterprise software, and IoT solutions.',
+        whatWeOffer:'we believe in creating innovative and custom-built products that cater to your specific business needs. Our expertise lies in product development, where we have worked with various clients to deliver tailored solutions that provide tangible value to their operations. Our product development services cover a range of areas, including web and mobile applications, enterprise software, and IoT solutions. By leveraging the latest technologies and industry best practices, we ensure that our product development solutions are both cutting-edge and effective, empowering our clients to achieve their business objectives.',
     },
 
     {   id:'custom-application-development',
