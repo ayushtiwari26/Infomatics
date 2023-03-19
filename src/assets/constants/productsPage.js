@@ -1,23 +1,23 @@
 export const productHero = [
-    {   id:'i-boss-manufacturing',
+    {   id:'manufacturing',
         img:'/images/dashboard.png',
-        title: 'i Boss Manufacturing',
-        titleDesc:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci, ipsum!',
+        title: 'Manufacturing',
+        titleDesc:'Streamline your manufacturing operations with our ERP solution designed to help you optimize production processes, manage inventory, and reduce costs.',
     },
-    {   id:'i-boss-warehouse-and-logistics',
+    {   id:'warehouse-and-logistics',
         img:'/images/dashboard.png',
-        title: 'i Boss Warehouse and Logistics',
+        title: 'Warehouse and Logistics',
         titleDesc:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci, ipsum!'
     },
-    {   id:'i-boss-trading',
+    {   id:'trading',
         img:'',
-        title: 'i Boss Trading',
+        title: 'Trading',
         titleDesc:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci, ipsum!'
     },
 ]
 
 export const productIllus = [
-    {   id:'i-boss-manufacturing',
+    {   id:'manufacturing',
         content :[
             {
                 sid:1,
@@ -71,16 +71,8 @@ export const productIllus = [
 ]
 
 export const productCard = [
-    {   id:'i-boss-manufacturing',
+    {   id:'manufacturing',
         content:[
-            {
-                title:'Title1',
-                data:'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia sit dignissimos soluta accusamus molestias placeat tenetur nemo vel quod nisi.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia sit dignissimos soluta accusamus molestias placeat tenetur nemo vel quod nisi.',
-                title2:'Title2',
-                data2:'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia sit dignissimos soluta accusamus molestias placeat tenetur nemo vel quod nisi.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia sit dignissimos soluta accusamus molestias placeat tenetur nemo vel quod nisi.',
-                title3:'Title3',
-                data3:'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia sit dignissimos soluta accusamus molestias placeat tenetur nemo vel quod nisi.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia sit dignissimos soluta accusamus molestias placeat tenetur nemo vel quod nisi.'
-            },
             {
                 title:'Title1',
                 data:'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia sit dignissimos soluta accusamus molestias placeat tenetur nemo vel quod nisi.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia sit dignissimos soluta accusamus molestias placeat tenetur nemo vel quod nisi.',

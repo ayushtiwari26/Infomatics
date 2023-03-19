@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import './Ser.css'
 import {Link, useParams} from "react-router-dom"
-import serHeroImage from '../../../assets/images/serHeroImg.jpg'
 import TypeWriter from 'typewriter-effect'
 import {servicesPage} from '../../../assets/constants/servicesPage'
 
@@ -17,7 +16,8 @@ const Ser = (props) => {
             backgroundImage:`url(/images/servicesHeroMain/${selectedService.sid}.jpg)`, 
             backgroundRepeat:'no-repeat', 
             backgroundSize:'cover', 
-            backgroundAttachment: 'fixed'
+            backgroundAttachment: 'fixed',
+            backgroundPosition: 'center top'
           }} className='serHero'>
             <div className='serSide'>
               <div className='serPos col'>

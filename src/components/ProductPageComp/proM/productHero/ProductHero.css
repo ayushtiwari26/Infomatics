@@ -45,10 +45,14 @@
     font-size: 40px;
     font-weight: 600;
     font-family: 'Inter';
+    margin: 0 2% 0 4%;
 }
 
 .prodImgNichu p:nth-child(2){
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 400;
-    font-family: 'Inter';
+    margin: 0 2% 0 4%;
+    font-style: italic;
+    /* font-family: 'Eczar'; */
+    font-family: 'Slabo 27px';
 }

@@ -39,7 +39,7 @@ const Mmap = () => {
     <>
       <div style={{height:height, width:width}}>
         <GoogleMapReact
-          bootstrapURLKeys={{key:'AIzaSyA_RZL5lINS6wY6R4ISLIEvrMedWmpjeLc'}}
+          bootstrapURLKeys={{key:process.env.REACT_APP_API_KEY}}
           defaultCenter={coordinates}
           center={coordinates}
           defaultZoom={18}

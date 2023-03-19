@@ -57,8 +57,6 @@
     margin-top: 10px;
     margin-left: 20px;
     margin-right: 20px;
-
-
 }
 .contactCol{
     text-align: center;
@@ -73,5 +71,66 @@
     font-weight: 500;
     font-family: 'Inter';
 }
+
+
+
+
+.erp-journey {
+    position: relative;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .erp-journey-dots {
+    display: flex;
+    align-items: center;
+  }
+  
+  .erp-journey-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin-right: 20px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .erp-journey-dot.show {
+    opacity: 1;
+  }
+
+  
+  .erp-journey-text-item {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    margin-top: 20px;
+    text-align: center;
+    width: calc(25% - 20px);
+  }
+  
+  .erp-journey-text-item.show {
+    opacity: 1;
+  }
+  
+  .erp-journey-dots div:nth-child(1) ~ .erp-journey-line {
+    transform: translateX(calc(-100% - 20px));
+  }
+  
+  .erp-journey-dots div:nth-child(2) ~ .erp-journey-line {
+    transform: translateX(calc(-50% - 10px));
+  }
+  
+  .erp-journey-dots div:nth-child(3) ~ .erp-journey-line {
+    transform: translateX(calc(50% + 10px));
+  }
+  
+  .erp-journey-dots div:nth-child(4) ~ .erp-journey-line {
+    transform: translateX(calc(100% + 20px));
+  }
+  
+  
 
 

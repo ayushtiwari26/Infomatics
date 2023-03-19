@@ -1,8 +1,6 @@
 
 import { useEffect, useState } from 'react';
 import './App.css';
-// import Hero from './components/hero/Hero';
-import Navbar from './components/navbar/Navbar';
 import Pages from './pages/Pages';
 import landingImg from '../src/assets/images/loading.gif'
 import Footer from './components/footer/Footer';
@@ -26,14 +24,12 @@ function App() {
       (
       <div className="loader-container" style={{background:`url(${landingImg}) center no-repeat`}}>
       </div>)
-
     :
-
       (  
       <div className="App">
         <MyNav/>
         <Pages/>
-        <Footer/>
+        {/* <Footer/> */}
       </div>)
     }
     </>
