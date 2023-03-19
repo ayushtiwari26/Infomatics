@@ -1,5 +1,7 @@
 import React from 'react'
 import  './OurCus.css'
+import {blabla} from '../../../assets/constants/testimonyCheck'
+
 import heart from '../../../assets/images/death.png'
 import c1 from '../../../assets/images/c1.jpg'
 import c2 from '../../../assets/images/c2.jpg'
@@ -32,7 +34,21 @@ const OurCus = () => {
                 </div>
 
             </div>
+            
         </div>
+        <div className='Clientslogo'>
+                    {blabla.map((item)=>{
+                        return(
+                        <div className='ClientsCol'>
+                            <div className='Client1'><img src={item.img4}/></div>
+                            <div className='Client1'><img src={item.img2}/></div>
+                            <div className='Client1'><img src={item.img3}/></div>
+                            <div className='Client1'><img src={item.img4}/></div>
+                            
+                        </div>
+                        )
+                    })}
+                </div>
     </>
   )
 }
