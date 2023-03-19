@@ -222,8 +222,9 @@ button:focus { outline: none !important;}
         display: flex;
         flex-direction: column;
         justify-content: center;
-        height: 100vh;
-        width: 30%;
+        height: 80rem;
+        border: 1px solid red;
+        width: 25%;
         background-color: white;
         
     }
@@ -284,10 +285,10 @@ button:focus { outline: none !important;}
 
 @media (max-width: 900px) and (min-width:600px){
     .MyNav .NavLinks .NavContainer{
-        width: 35%;
+        width: 30%;
     }
 }
-@media (max-width: 600px){
+/* @media (max-width: 600px){
     .logow{
        
         display: flex;
@@ -295,7 +296,7 @@ button:focus { outline: none !important;}
 
     }
  
-}
+} */
 @media (max-width: 600px)
 {
     .logow{
@@ -305,6 +306,23 @@ button:focus { outline: none !important;}
 
     }
     .MyNav .NavLinks .NavContainer{
-        width:80%;
+        width:40%;
     }
+   
+
+}
+@media (min-width: 350px) and (max-width:500px){
+    .MyNav .NavLinks .NavContainer{
+        width:40%;
+    }
+    .MyNav .NavLinks .NavContainer Button:hover{
+        width:40%;
+    }
+    /* .MyNav .NavLinks Button a 
+    {
+        display: none;
+    }
+    .MyNav .NavLinks  Button :hover + a{
+        display:block;
+    } */
 }
