@@ -60,14 +60,9 @@ const NavLinks = (props) => {
                     initial={animateFrom}
                     animate={animateTo}
                     transition={{delay:0.10}}>
-<<<<<<< HEAD
                       <Button className='hoverNavbarSideDiv'>
                         <img src='/images/home.png'/>
                         <a href='/' >Home</a>
-=======
-                      <Button startIcon={<HomeRoundedIcon />} className='hoverNavbarSideDiv'>
-                        <a href='/'>Home</a>
->>>>>>> 5e169b34cdb52022ad342b2ec5e6b582a2f4fbc0
                       </Button>
                   </motion.div>
                 

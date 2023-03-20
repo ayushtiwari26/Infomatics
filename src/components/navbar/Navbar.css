@@ -196,7 +196,7 @@ button:focus { outline: none !important;}
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+    background-color: rgba(0, 0, 0, 0.5); 
     z-index: 999; /* make sure it appears on top of other elements */
     display: none; /* hide it by default */
   }
@@ -235,7 +235,6 @@ button:focus { outline: none !important;}
         flex-direction: column;
         justify-content: center;
         height: 80rem;
-        border: 1px solid red;
         width: 25%;
         background-color: white;
         
