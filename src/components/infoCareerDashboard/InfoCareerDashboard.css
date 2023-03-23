@@ -1,0 +1,16 @@
+.icd-container{
+margin: 5% auto;
+}
+
+.icd-container div div{
+    display: grid;
+    align-items: center;
+}
+
+.icd-main-row .col .row:nth-child(1){
+    font-size: 44px;
+}
+
+.icd-main-row .col .row:nth-child(2){
+    font-size: 24px;
+}

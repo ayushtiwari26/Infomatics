@@ -47,6 +47,7 @@ const AOpenPositions = () => {
             </div>
 
           </div>
+
         )
         })}
       </div>

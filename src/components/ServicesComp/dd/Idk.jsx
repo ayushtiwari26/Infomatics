@@ -2,8 +2,6 @@ import * as React from 'react';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import './Idk.css'
-import { Button} from '@material-ui/core';
-import { Link } from 'react-scroll'
 
 export default function Idk() {
   return (
@@ -15,19 +13,6 @@ export default function Idk() {
             <p>Meet our Hiring team</p>
             <p>Join our team of expert IT professionals </p>
             <p>and help shape the future of software solutions.</p>
-            {/* <Button variant="contained"
-              style={{
-                backgroundColor:'var(--blue)', 
-                width:'30%', 
-                marginTop:'2%', 
-                padding:'1.5% 0'
-                }}
-                onClick={() => {
-                  <Link to="my-component-2" smooth={true} offset={-140} duration={500}>
-                  </Link>
-                }}> 
-              View Careers 
-            </Button> */}
             <button type="button" class="btn btn-info" style={{
                 width:'30%', 
                 marginTop:'2%', 
