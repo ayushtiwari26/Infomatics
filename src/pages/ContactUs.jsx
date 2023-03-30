@@ -9,11 +9,11 @@ const ContactUs = () => {
   return (
     <>  
     
-    <ContactForm/>
+    {/* <ContactForm/> */}
     {/* <ContactPoster/> */}
-    {/* <Pt/> */}
     <InfoCareerDashboard/>
-    <Map/>
+    <Pt/>
+    {/* <Map/> */}
     </>
   )
 }

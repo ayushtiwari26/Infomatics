@@ -1,78 +1,85 @@
-import React, { useEffect, useState } from 'react';
-import './Pt.scss';
+import React from "react";
+import "./Pt.css";
 
 const Pt = () => {
-  const [isSticky, setIsSticky] = useState(false);
-  const [activeStep, setActiveStep] = useState(0);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const windowHeight = window.innerHeight;
-      const currentStep = Math.floor((window.scrollY + (windowHeight / 2)) / windowHeight);
-
-      setActiveStep(currentStep);
-      console.log(currentStep)
-
-      if (currentStep >= steps.length) {
-        setIsSticky(true);
-      } else {
-        setIsSticky(false);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
-  const steps = [
-    {
-      label: 'Step 1',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    },
-    {
-      label: 'Step 2',
-      description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    },
-    {
-      label: 'Step 3',
-      description: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-    },
-    {
-      label: 'Step 4',
-      description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
-    },
-  ];
-
   return (
-    <div className={`journey${isSticky ? ' journey--sticky' : ''}`}>
-      <div className="journey__timeline">
-        {steps.map((step, index) => (
-          <React.Fragment key={step.label}>
-            {index !== 0 && (
-              <div
-                className={`journey__line${activeStep >= index ? ' journey__line--active' : ''}`}
-              />
-            )}
-            <div className={`journey__dot${index <= activeStep ? ` journey__dot--active` : ''}`}>
-              <div className="journey__dot-label">{step.label}</div>
-            </div>
-          </React.Fragment>
-        ))}
-      </div>
-      <div className="journey__steps">
-        {steps.map((step, index) => (
-          <div key={step.label} className="journey__step">
-            <div className="journey__step-description">{step.description}</div>
+    <>
+    <section id="conference-timeline">
+    <div class="timeline-start"></div>
+    <div class="conference-center-line"></div>
+    <div class="conference-timeline-content">
+
+
+      <div class="timeline-article">
+        <div class="content-left-container">
+          <div class="content-left">
+            <p>When I orbited the Earth in a spaceship, I saw for the first time how beautiful our planet is. Mankind, let us preserve and increase this beauty, and not destroy it! <span class="article-number">01</span></p>
           </div>
-        ))}
+          <span class="timeline-author">John Doe</span>
+        </div>
+        <div class="content-right-container">
+          <div class="content-right">
+            <p>When I orbited the Earth in a spaceship, I saw for the first time how beautiful our planet is. <span class="article-number">02</span></p>
+          </div>
+          <span class="timeline-author">John Doe</span>
+        </div>
+        <div class="meta-date">
+          <span class="date">2016</span>
+          {/* <span class="month">APR</span> */}
+        </div>
+      </div>
+
+
+      <div class="timeline-article">
+        <div class="content-left-container">
+          <div class="content-left">
+            <p>When I orbited the Earth in a spaceship, I saw for the first time how beautiful our planet is. Mankind, let us preserve and increase this beauty, and not destroy it! <span class="article-number">01</span></p>
+          </div>
+          <span class="timeline-author">John Doe</span>
+        </div>
+        <div class="content-right-container">
+          <div class="content-right">
+            <p>When I orbited the Earth in a spaceship, I saw for the first time how beautiful our planet is. <span class="article-number">02</span></p>
+          </div>
+          <span class="timeline-author">John Doe</span>
+        </div>
+        <div class="meta-date">
+          <span class="date">18</span>
+          <span class="month">APR</span>
+        </div>
+      </div>
+
+      <div class="timeline-article">
+        <div class="content-left-container">
+          <div class="content-left">
+            <p>When I orbited the Earth in a spaceship, I saw for the first time how beautiful our planet is. Mankind, let us preserve and increase this beauty, and not destroy it! <span class="article-number">01</span></p>
+          </div>
+          <span class="timeline-author">John Doe</span>
+        </div>
+        <div class="content-right-container">
+          <div class="content-right">
+            <p>When I orbited the Earth in a spaceship, I saw for the first time how beautiful our planet is. <span class="article-number">02</span></p>
+          </div>
+          <span class="timeline-author">John Doe</span>
+        </div>
+        <div class="meta-date">
+          <span class="date">18</span>
+          <span class="month">APR</span>
+        </div>
       </div>
     </div>
+    <div class="timeline-end"></div>
+    </section>
+
+
+    <div>hello mr dj</div>
+    </>
+
   );
 };
 
 export default Pt;
+
+
 
 

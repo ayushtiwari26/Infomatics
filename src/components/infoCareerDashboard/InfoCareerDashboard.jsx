@@ -8,27 +8,28 @@ const InfoCareerDashboard = () => {
   const ClientsNumber = useRandomNumber(56);
   const usersNumber = useRandomNumber(410);
 
+
   return (
     <>
       <div className="container-fluid icd-container">
         <div className="row icd-main-row">
 
-          <div className="col">
+          <div className="col-3 col-sm-3 col-md-3 icd-display">
             <div className="row">{ExpertiseNumber !== null ? ExpertiseNumber : "Loading..."}+</div>
             <div className="row">Years of Expertise</div>
           </div>
 
-          <div className="col">
+          <div className="col-3 col-sm-3 col-md-3 icd-display">
             <div className="row">{ProjectsDoneNumber !== null ? ProjectsDoneNumber : "Loading..."}</div>
             <div className="row">Projects Done</div>
           </div>
 
-          <div className="col">
+          <div className="col-3 col-sm-3 col-md-3 icd-display">
             <div className="row">{ClientsNumber !== null ? ClientsNumber : "Loading..."}</div>
             <div className="row">Clients</div>
           </div>
 
-          <div className="col">
+          <div className="col-3 col-sm-3 col-md-3 icd-display">
             <div className="row">{usersNumber !== null ? usersNumber : "Loading..."}</div>
             <div className="row">Users</div>  
           </div>
