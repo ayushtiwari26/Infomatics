@@ -9,5 +9,17 @@
     font-weight: 600;
     font-size: 2rem;
     text-transform:capitalize;
+    
 }
-
+.verStep{
+    display: none;
+}
+@media (max-width:800px){
+    .verStep{
+        display: block;
+    }
+    .horStep{
+        display: none;
+    }
+    
+}

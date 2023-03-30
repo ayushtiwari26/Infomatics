@@ -1,0 +1,54 @@
+.applyback{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    margin: 0% 15%;
+    margin-top: 2%;
+    gap: 20px;
+
+}
+.applyhead{
+    font-size: 2.4rem;
+    font-weight: 500;
+    /* border-bottom: 10px solid red; */
+
+}
+.applyhead h1:after{
+    content: "";
+  display: block;
+  width: 20%;
+  padding-top: 6px;
+  border-bottom: 6px solid #588ADF;
+}
+.applyDis, .applyRole, .applySkills , .applyGood, .applyExperience{
+    font-size: 1.6rem;
+    font-weight: 500;
+
+    
+}
+.applypara{
+    color:#929292 ;
+    font-size: 1.2rem;
+    margin-bottom: 3%;
+
+}
+.arrow{
+    list-style: none;
+    /* list-style-position: outside; */
+    /* list-style-type: square; */
+
+  }
+  
+.arrow li{
+    color:#929292 ;
+    font-size: 1.2rem;
+    margin-top: 1%;
+    
+  }
+.arrow li::before {
+    content: '▶';
+    left: 0;
+    color: cornflowerblue;
+
+  }

@@ -11,8 +11,8 @@ const ClientsPoster = () => {
     <div className="sizebg">
     <div  className="Clientback">
         
-        <div style={{
-            backgroundImage:`url(${black})` ,
+          <div style={{
+              backgroundImage:`url(${black})`,
               backgroundRepeat:'no-repeat', 
               backgroundSize:'cover', 
               }}className='ClientsInfo'>
@@ -20,7 +20,7 @@ const ClientsPoster = () => {
                <div className="ClientH1"> Infomatics Clients</div>
                <div className="ClientH2"> Infomatics client ecosystem is critical to our customer's success.</div>
             </div>
-        </div>
+          </div>
     </div>
     </div>
 

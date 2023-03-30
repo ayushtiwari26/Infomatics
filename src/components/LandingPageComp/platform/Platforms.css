@@ -188,7 +188,7 @@
 }
 @media (min-width:350px ) and (max-width:750px) {
 .ak{
-  height: 100vh;
+  height: 50rem;
 }
   .head{
       font-size: 15px;
