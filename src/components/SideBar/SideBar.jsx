@@ -16,21 +16,52 @@ const SideBar = () => {
     <div className='sideCon'>
           <div className="sidelabel">
               <div className={tab===1?'side2':'side1'} onClick={()=>{setTab(1)}}>
-                Who are We
+              Material Management
               </div>
               <div className={tab===2?'side2':'side1'} onClick={()=>{setTab(2)}}>
-                WHAT WE DO
+              Finance & Accounts
               </div>
               <div className={tab===3?'side2':'side1'} onClick={()=>{setTab(3)}}>
-                AWARDS
+              Sales and Distribution
               </div>
               <div className={tab===4?'side2':'side1'} onClick={()=>{setTab(4)}}>
-                FAQ
+              Plant Maintenance
               </div>
+              <div className={tab===5?'side2':'side1'} onClick={()=>{setTab(5)}}>
+              Production planning and control
+              </div>
+              <div className={tab===6?'side2':'side1'} onClick={()=>{setTab(6)}}>
+              Quality Control
+              </div>
+              <div className={tab===7?'side2':'side1'} onClick={()=>{setTab(7)}}>
+              Service Management
+              </div>
+              <div className={tab===8?'side2':'side1'} onClick={()=>{setTab(8)}}>
+              Gate Control
+              </div>
+              <div className={tab===9?'side2':'side1'} onClick={()=>{setTab(9)}}>
+              Weighbridge Automation
+              </div>
+              <div className={tab===10?'side2':'side1'} onClick={()=>{setTab(10)}}>
+              Fixed Asset Management
+              </div>
+              <div className={tab===11?'side2':'side1'} onClick={()=>{setTab(11)}}>
+              Human Resource Management
+              </div>
+              <div className={tab===12?'side2':'side1'} onClick={()=>{setTab(12)}}>
+              Admin
+              </div>
+              <div className={tab===13?'side2':'side1'} onClick={()=>{setTab(13)}}>
+              Project Management
+              </div>
+              <div className={tab===14?'side2':'side1'} onClick={()=>{setTab(14)}}>
+              Project Management
+              </div>
+
           </div>
   
           <div className='sideItem'>
-            <div className="fitem">
+            <div className="sideChange">
               {tab===1?
               <>
               <p className='sideContent'>Now is the winter of our discontent
@@ -94,7 +125,165 @@ const SideBar = () => {
                 </p>
                 </>
                 :null}
-  
+
+              {tab===5?
+              <>
+              <p className='sideContent'>Langed war hath smooth'd his sun of this fair proportion,
+                            ove's majesty
+                            To strut before a want lour'd upon our house
+                            In the deep bosom of this sun of fearful adversaries,
+                            Nor made glorious pleasing nymph;
+                            I, that am not shaped for sportive tricks,
+                            Nor made glorious summer by this wrinkled front;
+                            And now, instead of this summer by this sun of this sun of
+                            our bruised arms hung up for made glorious wrinkled front;
+                            And now, instead of mountings,
+                                </p>
+                </>
+                :null}
+
+              {tab===6?
+              <>
+              <p className='sideContent'>Langed war hath smooth'd his sun of this fair proportion,
+                            ove's majesty
+                            To strut before a want lour'd upon our house
+                            In the deep bosom of this sun of fearful adversaries,
+                            Nor made glorious pleasing nymph;
+                            I, that am not shaped for sportive tricks,
+                            Nor made glorious summer by this wrinkled front;
+                            And now, instead of this summer by this sun of this sun of
+                            our bruised arms hung up for made glorious wrinkled front;
+                            And now, instead of mountings,
+                                </p>
+                </>
+                :null}
+
+              {tab===7?
+              <>
+              <p className='sideContent'>Langed war hath smooth'd his sun of this fair proportion,
+                            ove's majesty
+                            To strut before a want lour'd upon our house
+                            In the deep bosom of this sun of fearful adversaries,
+                            Nor made glorious pleasing nymph;
+                            I, that am not shaped for sportive tricks,
+                            Nor made glorious summer by this wrinkled front;
+                            And now, instead of this summer by this sun of this sun of
+                            our bruised arms hung up for made glorious wrinkled front;
+                            And now, instead of mountings,
+                                </p>
+                </>
+                :null}
+
+              {tab===8?
+              <>
+              <p className='sideContent'>Langed war hath smooth'd his sun of this fair proportion,
+                            ove's majesty
+                            To strut before a want lour'd upon our house
+                            In the deep bosom of this sun of fearful adversaries,
+                            Nor made glorious pleasing nymph;
+                            I, that am not shaped for sportive tricks,
+                            Nor made glorious summer by this wrinkled front;
+                            And now, instead of this summer by this sun of this sun of
+                            our bruised arms hung up for made glorious wrinkled front;
+                            And now, instead of mountings,
+                                </p>
+                </>
+                :null}
+
+              {tab===9?
+              <>
+              <p className='sideContent'>Langed war hath smooth'd his sun of this fair proportion,
+                            ove's majesty
+                            To strut before a want lour'd upon our house
+                            In the deep bosom of this sun of fearful adversaries,
+                            Nor made glorious pleasing nymph;
+                            I, that am not shaped for sportive tricks,
+                            Nor made glorious summer by this wrinkled front;
+                            And now, instead of this summer by this sun of this sun of
+                            our bruised arms hung up for made glorious wrinkled front;
+                            And now, instead of mountings,
+                                </p>
+                </>
+                :null}
+
+              {tab===10?
+              <>
+              <p className='sideContent'>Langed war hath smooth'd his sun of this fair proportion,
+                            ove's majesty
+                            To strut before a want lour'd upon our house
+                            In the deep bosom of this sun of fearful adversaries,
+                            Nor made glorious pleasing nymph;
+                            I, that am not shaped for sportive tricks,
+                            Nor made glorious summer by this wrinkled front;
+                            And now, instead of this summer by this sun of this sun of
+                            our bruised arms hung up for made glorious wrinkled front;
+                            And now, instead of mountings,
+                                </p>
+                </>
+                :null}
+
+             {tab===11?
+              <>
+              <p className='sideContent'>Langed war hath smooth'd his sun of this fair proportion,
+                            ove's majesty
+                            To strut before a want lour'd upon our house
+                            In the deep bosom of this sun of fearful adversaries,
+                            Nor made glorious pleasing nymph;
+                            I, that am not shaped for sportive tricks,
+                            Nor made glorious summer by this wrinkled front;
+                            And now, instead of this summer by this sun of this sun of
+                            our bruised arms hung up for made glorious wrinkled front;
+                            And now, instead of mountings,
+                                </p>
+                </>
+                :null}
+
+              {tab===12?
+              <>
+              <p className='sideContent'>Langed war hath smooth'd his sun of this fair proportion,
+                            ove's majesty
+                            To strut before a want lour'd upon our house
+                            In the deep bosom of this sun of fearful adversaries,
+                            Nor made glorious pleasing nymph;
+                            I, that am not shaped for sportive tricks,
+                            Nor made glorious summer by this wrinkled front;
+                            And now, instead of this summer by this sun of this sun of
+                            our bruised arms hung up for made glorious wrinkled front;
+                            And now, instead of mountings,
+                                </p>
+                </>
+                :null}
+
+              {tab===13?
+              <>
+              <p className='sideContent'>Langed war hath smooth'd his sun of this fair proportion,
+                            ove's majesty
+                            To strut before a want lour'd upon our house
+                            In the deep bosom of this sun of fearful adversaries,
+                            Nor made glorious pleasing nymph;
+                            I, that am not shaped for sportive tricks,
+                            Nor made glorious summer by this wrinkled front;
+                            And now, instead of this summer by this sun of this sun of
+                            our bruised arms hung up for made glorious wrinkled front;
+                            And now, instead of mountings,
+                                </p>
+                </>
+                :null}
+              {tab===14?
+              <>
+              <p className='sideContent'>Langed war hath smooth'd his sun of this fair proportion,
+                            ove's majesty
+                            To strut before a want lour'd upon our house
+                            In the deep bosom of this sun of fearful adversaries,
+                            Nor made glorious pleasing nymph;
+                            I, that am not shaped for sportive tricks,
+                            Nor made glorious summer by this wrinkled front;
+                            And now, instead of this summer by this sun of this sun of
+                            our bruised arms hung up for made glorious wrinkled front;
+                            And now, instead of mountings,
+                                </p>
+                </>
+                :null}
             </div>
           </div>
           </div>
