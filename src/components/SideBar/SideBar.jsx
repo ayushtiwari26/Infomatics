@@ -144,16 +144,15 @@ const SideBar = () => {
 
               {tab===6?
               <>
-              <p className='sideContent'>Langed war hath smooth'd his sun of this fair proportion,
-                            ove's majesty
-                            To strut before a want lour'd upon our house
-                            In the deep bosom of this sun of fearful adversaries,
-                            Nor made glorious pleasing nymph;
-                            I, that am not shaped for sportive tricks,
-                            Nor made glorious summer by this wrinkled front;
-                            And now, instead of this summer by this sun of this sun of
-                            our bruised arms hung up for made glorious wrinkled front;
-                            And now, instead of mountings,
+              <p className='sideContent'>Now is the winter of our discontent
+                                    Made glorious summer by this sun of York;
+                                    And all the clouds that lour'd upon our house
+                                    In the deep bosom of the ocean buried.
+                                    Now are our brows bound with victorious wreaths;
+                                    Our bruised arms hung up for monuments;
+                                    Our stern alarums changed to merry meetings,
+                                    Our dreadful marches to delightful measures.
+                                    Grim-visaged war hath smooth'd his wrinkled front;
                                 </p>
                 </>
                 :null}
@@ -208,16 +207,15 @@ const SideBar = () => {
 
               {tab===10?
               <>
-              <p className='sideContent'>Langed war hath smooth'd his sun of this fair proportion,
-                            ove's majesty
-                            To strut before a want lour'd upon our house
-                            In the deep bosom of this sun of fearful adversaries,
-                            Nor made glorious pleasing nymph;
-                            I, that am not shaped for sportive tricks,
-                            Nor made glorious summer by this wrinkled front;
-                            And now, instead of this summer by this sun of this sun of
-                            our bruised arms hung up for made glorious wrinkled front;
-                            And now, instead of mountings,
+              <p className='sideContent'>Now is the winter of our discontent
+                                    Made glorious summer by this sun of York;
+                                    And all the clouds that lour'd upon our house
+                                    In the deep bosom of the ocean buried.
+                                    Now are our brows bound with victorious wreaths;
+                                    Our bruised arms hung up for monuments;
+                                    Our stern alarums changed to merry meetings,
+                                    Our dreadful marches to delightful measures.
+                                    Grim-visaged war hath smooth'd his wrinkled front;
                                 </p>
                 </>
                 :null}
@@ -240,16 +238,15 @@ const SideBar = () => {
 
               {tab===12?
               <>
-              <p className='sideContent'>Langed war hath smooth'd his sun of this fair proportion,
-                            ove's majesty
-                            To strut before a want lour'd upon our house
-                            In the deep bosom of this sun of fearful adversaries,
-                            Nor made glorious pleasing nymph;
-                            I, that am not shaped for sportive tricks,
-                            Nor made glorious summer by this wrinkled front;
-                            And now, instead of this summer by this sun of this sun of
-                            our bruised arms hung up for made glorious wrinkled front;
-                            And now, instead of mountings,
+              <p className='sideContent'>Now is the winter of our discontent
+                                    Made glorious summer by this sun of York;
+                                    And all the clouds that lour'd upon our house
+                                    In the deep bosom of the ocean buried.
+                                    Now are our brows bound with victorious wreaths;
+                                    Our bruised arms hung up for monuments;
+                                    Our stern alarums changed to merry meetings,
+                                    Our dreadful marches to delightful measures.
+                                    Grim-visaged war hath smooth'd his wrinkled front;
                                 </p>
                 </>
                 :null}
