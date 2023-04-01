@@ -11,6 +11,10 @@ import Clients from './Clients';
 import PageNotFound from '../components/pageNotFound/PageNotFound';
 import MyNav from '../components/navbar/MyNav';
 import Footer from '../components/footer/Footer';
+import SideBar from '../components/SideBar/SideBar';
+import Apply from './Apply'
+import ProductChild from '../components/ProductChildPageComp/SideBar'
+
 
 // create a layout component that includes MyNav and Footer
 const Layout = ({ children }) => (

@@ -64,7 +64,7 @@ const AOpenPositions = () => {
         )
         })}
         </div>
-      <div className="openFormDiv">
+      {/* <div className="openFormDiv">
         <div className="openFree">Feel Free To Apply</div>
         
           <div className="openPos">
@@ -159,7 +159,7 @@ const AOpenPositions = () => {
               </TextField>
            </div>
            
-      </div>
+      </div> */}
       
       </div>
       
