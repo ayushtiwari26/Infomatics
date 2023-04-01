@@ -11,8 +11,6 @@ import Clients from './Clients';
 import PageNotFound from '../components/pageNotFound/PageNotFound';
 import MyNav from '../components/navbar/MyNav';
 import Footer from '../components/footer/Footer';
-import Apply from './Apply'
-import SideBar from '../components/SideBar/SideBar';
 
 // create a layout component that includes MyNav and Footer
 const Layout = ({ children }) => (
@@ -32,6 +30,7 @@ const Pages = () => {
       <Route exact path={'/contact-us'} element={<Layout><ContactUs /></Layout>} />
       <Route exact path={'/services/:id'} element={<Layout><Services /></Layout>} />
       <Route exact path={'/products/:productName'} element={<Layout><Products /></Layout>} />
+      <Route exact path={'/productschild'} element={<Layout><ProductChild /></Layout>} />
       <Route exact path={'/industries'} element={<Layout><Industries /></Layout>} />
       <Route exact path={'/carrier'} element={<Layout><Carriers /></Layout>} />
       <Route exact path={'/clients'} element={<Layout><Clients /></Layout>} />
