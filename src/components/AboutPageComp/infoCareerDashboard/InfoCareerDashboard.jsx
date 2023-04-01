@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./InfoCareerDashboard.css";
-import useRandomNumber from "../../hooks/useRandomNumber";
+import useRandomNumber from "../../../hooks/useRandomNumber";
 
 const InfoCareerDashboard = () => {
   const ExpertiseNumber = useRandomNumber(25);
