@@ -1,13 +1,50 @@
+.AOpenPosition{
+    display: flex;
+    flex-direction: column;
+}
+.openHead{
+    display: flex;
+    flex-direction: column;
+}
+.openPosDiv{
+    width: 70%;
 
-.openPosPar, .AOpenJoinP, .AOpenJoinPcont{
-    margin: 0% 15%;
+}
+.openFormDiv{
+    width: 35%;
+    /* height: 180vh; */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: 1px solid rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-right: 2%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+
+}
+/* .openPos .MuiMenu-list .MuiMenuItem-root {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+  } */
+ 
+.openSet{
+    display: flex;
+    flex-direction: row;
+    margin-left: 4%;
+    gap: 2%;
+}
+
+
+.openPosPar{
+    /* margin-left: 10%; */
     padding: 1% 1%;
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 
 .AOpenJoinP{
-    font-size: 2rem;
+    font-size: 3rem;
     font-family: 'Roboto Slab';
     font-weight: 600;
 }
@@ -16,6 +53,8 @@
     text-align: left;
     width: 60%;
     font-size: 1.05rem;
+    margin-left: 10%;
+
 }
 
 .AOpenJoinPcont button{
@@ -27,14 +66,15 @@
 }
 
 .openPosPar{
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    margin-bottom: 5%;
     text-align: left;
-    border-top: 1px solid rgb(211, 211, 211);
-    border-bottom: 1px solid rgb(211, 211, 211);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .openPosLeft{
     margin-right: 25%;
+    padding: 1%;
 }
 
 .openTitle{
@@ -68,6 +108,137 @@
     font-weight: 500;
 }
 
-.openPosRight{
+.openFree{
+    font-size: 3rem;
+    margin: 5% 0%;
+    font-weight: 700;
 
+}
+.openPos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2% 3%;
+    /* align-items: center; */
+}
+.openPos p{
+    margin-top: 4%;
+}
+.openEx{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2% 3%;
+
+}
+.openEx p{
+    margin-top: 4%;
+}
+.openName{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2% 3%;
+}
+.openName p{
+    margin-top: 4%;
+}
+.openEmail{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2% 3%;
+}
+.openEmail p{
+    margin-top: 4%;
+}
+.openPhoneNum{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2% 3%;
+    align-items: center;
+    text-align: left;
+}
+.openPhoneNum p{
+   margin-top: 4%;
+}
+.openGender{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+    margin: 2% 3%;
+    align-items: center;
+}
+.openGender p{
+    margin-top: 4%;
+    margin-right: 28%;
+}
+/* .OpenQuali .modalInputSize{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+} */
+.openDob{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2% 3%;
+}
+.openDob p{
+    margin-top: 4%;
+}
+.openMessage{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2% 3%;
+    align-items: center;
+}
+.openMessage p{
+    margin-top: 4%;
+}
+.openCompany{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2% 3%;
+    align-items: center;
+}
+.openCompany p{
+    margin-top: 4%;
+}
+.openCTC{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2% 3%;
+    align-items: center;
+}
+.openCTC p{
+    margin-top: 4%;
+}
+.OpenAdd{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2% 3%;
+    align-items: center;
+}
+.OpenAdd p{
+    margin-top: 4%;
+}
+.OpenQuali{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2% 3%;
+    align-items: center;
+}
+.OpenQuali p{
+    margin-top: 4%;
 }

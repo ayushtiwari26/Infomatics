@@ -12,11 +12,11 @@ const VerticalTabs = () => {
 
     return (
   
-      <><div className="container-fluid tabBg">
-  
-      
+      <>
+      <div className="container-fluid tabBg">
+        
         <div className='fcontainer'>
-          <div className='f1C'>
+          <div className="f1C">
               <div className={tab===1?'Ftitle2':'ftitle'} onClick={()=>{setTab(1)}}>
                 WHO ARE WE
               </div>
@@ -31,15 +31,13 @@ const VerticalTabs = () => {
               </div>
           </div>
   
-  
-  
           <div className='f2C'>
             <div className="fitem">
   
               {tab===1?
               <>
               <div>
-              <Avatar sx={{ width: 55, height: 55}} alt="Check list" src={whoAreWe} />
+              <Avatar sx={{ width: 55, height: 55,}} alt="Check list" src={whoAreWe} />
               </div>
               <div className="iconTab">Who are we ?</div>
               <p className='Content'>Now is the winter of our discontent

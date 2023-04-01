@@ -225,9 +225,10 @@ button:focus { outline: none !important;}
     .MyNav .NavLinks .Hamberger{
         position: absolute;
         right: 3%;
-        top: 5%;
+        top: 12%;
         cursor: pointer;
         z-index: 1000;
+        /* border: 1px solid red; */
         
     }
     .MyNav .NavLinks .NavContainer{

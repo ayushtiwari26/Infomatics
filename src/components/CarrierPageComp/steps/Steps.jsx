@@ -57,6 +57,7 @@ const Steps = ({no}) => {
   ];
   return (
     <>
+   <div className="horStep">
     <div className="container">
       <div className="row stepsRecru">
         <p>Our four steps Recruitment process</p>
@@ -92,6 +93,45 @@ const Steps = ({no}) => {
         ))}
       </Stepper>
     </Box>
+    </div>
+
+    <div className="verStep">
+    <div className="container">
+      <div className="stepsRecru">
+        <p>Our four steps Recruitment process</p>
+      </div>
+    </div>
+    <Box className={classes.root}>
+      <Stepper activeStep={0} alternativeLabel className={classes.stepper1} orientation="vertical">
+        {steps.map((label) => (
+          <Step key={label} style={{ display: 'flex', justifyContent: 'center',flexDirection:'column',width:'100%',marginTop:'20px' }}>
+            <StepLabel className={classes.stepper} style={{ display: 'flex', justifyContent: 'center',padding:'10px'}}>
+              <Container style={{ display: 'flex', justifyContent: 'center', }}>
+                <Avatar
+                  alt="Interview Round photos"
+                  src={label.img}
+                  className={classes.smallAvatar}
+                  sx={{ width: 56, height: 56,}}
+                  style={{display:'flex', justifyContent:'center', alignSelf:'center'}}
+                />
+              </Container>
+
+              <Container style={{ display: 'flex', justifyContent: 'center' }}>
+                <p className={classes.smallTitle}>{label.title}</p>
+              </Container>
+              <Box className={classes.stepContent}>
+              <Container style={{ display: 'flex', justifyContent: 'center' }}>
+                <p>{label.content}</p>
+              </Container>    
+            </Box>
+            </StepLabel>
+
+            
+          </Step>
+        ))}
+      </Stepper>
+    </Box>
+    </div>
     </>
   );
 };
