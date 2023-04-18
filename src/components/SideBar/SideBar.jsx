@@ -1,20 +1,37 @@
-import React from 'react'
+import React, { useEffect, useLayoutEffect } from 'react'
 import { useState } from 'react'
-import { Avatar } from '@mui/material'
-// import checkList from '../../../assets/images/checkList.png'
-// import whoAreWe from '../../../assets/images/whoAreWe.png'
-// import award from '../../../assets/images/award.png'
-// import faq from '../../../assets/images/faq.png'
+import {CgMenuGridR} from 'react-icons/cg'
 
 import '../SideBar/SideBar.css'
 
 
 const SideBar = () => {
     const [tab, setTab] = useState(1)
+    const [sidebarVisible, setSidebarVisible] = useState(false);
+
+    useEffect(() => {
+      const handleResize = () => {
+        if (window.innerWidth > 1000) {
+          setSidebarVisible(false);
+        }
+      };
+  
+      window.addEventListener("resize", handleResize);
+  
+      return () => {
+        window.removeEventListener("resize", handleResize);
+      };
+    }, []);
+
+    const toggleSidebar = () => {
+      setSidebarVisible(!sidebarVisible);
+    };
+
+    
   return (
     <>
     <div className='sideCon'>
-          <div className="sidelabel">
+          <div className={`sidelabel ${sidebarVisible===true?'sideLabel2':'sideLabel'}`}>
               <div className={tab===1?'side2':'side1'} onClick={()=>{setTab(1)}}>
               Material Management
               </div>
@@ -61,6 +78,7 @@ const SideBar = () => {
           </div>
   
           <div className='sideItem'>
+          <div className='sideToggleMain' onClick={toggleSidebar}><CgMenuGridR/></div>
             <div className="sideChange">
               {tab===1?
               <>

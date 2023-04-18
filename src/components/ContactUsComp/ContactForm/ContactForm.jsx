@@ -4,16 +4,18 @@ import { TextField , Button} from '@mui/material'
 import SendIcon from '@mui/icons-material/Send';
 import getInTouch from "../../../assets/images/getInTouch.png"
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import SmallMap from '../../../assets/images/sscontact2.png'
 
 const ContactForm = () => {
+  const imageUrl = `https://maps.googleapis.com/maps/api/staticmap?center=21.268064871325173,81.59350096558912&zoom=5&size=100&key=AIzaSyDNS5PYQ9DPmYOLmjMZwLJ5Su99bzgoDSo  `;
   return (
     <div className="ConBG">
         <div className="ConCard">
-            <div className="ConImg" style={{backgroundImage:`url(${getInTouch})`}}>
-                {/* illustration */}
+            <div className="ConImg" style={{backgroundImage: `url(${SmallMap})`}}>
+              {/* <img src="/images/sscontact.png" alt="" srcset="" /> */}
             </div>
             <div className="ConForm">
-            <a href='#'><p className="ConUs">Contact Us</p></a>
+            <p className="ConUs">Contact Us</p>
               <form>
                 <div className='FName'>
                   <TextField id="standard-basic" label="First Name" variant="standard" />

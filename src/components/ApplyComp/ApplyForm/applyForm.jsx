@@ -1,11 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useRef } from 'react';
 import "../ApplyForm/applyForm.css"
 import { MenuItem, TextField } from '@mui/material'
-// import NorthEastRoundedIcon from '@mui/icons-material/NorthEastRounded';
-// import LocationCityRoundedIcon from '@mui/icons-material/LocationCityRounded';
-// import AccessTimeRoundedIcon from '@mui/icons-material/AccessTimeRounded';
-// import {openPositions} from '../../../assets/constants/carrierPage';
 import { DemoContainer } from '@mui/x-date-pickers/internals/demo';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
@@ -14,17 +10,68 @@ import Radio from '@mui/material/Radio';
 import RadioGroup from '@mui/material/RadioGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import FormControl from '@mui/material/FormControl';
-import FormLabel from '@mui/material/FormLabel';
-import {  Button } from "@material-ui/core";
-import SendIcon from '@mui/icons-material/Send';
 
 
 
-const applyForm = () => {
-  const handleFileUpload = (event) => {
-    const file = event.target.files[0];
-    console.log("Selected file:", file);
-    // Do something with the file
+const ApplyForm = () => {
+
+  const [email, setEmail] = useState('');
+  const [phoneNumber, setPhoneNumber] = useState('');
+  const [emailError, setEmailError] = useState('');
+  const [phoneNumberError, setPhoneNumberError] = useState('');
+
+  const validateEmail = (email) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  };
+
+  const validatePhoneNumber = (phoneNumber) => {
+    const phoneNumberRegex = /^[6789]\d{9}$/;
+    return phoneNumberRegex.test(phoneNumber);
+  };
+
+  const handleEmailChange = (e) => {
+    const value = e.target.value;
+    setEmail(value);
+    if (!validateEmail(value)) {
+      setEmailError('Please enter a valid email');
+    } else {
+      setEmailError('');
+    }
+  };
+
+  const handlePhoneNumberChange = (e) => {
+    const value = e.target.value;
+    setPhoneNumber(value);
+    if (!validatePhoneNumber(value)) {
+      setPhoneNumberError('Please enter a valid phone number');
+    } else {
+      setPhoneNumberError('');
+    }
+  };
+
+
+  const fileInputRef = useRef(null);
+
+  const handleFileSelect = (e) => {
+    const files = e.target.files;
+    // Handle selected files here
+    console.log(files);
+    
+    // Max file size in bytes (5MB)
+    const maxSize = 4 * 1024 * 1024;
+    
+    // Validate file size
+    for (let i = 0; i < files.length; i++) {
+      if (files[i].size > maxSize) {
+        alert('File size exceeds the maximum limit of 4MB');
+        return;
+      }
+    }
+  };
+
+  const handleButtonClick = () => {
+    fileInputRef.current.click();
   };
   return (
     <>
@@ -35,7 +82,7 @@ const applyForm = () => {
           </div>
           <div className="applyLocation">
             <div><h3>Raipur</h3></div>
-            <div><h3>Remote</h3></div>
+            {/* <div><h3>Remote</h3></div> */}
           </div>
           </div>
         
@@ -82,14 +129,32 @@ const applyForm = () => {
             </div>
           <div className='applyEmail'>
             <h5>Email*</h5>
-              <TextField prop sx={{width: 500}} id="outlined-basic" label="Email" variant="outlined" className="modalInputSize"/>
+              <TextField prop sx={{width: 500}} 
+              id="outlined-basic" 
+              label="Email" 
+              variant="outlined" 
+              className="modalInputSize"
+              value={email}
+              onChange={handleEmailChange}
+              error={emailError !== ''}
+              helperText={emailError}/>
             </div>
         </div>
         <div className="applyDivide">
+
             <div className='applyPhoneNum'>
                 <h5>Phone Number*</h5>
-                  <TextField prop sx={{width: 500}} id="outlined-basic" label="Phone Number" variant="outlined" className="modalInputSize"/>
-                </div>
+                  <TextField prop sx={{width: 500}} 
+                    id="outlined-basic" 
+                    label="Phone Number" 
+                    variant="outlined" 
+                    className="modalInputSize"
+                    value={phoneNumber}
+                    onChange={handlePhoneNumberChange}
+                    error={phoneNumberError !== ''}
+                    helperText={phoneNumberError}/>
+              </div>
+
             <div className='applyGender'>
             <h5>Gender*</h5>
                 <FormControl sx={{marginTop: "20px"}}>
@@ -112,17 +177,17 @@ const applyForm = () => {
               </FormControl>
               </div >
                 <div className='applyMessage'>
-                <h5>Message*</h5>
+                <h5>Cover Letter</h5>
                   <TextField  prop sx={{width: 500}} id="outlined-basic" label="Message" variant="outlined" className="modalInputSize"/>
                 </div>
           </div>
           <div className="applyDivide">
             <div className='applyCompany'>
-            <h5>Company*</h5>
+            <h5>Company (If any)</h5>
               <TextField  prop sx={{width: 500}} id="outlined-basic" label="Current Company" variant="outlined" className="modalInputSize"/>
             </div>
             <div className='applyCTC'>
-            <h5>CTC(in Lacs)*</h5>
+            <h5>Current CTC(in Lacs)</h5>
               <TextField  prop sx={{width: 500}} id="outlined-basic" label="Current CTC" variant="outlined" className="modalInputSize"/>
             </div>
           </div>
@@ -145,9 +210,17 @@ const applyForm = () => {
           </div>
 
           <div className="applyUpload">
-            <button id='uploadButton' class="btn btn-primary" onClick={handleFileUpload}>Upload file</button>
-            <p>(Format: PDF, DOC | Size: Upload upto 5 MB)</p>
+            <input
+              type="file"
+              ref={fileInputRef}
+              style={{ display: 'none' }}
+              onChange={handleFileSelect}
+              accept=".pdf,.doc,.docx"
+            />
+            <button id='uploadButton' class="btn btn-primary" onClick={handleButtonClick}>Upload File</button>
+            <p>(Format: PDF, DOC | Size: Upload upto 4 MB)</p>
           </div>
+
           <div className="applySend">
                 <button id='applysubmit'>
                      Submit
@@ -161,5 +234,5 @@ const applyForm = () => {
 }
 
 
-export default applyForm
+export default ApplyForm
 
