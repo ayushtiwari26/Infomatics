@@ -44,7 +44,7 @@ let useClickOutside = (handler)=>{
     const classes = useStyles();
     const [navChev, setNavchev] = useState(true)
     const [navProducts, setNavProducts] = useState(true)
-
+    const [navIndus, setNavIndus]= useState(true)
   function handleChev(){
     setNavchev(!navChev)
   }
@@ -52,6 +52,7 @@ let useClickOutside = (handler)=>{
   let domNode = useClickOutside(()=>{
     setNavchev(true)
     setNavProducts(true)
+    setNavIndus(true)
   })
   return (
     <>
@@ -74,7 +75,12 @@ let useClickOutside = (handler)=>{
                   </span>
             </li>
 
-            <li><a href='/industries'>Industries</a></li>
+            <li className={navIndus===true?'navArrow':'navBackArrow uProLine'}>
+                <span onClick={()=>{setNavIndus(!navIndus)}}>
+                  Industries
+                  </span>
+              {/* <a href='/industries'>Industries</a> */}
+            </li>
 
             {/* <li><a href='#'>Resources</a></li> */}
 
@@ -87,7 +93,54 @@ let useClickOutside = (handler)=>{
             </li>
         </ul>
     </nav>
+{navIndus===false?
+          <>
+          <BouncyDiv2 ref={domNode} className='Indus'>
+            <div className="Indusnav">
+              <div className="Induscol">
+                <div className='indusnavhead'>Manufacturing</div>
+                <ul className='indusnavlist'>
+                  <li>Steel</li>
+                  <li>Metals & Minerals Industries</li>
+                  <li>Batch Manufacturing</li>
+                  <li>Discrete Manufacturing</li>
+                </ul>
+              </div>
+               <div className="Induscol">
+                <div className='indusnavhead2'>Trading</div>
+                <ul className='indusnavlist'>
+                  <li>Coal</li>
+                  <li>Cement</li>
+                  <li>Iron Ore</li>
+                
+                </ul>
+              </div>
+              <div className="Induscol">
+                <div className='indusnavhead3'>Logistics and C&F</div>
+                <ul className='indusnavlist'>
+                  <li>Coal</li>
+                  <li>Cement</li>
+                  <li>Iron Ore</li>
+                  <li>Agro Commodity</li>
+                  <li>Steel</li>
+                </ul>
+              </div>
+              <div className="Induscol">
+                <div className='indusnavhead4'>Other Servies</div>
+                <ul className='indusnavlist'>
+                  <li>Education</li>
+                  <li>Lifestyle</li>
+                  <li>Entertainment</li>
+                  
+                </ul>
+              </div>
+              
+            </div>
+          </BouncyDiv2>
+          
 
+          </>:null
+}
 {navChev===false?
           <>
           <BouncyDiv ref={domNode} className='container-fluid'>
@@ -211,6 +264,15 @@ const BouncyDiv = styled.div`
   border-top: 2px solid var(--blue);
   padding-left: 7%;
   top:4rem;
+  z-index: 1000;
+  background-color: white;
+  animation: 1s ${bounceAnimation};
+`;
+const BouncyDiv2 = styled.div`
+  position: fixed;
+  border-top: 2px solid var(--blue);
+  // padding-left: 7%;
+  // top:4rem;
   z-index: 1000;
   background-color: white;
   animation: 1s ${bounceAnimation};

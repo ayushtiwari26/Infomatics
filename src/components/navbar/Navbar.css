@@ -52,6 +52,8 @@ nav{
     justify-content: space-evenly;
     align-items: center;
     text-transform: uppercase;
+    scroll-behavior: smooth;
+
 }
 .nav-links li a{
     color: black;
@@ -215,6 +217,8 @@ button:focus { outline: none !important;}
     .MyNav .NavLinks 
     {
         display: flex;
+    scroll-behavior: auto;
+
     }
     .MyNav .NavLinks .Nav{
         display: flex;
@@ -238,6 +242,9 @@ button:focus { outline: none !important;}
         height: 80rem;
         width: 25%;
         background-color: white;
+        overflow-y: scroll;
+        height: 100vh;
+        /* border: 1px solid red; */
         
     }
     .MyNav .NavLinks .NavContainer .Navbar{
@@ -329,11 +336,64 @@ button:focus { outline: none !important;}
     .MyNav .NavLinks .NavContainer Button:hover{
         width:40%;
     }
-    /* .MyNav .NavLinks Button a 
-    {
-        display: none;
-    }
-    .MyNav .NavLinks  Button :hover + a{
-        display:block;
-    } */
+}
+.Indus{
+    width: 100%;
+}
+.Indusnav{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: left;
+}
+.indusnavlist{
+    list-style: none;
+}
+.indusnavhead2{
+    color: red;
+    font-size: 1.4em;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-bottom: 1px solid red;
+    height: 3rem;
+}
+.indusnavhead3{
+    color:blue;
+    font-size: 1.4em;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-bottom: 1px solid blue;
+    height: 3rem;
+}
+.indusnavhead4{
+    color:seagreen;
+    font-size: 1.4em;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-bottom: 1px solid seagreen;
+    height: 3rem;
+}
+.indusnavlist li{
+    margin: 3% 0; 
+    font-size: 1.06em;
+    font-weight: 400;
+    font-family: 'Inter';
+    transition: 0.5s;  
+    
+}
+.indusnavlist li:hover{
+    font-size: 1.1em;
+    font-weight: 700;
+    cursor: pointer;
+    color: var(--blue);
+    
+}
+.indusnavhead{
+    font-size: 1.4em;
+    font-weight: 500;
+    color:#F28651;
+    text-transform: uppercase;
+    border-bottom: 1px solid orange;
+    height: 3rem;
 }

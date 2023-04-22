@@ -8,11 +8,14 @@ import {VscChromeClose} from 'react-icons/vsc'
 import { Link } from 'react-router-dom';
 import {servicesPage} from '../../assets/constants/servicesPage'
 import {productHero} from '../../assets/constants/productsPage'
+import { industries } from '../../assets/constants/industries';
 
 const NavLinks = (props) => {
   const [open , setOpen]= useState(false)
   const [serviceChild, setServiceChild] = useState(false)
   const [productChild, setProductChild] = useState(false)
+  const [indusChild, setIndusChild] = useState(false)
+  
   const hambergerIcon = (
     <HiMenu
       className="Hamberger"
@@ -130,9 +133,26 @@ const NavLinks = (props) => {
                     initial={animateFrom}
                     animate={animateTo}
                     transition={{delay:0.50}}>
-                    <Button className='hoverNavbarSideDiv'> 
+                    {/* <Button className='hoverNavbarSideDiv'> 
                     <img src='/images/industriesIcon.png'/>
-                    <a href='/industries'>Industries</a></Button>
+                    <a href='/industries'>Industries</a></Button> */}
+                      <Button
+                        onClick={()=>{setIndusChild(!indusChild)}}
+                        sx={{marginBottom:1}}
+                        className='hoverNavbarSideDiv'>
+                          <img src='/images/productIcon.png'/>
+                        <Link to='#'>Industries</Link>
+                      </Button>
+                      {indusChild===true && industries.map((item)=>{
+                      return(
+                        <p className='childSerSmallScreen'>
+                        <Button onClick={handleServiceChildStatus} className='hoverNavbarSideDiv'>
+                          <img src='/images/verifyIcon.png'/>
+                          <Link to={item.id} className='linkChildFOntSize'>{item.title}</Link>
+                        </Button>
+                      </p>
+                      )
+                    })}
                   </motion.div>
 
                   <motion.div className="NavCli "

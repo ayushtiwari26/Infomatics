@@ -1,4 +1,5 @@
 import { Button } from '@mui/material'
+import {useNavigate} from 'react-router-dom';
 import React from 'react'
 import './Dir.css'
 import B2 from '../../../assets/images/B2.jpg'
@@ -6,6 +7,11 @@ import {RiDoubleQuotesL} from 'react-icons/ri'
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Dir = () => {
+  // const navigate = useNavigate();
+
+  // const navigateHome = () => {
+  //   navigate('/readMe');
+  // };
   return (
 <div className='back' >
       <div className='Backu'>
@@ -21,14 +27,20 @@ const Dir = () => {
                   </div>
                   <div className="dirleft2">
                       <Button 
+                      // onClick={navigateHome}
                       style={{
+                      borderRadius: 35,
+                      color:"black",
+                      backgroundColor: "",
+                      }} >
+                        <a 
+                        style={{
                       borderRadius: 35,
                       color:"black",
                       backgroundColor: "#BFD5DB",
                       padding: "12px 26px",
-                      fontWeight:"700" ,
-                      }}>
-                        Read the Story.
+                      fontWeight:"700"
+                      }} href='/readMe'>Read the Story.</a>
                       </Button>
                   </div>
         </div>
