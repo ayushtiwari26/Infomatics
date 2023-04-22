@@ -1,0 +1,59 @@
+/* .OurDiv{
+    height: 60rem;
+    
+} */
+.Ourhero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    /* height: 40rem; */
+    /* background-color: var(--blue); */
+}
+.OurHead{
+    width: 100%;
+    height: 25rem;
+    background-color: var(--blue);
+    font-size: 10vh;
+    font-weight: 700;
+    font-family: 'New Century Schoolbook';
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    letter-spacing: 7px;
+
+}
+
+.OurImg{
+    width: 40%;
+    height: 25rem;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -5%;
+}
+
+.OurImg img{
+    width: 100%;
+    height: 100%;
+
+}
+.OurPara{
+    width: 50%;
+    margin-top: 5%;
+    font-size: 1.4rem;
+    text-align: left;
+    initial-letter: 2;
+    line-height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.OurPara::first-letter {
+    -webkit-initial-letter: 2;
+          initial-letter: 2;
+  color: orange;
+  font-weight: bold;
+  margin-right: .75em;
+  }

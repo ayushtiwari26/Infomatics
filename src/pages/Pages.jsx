@@ -4,7 +4,7 @@ import About from './About';
 import ContactUs from './ContactUs';
 import Landing from './Landing';
 import Services from './Services';
-import Industries from '../components/Industries/IndusPage';
+import Industries from './Industries';
 import Products from './Products';
 import Carriers from './Carriers';
 import Clients from './Clients';
@@ -12,9 +12,6 @@ import PageNotFound from '../components/pageNotFound/PageNotFound';
 import MyNav from '../components/navbar/MyNav';
 import Footer from '../components/footer/Footer';
 import SideBar from '../components/SideBar/SideBar';
-import Apply from './Apply'
-import ProductChild from '../components/ProductChildPageComp/SideBar'
-
 
 // create a layout component that includes MyNav and Footer
 const Layout = ({ children }) => (
@@ -40,6 +37,9 @@ const Pages = () => {
       <Route exact path={'/clients'} element={<Layout><Clients /></Layout>} />
       <Route exact path={'/apply'} element={<Layout><Apply/></Layout>} />
       <Route exact path={'/sidebar'} element={<Layout><SideBar/></Layout>} />
+      <Route exact path={'/readMe'} element={<Layout><ReadMe/></Layout>} />
+      {/* <Route exact path={'/manufacturing'} element={<Layout><Manufacture/></Layout>} /> */}
+
 
       <Route path='*' element={<PageNotFound />} />
     </Routes>
