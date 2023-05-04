@@ -1,0 +1,57 @@
+.benefitBg{
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.benefitHead{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    font-size: 1.3rem;
+    font-weight: 600;
+    /* border: 1px solid red; */
+}
+.benefitPara{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+}
+.benefitPoint{
+    display: flex;
+    margin-top: 3%;
+    text-align: left;
+    /* gap: 10%; */
+    width: 80%;
+    /* border: 1px solid red; */
+
+}
+.beneCol1{
+    width: 50%;
+}
+.listitem1{
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid red; */
+    /* width: 100%; */
+}
+.imgdiv{
+    width: 5%;
+    height: 5%;
+    /* border: 1px solid red; */
+
+}
+.imgdiv img{
+    width: 100%;
+    height: 100%;
+}
+.beneLine{
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+}
