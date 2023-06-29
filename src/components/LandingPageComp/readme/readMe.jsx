@@ -1,7 +1,7 @@
 import React from 'react'
-import "./readMe.css"
+import "./ReadMe.css"
 import Our from "../../../assets/images/OurStory.jpg"
-const readMe = () => {
+const ReadMe = () => {
   return (
     <>
         <div className="OurDiv">
@@ -19,4 +19,4 @@ const readMe = () => {
   )
 }
 
-export default readMe
+export default ReadMe

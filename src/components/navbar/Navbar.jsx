@@ -100,7 +100,14 @@ let useClickOutside = (handler)=>{
               <div className="Induscol">
                 <div className='indusnavhead'>Manufacturing</div>
                 <ul className='indusnavlist'>
-                  <li>Steel</li>
+                  <li>
+                    <Link reloadDocument to={`/industries/steel`} onClick={
+                        ()=>{
+                          setNavIndus(!navIndus)
+                        }
+                        }>
+                          </Link>
+                  </li>
                   <li>Metals & Minerals Industries</li>
                   <li>Batch Manufacturing</li>
                   <li>Discrete Manufacturing</li>

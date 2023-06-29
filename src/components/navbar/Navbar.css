@@ -2,9 +2,9 @@
     margin: 0;
     padding: 0;
     color: #000000;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
     letter-spacing: 1px;
-    font-weight: 300;
+    font-weight: 400;
 }
 body{
     overflow-x: hidden;
