@@ -7,36 +7,27 @@
     flex-direction: column;
 }
 .openPosDiv{
-    width: 70%;
+    width: 90%;
 
 }
-.openFormDiv{
+/* .openFormDiv{
     width: 35%;
-    /* height: 180vh; */
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border: 1px solid rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     margin-right: 2%;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
 
-}
-/* .openPos .MuiMenu-list .MuiMenuItem-root {
-    border: 1px solid red;
-    display: flex;
-    flex-direction: column;
-  } */
- 
+} */
 .openSet{
     display: flex;
     flex-direction: row;
-    margin-left: 4%;
+    margin-left: 6%;
     gap: 2%;
 }
 
 
 .openPosPar{
-    /* margin-left: 10%; */
     padding: 1% 1%;
     display: flex;
     flex-direction: row;
@@ -59,6 +50,7 @@
 
 .AOpenJoinPcont button{
     margin-right: 3%;
+    margin-top: 20px;
     border-top-left-radius: 20px !important;
     border-top-right-radius: 20px !important;
     border-bottom-left-radius: 20px !important;
@@ -241,4 +233,31 @@
 }
 .OpenQuali p{
     margin-top: 4%;
+}
+.openPosRight{
+    margin-left: 20%;
+}
+@media (min-width:550px) and (max-width:1000px){
+    .openPosLeft{
+        margin-right: 10%;
+        padding: 1%;
+    }
+}
+
+@media (min-width:350px) and (max-width:550px){
+    .openPosPar{
+        padding: 1% 1%;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .openPosLeft{
+        width: 100%;
+
+    }
+    .openPosRight{
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+   
 }

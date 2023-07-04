@@ -1,4 +1,291 @@
-.ak{
+.plateBg{
+  width: 100%;
+  height: 50rem;
+  background-size: auto;
+  background-position:70%;
+
+}
+.plateHead{
+  width: 60%;
+  margin-top: 10%;
+}
+.plateHead h1{
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+}
+.plateHead p{
+  letter-spacing: 2.5px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+}
+.plateCardDeck{
+  display: flex;
+  flex-direction: row;
+  width: 68%;
+  height: fit-content;
+  gap: 2%;
+  padding-left: 3%;
+  margin-top: 3%;
+}
+.card1{
+  width: 50%;
+  height: 20rem;
+  display:flex;
+  gap: 4%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.6px);
+  -webkit-backdrop-filter: blur(3.6px);
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  
+}
+.card3{
+  width: 50%;
+  height: 20rem;
+  display:flex;
+  gap: 4%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.6px);
+  -webkit-backdrop-filter: blur(3.6px);
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  
+}
+.card-img-top{
+  width: 20%;
+  height: 20%;
+}
+.cardHead h3{
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  color: rgb(0, 0, 0);
+}
+.cardHead2 h3{
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  color: rgb(34, 101, 148);
+}.cardHead3 h3{
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  color: rgb(211, 70, 70);
+}
+.cardSub p{
+  padding-left: 1%;
+  padding-right: 1%;
+}
+.platebutt{
+  font-size: 12px !important;
+  font-weight: 500;
+  width: 50%;
+}
+
+@media (min-width: 800px) and (max-width:1100px) {
+  .plateBg{
+    height: 45rem;
+    background-position:40%;
+  
+  }
+  .plateHead{
+    width: 80%;
+    margin-top: 15%;
+  }
+  .plateHead h1{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+  }
+  .plateHead p{
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 1.5px;
+  }
+  .plateCardDeck{
+    width: 75%;
+    gap: 2%;
+    padding-left: 3%;
+    margin-top: 7%;
+  }
+  .card-img-top{
+    width: 30%;
+    height: 20%;
+  }
+  .card1{
+    width: 70%;
+    height: 20rem;
+    display:flex;
+    gap: 4%;
+   
+  }
+  .card3{
+    width: 70%;
+    height: 20rem;
+    display:flex;
+    gap: 4%;
+   
+  }
+  .cardHead h3{
+    font-size: 17px;
+  }
+  .cardHead2 h3{
+    font-size: 17px;
+  } .cardHead3 h3{
+    font-size: 17px;
+  }
+  .cardSub p{
+   font-size: 14px; 
+  }
+  .platebutt{
+    width: 80%;
+  }
+}
+@media (min-width: 500px) and (max-width:800px) {
+  .plateBg{
+    height: fit-content;
+    background-position:40%;
+  }
+  .plateHead{
+    width: 100%;
+    margin-top: 5%;
+  }
+  .plateHead h1{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .plateHead p{
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 1.5px;
+    font-size: 13px;
+
+  }
+  .plateCardDeck{
+    width: 98%;
+    gap: 10px;
+    flex-direction: column;
+    padding-left: 3%;
+    margin-top: 5%;
+    padding-bottom: 1%;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-img-top{
+    width: 30%;
+    height: 20%;
+  }
+  .card1{
+    width: 50%;
+    height: fit-content;
+    gap: 4%;
+    
+  }
+  .card2{
+    width: 50%;
+    height: fit-content;
+    gap: 4%;
+    
+  }
+  .card3{
+    width: 50%;
+    height: fit-content;
+    gap: 4%;
+    
+  }
+  .platebutt{
+    width: 50%;
+  }
+  .cardHead h3{
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+  }
+  .cardHead2 h3{
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+  }
+  .cardHead3 h3{
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+  }
+}
+@media (min-width: 350px) and (max-width:500px) {
+  .plateBg{
+    height: fit-content;
+    background-position:40%;
+  }
+  .plateHead{
+    width: 100%;
+    margin-top: 5%;
+  }
+  .plateHead h1{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+   
+  }
+  .plateHead p{
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 1px;
+    font-size: 13px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+  }
+  .plateCardDeck{
+    width: 98%;
+    gap: 10px;
+    flex-direction: column;
+    padding-left: 3%;
+    margin-top: 5%;
+    padding-bottom: 1%;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-img-top{
+    width: 30%;
+    height: 20%;
+  }
+  .card1{
+    width: 60%;
+    height: fit-content;
+    gap: 4%;
+    
+  }
+  .card2{
+    width: 60%;
+    height: fit-content;
+    gap: 4%;
+    
+  }
+  .card3{
+    width: 60%;
+    height: fit-content;
+    gap: 4%;
+    
+  }
+  .platebutt{
+    width: 70%;
+  }
+  .cardHead h3{
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+  }
+  .cardHead2 h3{
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+  }
+  .cardHead3 h3{
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+  }
+}
+
+/* .ak{
   width: 100%;
   position: relative;
   background-position:70%;
@@ -259,7 +546,6 @@
     display: flex;
     justify-content: center;
     text-align: center;
-    /* font-size: 2rem; */
   }
 }
 
@@ -276,15 +562,15 @@
   .butt{
       width: 60%;
   }
-}
+} */
 
 
 /* modal css */
 
-.ModalBack{
+.ModalBacks{
   z-index: 10000000000;
 }
-.ModalBack, .overlay {
+.ModalBacks, .overlays {
   width: 100vw;
   height: 100vh;
   top: 0;
@@ -293,10 +579,10 @@
   bottom: 0;
   position: fixed;
 }
-.overlay {
+.overlays {
   background: rgba(49,49,49,0.8);
 }
-.modalContent {
+.modalContents {
 background-size: cover;
 position: absolute;
 top: 50%;
@@ -314,7 +600,7 @@ padding: 14px 28px;
   padding: 25px;
 
 }
-.ModClose{
+.ModCloses{
 width: 30px;
 position: absolute;
 right: 10%;
@@ -323,27 +609,27 @@ background-color: #fff;
 border-radius: 50%;
 box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 5px;
 } 
-.modalContent .ModalTitle{
+.modalContents .ModalTitles{
   display: inline-block;
   text-align: center;
   margin-top: 10px;
 }
 
-.titleCloseBtn {
+.titleCloseBtns {
   display: flex;
   justify-content: flex-end;
 }
-.modalContent .Modfooter {
+.modalContents .Modfooters {
   flex: 20%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.ModalBut{
+.ModalButs{
   width: 100%;
   align-items: center;
 } 
-.ModalBut button{
+.ModalButs button{
   width: 150px;
   height: 45px;
   margin: 10px;
@@ -354,7 +640,7 @@ box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 5px;
   font-size: 20px;
   cursor: pointer;
 }
-.modalContent .Modfooter button {
+.modalContents .Modfooters button {
   width: 150px;
   height: 45px;
   margin: 10px;
@@ -369,48 +655,48 @@ box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 5px;
 #cancelBtn {
   background-color: crimson;
 }
-.ModalTitle{
+.ModalTitles{
   font-size: 30px;
   font-weight: 500;
   width: 100%;
   padding-top: 10px;
 }
-.ModalName{
+.ModalNames{
   margin-top: 5%;
 
 }
-.ModalName label{
+.ModalNames label{
   /* color: rgb(114, 26, 222); */
   color: black;
 }
-.ModalEmail{
+.ModalEmails{
   margin-top: 2%;
 
 }
-.ModalEmail label{
-  color: black;
-  /* color: rgb(114, 26, 222); */
-
-}
-.ModalPhoneNum{
-  margin-top: 2%;
-
-}
-.ModalPhoneNum label{
+.ModalEmails label{
   color: black;
   /* color: rgb(114, 26, 222); */
 
 }
-.ModalMessage{
+.ModalPhoneNums{
   margin-top: 2%;
 
 }
-.ModalMessage label{
+.ModalPhoneNums label{
+  color: black;
+  /* color: rgb(114, 26, 222); */
+
+}
+.ModalMessages{
+  margin-top: 2%;
+
+}
+.ModalMessages label{
   color: black;
   /* color: rgb(5, 14, 110); */
 
 }
-.ModA{
+.ModAs{
 position: relative;
 width: 150px;
 height: 50px;
@@ -422,7 +708,7 @@ text-decoration: none;
 gap: 10px;
 
 }
-.ModSub{
+.ModSubs{
 color:rgba(255, 255, 255, 0.5);
 text-decoration: none;
 text-transform: uppercase;
@@ -433,7 +719,7 @@ display: inline-block;
 z-index: 2;
 transition: 0.5 ease-in-out;
 }
-.ModA::before{
+.ModAs::before{
 content: '';
 position: absolute;
 top: 0;
@@ -445,14 +731,14 @@ transform: scaleX(0);
 transition: transform 0.5s ease-in-out;
 transform-origin: right;
 }
-.ModA:hover:before{
+.ModAs:hover:before{
 transform: scaleX(1);
 transform-origin: left;
 
 
 }
 
-.ModA:hover .ModSub{
+.ModAs:hover .ModSubs{
 color: black;
 }
 a:link{
@@ -511,7 +797,7 @@ transform: rotate(-45deg);
 transition-delay: 0.5s;
 }
 @media (min-width: 350px) and (max-width:570px){
-.modalContent{
+.modalContents{
   width: 300px;
   height: 450px;
   top: 40%;

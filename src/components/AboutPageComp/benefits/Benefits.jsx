@@ -4,9 +4,9 @@ const Benefits = () => {
   return (
     <>
     <div className="MainBene">
-    <div className="imgdiv">
-        <div className="bigimg"><img src={'./images/grp1.jpg'}/></div>
-        <div className="smallimg"><img src={'./images/grp2.jpg'}/></div>
+    <div className="imgdivs">
+        <div className="bigimgs"><img src={'./images/grp1.jpg'}/></div>
+        <div className="smallimgs"><img src={'./images/grp2.jpg'}/></div>
     </div>
     <div className="textdiv">
         <div className="headdiv"><h2>Benefits and Perks</h2></div>

@@ -178,8 +178,17 @@
     }
   }
    */
-   
-   .mainHero{
+   .HeroDemoBut{
+    border-radius: 35px!important;
+    background-color: #BFD5DB!important;
+    color:black!important;
+    padding: 12px 0px!important;
+    font-size: 15px!important;
+    font-weight:550!important;
+    font-family:'Montserrat'!important;
+    letter-spacing:-0.5px!important;
+   }
+  .mainHero{
     position: relative;
     width: 100vw;
     height: 100vh;
@@ -187,7 +196,6 @@
   .sideMainHero{
     display: flex;
   }
-  
   .sideHero{
     position: absolute;
     top:30%;
@@ -277,6 +285,12 @@
   }
   
   @media only screen and (max-width: 768px) {
+    .HeroDemoBut{
+      font-size: 12px!important;
+    padding: 10px 0px!important;
+
+     }
+     
     .mainHero {
       height: 60vh;
     }

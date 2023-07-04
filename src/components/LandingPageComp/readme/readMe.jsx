@@ -1,5 +1,5 @@
 import React from 'react'
-import "./ReadMe.css"
+import "./readMe.css"
 import Our from "../../../assets/images/OurStory.jpg"
 const ReadMe = () => {
   return (

@@ -14,7 +14,7 @@ import Footer from '../components/footer/Footer';
 import SideBar from '../components/SideBar/SideBar';
 import ProductChild from '../pages/ProductChild';
 import Apply from '../pages/Apply';
-import ReadMe from '../components/LandingPageComp/readme/ReadMe';
+import ReadMe from '../components/LandingPageComp/readme/readMe';
 
 // create a layout component that includes MyNav and Footer
 const Layout = ({ children }) => (

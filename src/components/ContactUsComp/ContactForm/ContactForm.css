@@ -125,3 +125,95 @@ a:link{
     display: inline-block;
     font-size: 12px;
 }
+@media (min-width:550px) and (max-width:1100px){
+    .ConImg{
+        display: none;
+        border: 1px solid red;
+    }
+    
+    .ConForm{
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    left: 0;
+    width: 100%;
+}
+}
+@media (min-width:350px) and (max-width:1000px){
+     .ConImg{
+        display: none;
+        border: 1px solid red;
+    }
+    
+    .ConForm{
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    left: 0;
+    width: 100%;
+}
+    .ConUs{
+    position: absolute;
+    left: 15%;
+    top: 10%;
+    font-size: 37px;
+    font-family: 'Inter';
+}
+.FName{
+    position: absolute;
+    top: 20%;
+    left: 15%;
+
+}
+.LName{
+    position: absolute;
+    top: 32%;
+    left: 15%;
+
+}
+.ConEmail{
+    position: absolute;
+    top: 42%;
+    left: 15%;
+}
+.PhoneNum{
+    position: absolute;
+    top: 52%;
+    left: 15%;
+}
+.Message{
+    position: absolute;
+    top: 62%;
+    left: 15%;
+}
+.ConBut{
+    position: absolute;
+    top: 72%;
+    left: 15%;
+}
+.ConEmailUs{
+    position: absolute;
+    top: 82%;
+    left: 15%;
+    text-align: left;
+    font-size: 14px;
+    
+}
+/* .Conmail{
+    font-family: 'Inter';
+} */
+.ConBottom{
+    position: absolute;
+    bottom: 3%;
+    right: 0%;
+    
+}
+/* .ConFoot{
+    display: inline-block;
+    font-size: 12px;
+} */
+}

@@ -13,7 +13,7 @@
 .CompanyHead{
     display: flex;
     flex-direction: row;
-    margin: 0 5%;
+    margin: 0 3%;
 }
 .Companyteam{
     width: 30%;
@@ -25,7 +25,8 @@
     font-family: 'Inter';
 }
 .Companypara{
-    width: 40%;
+    width: 70%;
+    height: fit-content;
 
 }
 .Companypara p{
@@ -60,8 +61,6 @@
     align-items: flex-end;
     width: 40%;
     gap: 3%;
-
-    
 }
 .Companyemp img{
     width: 90%;
@@ -114,13 +113,125 @@
         font-size: 2em;
         
     }
-    /* .ComImg{
-
-        background-color: aqua;
-        width: 25%;
-        height: 10vw;
-    } */
     
+}
+@media (min-width:500px) and (max-width:800px){
+    .CompanyHead{
+    display: flex;
+    flex-direction: column;
+    margin: 1% 0;
+}
+.Companyteam{
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+}
+.Companypara{
+    width: 100%;
+    padding-left: 2%;
+    padding-right: 2%;
+    text-align:center;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+}
+.Companypara p{
+    text-align: justify;
+    font-size: 1em;
+
+}
+.CompanyNum{
+    display: none;
+}
+.CompanyImg{
+    display: flex;
+    justify-content: center;
+}
+}
+@media (min-width:350px) and (max-width:500px){
+    .CompanyHead{
+    display: flex;
+    flex-direction: column;
+    margin: 1% 0;
+}
+.Companyteam{
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+}
+.Companypara{
+    width: 100%;
+    padding-left: 2%;
+    padding-right: 2%;
+    text-align:center;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+}
+.Companypara p{
+    text-align: justify;
+    font-size: 1em;
+    line-height: 22px;
+
+}
+.CompanyNum{
+    display: none;
+}
+.CompanyImg{
+    display: flex;
+    justify-content: center;
+}
+    .CompanyDetail h4{
+    font-size: 18px;
+}
+.CompanyDetail p{
+    font-size: 15px;
+
+}
+.CompanyImg{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+    gap: 3%;
+}
+.CompanyDetail{
+    width: 50%;
+    margin-left: 2%;
+    border-left: none;
+    padding-left: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    /* border: 1px solid red; */
+
+}
+.ComImg{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    /* border: 1px solid red; */
+
+ 
+}
+.ComImg img{
+    width: 100%;
+ 
+}
+.Companyemp{
+    width: 100%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.Companyemp img{
+    width: 100%;
+    height: 70%;
+    /* clip-path: polygon(38% 1%, 100% 0%, 100% 100%, 0% 100%); */
+    
+}
 }
 
 

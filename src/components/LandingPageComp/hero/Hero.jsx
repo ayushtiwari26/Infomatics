@@ -32,16 +32,7 @@ const Hero = () => {
              
                     <Button
                     onClick={handleButtonClick} 
-                    style={{
-                                borderRadius: 35,
-                                backgroundColor: "#BFD5DB",
-                                color:'black',
-                                padding: "12px 0px",
-                                fontSize: "17px",
-                                fontWeight:'550',
-                                fontFamily:'Montserrat',
-                                letterSpacing:'-0.5px'
-                                }}
+                    className='HeroDemoBut'
                             variant="contained">
                               Request a free Demo
                              
