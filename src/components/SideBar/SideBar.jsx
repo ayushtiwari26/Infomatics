@@ -1,6 +1,7 @@
 import React, { useEffect, useLayoutEffect } from 'react'
 import { useState } from 'react'
 import {CgMenuGridR} from 'react-icons/cg'
+import black from "../../assets/images/OurStory.jpg"
 
 import '../SideBar/SideBar.css'
 
@@ -300,8 +301,33 @@ const SideBar = () => {
                 </>
                 :null}
             </div>
+                <div style={{
+                  backgroundImage:`url(${black})`,
+                  backgroundRepeat:'no-repeat', 
+                  backgroundSize:'cover',
+                  backgroundPosition:"10%" ,
+                  }}className='aboutImg'>
+                    
+                  </div>
+                  <div className="SideDown"> <p className='sideContent'>Langed war hath smooth'd his sun of this fair proportion,
+                            ove's majesty
+                            To strut before a want lour'd upon our house
+                            In the deep bosom of this sun of fearful adversaries,
+                            Nor made glorious pleasing nymph;
+                            I, that am not shaped for sportive tricks,
+                            Nor made glorious summer by this wrinkled front;
+                            And now, instead of this summer by this sun of this sun of
+                            our bruised arms hung up for made glorious wrinkled front;
+                            And now, instead of mountings,
+                                </p>
+                    </div>
+                </div>
+                <div>
+        
+         </div>
+         
           </div>
-          </div>
+         
     </>
   )
 }

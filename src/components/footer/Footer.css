@@ -1,4 +1,3 @@
-
 .footerMain{
     margin-top: 2%;
     width: 100%;
@@ -180,5 +179,40 @@
     
     .col:nth-child(2) .col:nth-child(3){
         flex-basis: 100%;
+    }
+}
+@media (min-width:350px) and (max-width: 860px){
+    .underline{
+        color: #767676;
+        width:50%;
+        height: 5px;
+        background: #767676;
+        border-radius: 3px;
+        position: absolute;
+        margin-top: 5px;
+        top: 30px;
+        left: 0;
+        overflow: hidden;
+    }
+    .underline span{
+        display: none;
+        color: #767676;
+        width: 15px;
+        height: 100%;
+        background:#fff;
+        position: absolute;
+        top: 0;
+        left: 10px;
+        animation: movings 2s linear infinite;
+    }
+    .fotCol h3{
+        color: #fff;
+        width:200px;
+        margin-bottom: 40px;
+        position: relative;
+    }
+    .fotCol h4{
+        font-size: 20px;
+        font-weight: 400;
     }
 }
